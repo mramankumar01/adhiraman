@@ -16,10 +16,15 @@
 // This file was generated from the user-provided MCQ booklets.
 // Answers are kept exactly as provided, including where the source
 // data itself may be debatable.
+//
+// De-duplicated on 2026-08-22: 105 exact-text
+// duplicate questions (same question re-asked, differing only in
+// punctuation/casing or with reworded distractors) were removed,
+// keeping the cleanest version of each. See dedupe report for details.
 // ============================================================
 
 const QUESTION_BANK = {
-  java: [
+  "java": [
     {
       "q": "Which of the following best describes the principle of Encapsulation in Java?",
       "options": [
@@ -1891,24 +1896,6 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "Which of the following allows non repeatable read in JDBC Connection?",
-      "options": [
-        "TRANSACTION_READ_UNCOMMITTED",
-        "TRANSACTION_READ_COMMITTED",
-        "TRANSACTION_SERIALIZABLE",
-        "TRANSACTION_REPEATABLE_READ",
-        "Ans. D",
-        "DOCKER & DEVOPS :-",
-        "1) After you initialize a new Git repository and create a file named git-quiz.html, which of the following commands will NOT work",
-        "if issued?",
-        "git add git-quiz.html",
-        "git status",
-        "git add .",
-        "git commit -m \"git quiz web file added\""
-      ],
-      "correct": 3
-    },
-    {
       "q": "Which of the following are the benefits of using Gradle over Maven? Select all that apply.",
       "options": [
         "Gradle supports more languages than Maven.",
@@ -2222,15 +2209,6 @@ const QUESTION_BANK = {
         "iii. ViewResolver."
       ],
       "correct": 0
-    },
-    {
-      "q": "Which annotation is used to create Primary KEY : Foreign KEY relation between two tables ?",
-      "options": [
-        "i. ForeignKey.",
-        "ii. JoinedKey.",
-        "iii. JoinColumn."
-      ],
-      "correct": 2
     },
     {
       "q": "You can only use Hibernate in ORM in Spring Boot Applications.",
@@ -2628,15 +2606,6 @@ const QUESTION_BANK = {
         "BigDecimal.MAX_VALUE"
       ],
       "correct": 1
-    },
-    {
-      "q": "Which of the following is the immutable Java List static factory method?",
-      "options": [
-        "List.of",
-        "List.immutable",
-        "List.create"
-      ],
-      "correct": 0
     },
     {
       "q": "What is the command line tool introduced for JS engine in Java 8?",
@@ -3811,16 +3780,6 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "How can you detect the client's browser name in JavaScript?",
-      "options": [
-        "client.navName",
-        "navigator.appName",
-        "browser.name",
-        "window.browser"
-      ],
-      "correct": 1
-    },
-    {
       "q": "In JavaScript, var declares a block-scoped variable.? False",
       "options": [
         "True",
@@ -4338,16 +4297,6 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "Which Java class has natural sorting implemented?",
-      "options": [
-        "LinkedHashSet",
-        "TreeSet",
-        "HashSet",
-        "ArrayList"
-      ],
-      "correct": 1
-    },
-    {
       "q": "Optional<String> aValue = Optional.of(\"Not Empty\"); if(aValue.isPresent()) { print(\"Got Not Empty\"); } Is this valid Java code?",
       "options": [
         "True, it's valid code",
@@ -4409,15 +4358,6 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "StringJoiner astring = new StringJoiner(\"-\", \" ( \", \" ) \"); astring.add(\"A\"); astring.add(\"B\"); astring.add(\"C\"); What is the output?",
-      "options": [
-        "(A-B-C)",
-        "(A)-(B)-(C)",
-        "(-A-)(-B-)(-C-)"
-      ],
-      "correct": 0
-    },
-    {
       "q": "Which of the below API calls provide you security information? (1) HttpServletRequest.isUserinRole() (2) HttpServletRequest.getUserPrincipal()",
       "options": [
         "Only 1",
@@ -4453,16 +4393,6 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "What is the command line tool introduced for the JS engine in Java 8?",
-      "options": [
-        "jjs",
-        "jss",
-        "jfs",
-        "jbd"
-      ],
-      "correct": 0
-    },
-    {
       "q": "Which statements are true about Java? (i) finally executed only after catch (ii) finally executed whether exception thrown or not (iii) finally not mandatory (iv) finally executed only if exception occurs",
       "options": [
         "i only",
@@ -4481,26 +4411,6 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "The Bootstrap grid system is based on how many columns?",
-      "options": [
-        "12",
-        "3",
-        "6",
-        "9"
-      ],
-      "correct": 0
-    },
-    {
-      "q": "Which Bootstrap class adds zebra-stripes to a table?",
-      "options": [
-        "table-bordered",
-        "table-zebra",
-        "table-striped",
-        "even and odd"
-      ],
-      "correct": 2
-    },
-    {
       "q": "The __ JavaScript method is like the mathematical \"for all\" quantifier, returning true if and only if the function returns true for all elements in the array.",
       "options": [
         "every()",
@@ -4509,16 +4419,6 @@ const QUESTION_BANK = {
         "forall()"
       ],
       "correct": 0
-    },
-    {
-      "q": "Which of the following methods CANNOT be used to add array elements in JavaScript?",
-      "options": [
-        "push()",
-        "splice()",
-        "shift()",
-        "All can be used"
-      ],
-      "correct": 2
     },
     {
       "q": "In JavaScript, ____ is a comma separated list of colon separated name-value pairs enclosed within curly braces.",
@@ -6065,26 +5965,6 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "Java Functional Interface can be defined as ______.",
-      "options": [
-        "Simple Abstract Markup",
-        "Simple Active Markup",
-        "Single Ambivalue Method",
-        "Single Abstract Method"
-      ],
-      "correct": 3
-    },
-    {
-      "q": "In Java, which of the following data structure classes CANNOT be type-parameterized?",
-      "options": [
-        "List",
-        "Set",
-        "Array",
-        "Map"
-      ],
-      "correct": 2
-    },
-    {
       "q": "What is the output of this inheritance chain?\nclass First { public First(){ System.out.println(\"F\"); } }\nclass Second extends First { public Second(){ System.out.println(\"S\"); } }\nclass Third extends Second { public Third(){ System.out.println(\"T\"); } }\npublic class TestClass { public static void main(String[] args){ Third c = new Third(); } }",
       "options": [
         "TSF",
@@ -6301,7 +6181,7 @@ const QUESTION_BANK = {
       "correct": 1
     }
   ],
-  spring: [
+  "spring": [
     {
       "q": "What is the Spring IoC (Inversion of Control) container responsible for?",
       "options": [
@@ -8047,20 +7927,6 @@ const QUESTION_BANK = {
       ]
     },
     {
-      "q": "What do you mean by inner bean?",
-      "options": [
-        "A <bean/> element inside the <bean/> elements is used to define a so-",
-        "called Inner bean.",
-        "A <bean/> element inside the <property/> elements is used to define a",
-        "so-called inner bean.",
-        "A <bean/> element inside the <constructor-arg/> elements is used to",
-        "define a so-called inner bean.",
-        "A<bean/> element inside the property or <constructor-arg/> elements",
-        "is used to define a so-called inner bean."
-      ],
-      "correct": 3
-    },
-    {
       "q": "Which of the following are basic techniques to implement inversion of",
       "options": [
         "control?",
@@ -8994,16 +8860,6 @@ const QUESTION_BANK = {
       "note": "answer was 'All of the above' -> marked all options correct"
     },
     {
-      "q": "Which of the below API Calls provides you the security information? 1. HttpServletRequest.isUserinRole() 2. HttpServletRequest.getUserPrincipal()",
-      "options": [
-        "Only 1",
-        "Only 2",
-        "Both i and ii"
-      ],
-      "correct": 2,
-      "note": null
-    },
-    {
       "q": "The __ attribute of a React form is called when the main action button inside the",
       "options": [
         "form is pressed.",
@@ -9072,28 +8928,6 @@ const QUESTION_BANK = {
         "Both i and ii"
       ],
       "correct": 2
-    },
-    {
-      "q": "Which Annotation is used to refer to Pointcuts.",
-      "options": [
-        "@PointCut.",
-        "@PointCutExecution.",
-        "@PointCutBefore."
-      ],
-      "correct": 0
-    },
-    {
-      "q": "Publishing an application’s data as a REST service requires.",
-      "options": [
-        "@RequestMapping",
-        "@PathVariable",
-        "All of the mentioned",
-        "None of the mentioned"
-      ],
-      "correct": [
-        0,
-        1
-      ]
     },
     {
       "q": "Spring Boot: What does @SpringBootApplication include?",
@@ -9361,16 +9195,6 @@ const QUESTION_BANK = {
         "@size"
       ],
       "correct": 1
-    },
-    {
-      "q": "Spring MVC supports generating Excel files using which of the following libraries?",
-      "options": [
-        "Apache POI library",
-        "JExcelAPI library",
-        "All of the mentioned",
-        "None of the mentioned"
-      ],
-      "correct": 2
     },
     {
       "q": "Interface for DispatcherServlet to auto detect view resolver beans:",
@@ -10428,15 +10252,6 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Which annotation is used to refer to Pointcuts?",
-      "options": [
-        "@PointCut",
-        "@PointCutExecution",
-        "@PointCutBefore"
-      ],
-      "correct": 0
-    },
-    {
       "q": "Which element is used to restrict access to a particular URL within Spring Security?",
       "options": [
         "restrict-url",
@@ -10477,16 +10292,6 @@ const QUESTION_BANK = {
         "org.springframework.ws.server",
         "org.springframework.*",
         "None of the mentioned"
-      ],
-      "correct": 0
-    },
-    {
-      "q": "Declaring bean form object properties can be done using:",
-      "options": [
-        "PropertyPathFactoryBean",
-        "util:constant",
-        "None of the mentioned",
-        "All of the mentioned"
       ],
       "correct": 0
     },
@@ -10553,14 +10358,6 @@ const QUESTION_BANK = {
         "An interface",
         "A concrete class",
         "A final class"
-      ],
-      "correct": 1
-    },
-    {
-      "q": "Annotations work as metadata for classes, and Spring uses annotations as an alternative to XML for declarative configuration. True or false?",
-      "options": [
-        "False",
-        "True"
       ],
       "correct": 1
     },
@@ -11076,16 +10873,6 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "What are the different implementations of Spring AOP?",
-      "options": [
-        "AspectJ only",
-        "Spring AOP only",
-        "JBoss AOP only",
-        "All of the above"
-      ],
-      "correct": 3
-    },
-    {
       "q": "How does Spring Batch work (core components)?",
       "options": [
         "step, ItemReader, ItemProcessor, ItemStreamWriter",
@@ -11295,16 +11082,6 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "The use of Autodiscovery and Autowire will reduce the amount of ___.",
-      "options": [
-        "Java code generated",
-        "Methods generated",
-        "XML Spring configurations",
-        "<bean> elements"
-      ],
-      "correct": 2
-    },
-    {
       "q": "DI / IoC is based on which Hollywood principle?",
       "options": [
         "Do not call us. We will call you.",
@@ -11385,16 +11162,6 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "The ___ packages are the basis of Spring Framework's IoC container.",
-      "options": [
-        "org.springframework.beans and org.springframework.Application",
-        "org.springframework.properties and org.springframework.context",
-        "org.springframework.beans and org.springframework.properties",
-        "org.springframework.beans and org.springframework.context"
-      ],
-      "correct": 3
-    },
-    {
       "q": "Which attributes are valid in a Spring bean definition? (A.ID B.Map C.Set D.Class)",
       "options": [
         "ID and Map",
@@ -11463,16 +11230,6 @@ const QUESTION_BANK = {
         "Execute update statements only"
       ],
       "correct": 1
-    },
-    {
-      "q": "Which of the following are MVC-specific annotations?",
-      "options": [
-        "@Controller, @RequestMapping, @PathVariable",
-        "@Controller, @RequestMapping, @Autowired",
-        "@RequestMapping, @PathVariable, @Autowired",
-        "All four including @Autowired"
-      ],
-      "correct": 0
     },
     {
       "q": "To annotate all your DAO classes, use the ___.",
@@ -12348,7 +12105,7 @@ const QUESTION_BANK = {
       "correct": 0
     }
   ],
-  mongodb: [
+  "mongodb": [
     {
       "q": "Which of the following correctly describes the structure of a document in MongoDB?",
       "options": [
@@ -12924,17 +12681,6 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "Which one is NOT a spring data MongoDB annotation?",
-      "options": [
-        "@Document",
-        "@Field",
-        "@Entity",
-        "@Query"
-      ],
-      "correct": 2,
-      "note": "fuzzy-matched answer text 'C @Entity' -> option '@Entity'"
-    },
-    {
       "q": "Point out the correct statement.",
       "options": [
         "MongoDB is classified as a NoSQL database",
@@ -13123,16 +12869,6 @@ const QUESTION_BANK = {
         "LIFO",
         "LRU",
         "MRU"
-      ],
-      "correct": 0
-    },
-    {
-      "q": "Identify the incorrect statement on MongoDB.",
-      "options": [
-        "Secondary Indices are not available in MongoDB.",
-        "MongoDB supports search by field, range queries and regular expression matches.",
-        "MongoDB can store the business subject in the minimal number of documents.",
-        "MongoDB documents can have different fields."
       ],
       "correct": 0
     },
@@ -13413,7 +13149,7 @@ const QUESTION_BANK = {
       "correct": 3
     }
   ],
-  nodejs: [
+  "nodejs": [
     {
       "q": "What is Node.js?",
       "options": [
@@ -14599,7 +14335,6 @@ const QUESTION_BANK = {
       "correct": 0,
       "note": null
     },
-
     {
       "q": "Data bindings are applied as . . . . . . . . or as special sequences of characters in strings.",
       "options": [
@@ -14662,7 +14397,7 @@ const QUESTION_BANK = {
       "correct": 3
     }
   ],
-  javascript: [
+  "javascript": [
     {
       "q": "Which of the following is the correct way to declare a variable in JavaScript that cannot be reassigned?",
       "options": [
@@ -15014,16 +14749,6 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "What will the following code output? console.log(1 < 2 < 3);",
-      "options": [
-        "true",
-        "false",
-        "undefined",
-        "TypeError"
-      ],
-      "correct": 0
-    },
-    {
       "q": "Which method is used to flatten an array to a specified depth?",
       "options": [
         "flat()",
@@ -15134,16 +14859,6 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "What will the following code output? console.log([] + {});",
-      "options": [
-        "[object Object]",
-        "{}[]",
-        "[]",
-        "undefined"
-      ],
-      "correct": 0
-    },
-    {
       "q": "Which of the following is a valid way to create a deep clone of an object (excluding special cases like Date, RegExp)?",
       "options": [
         "JSON.parse(JSON.stringify(obj))",
@@ -15162,16 +14877,6 @@ const QUESTION_BANK = {
         "0"
       ],
       "correct": 1
-    },
-    {
-      "q": "What is the output of: console.log(typeof null)?",
-      "options": [
-        "null",
-        "undefined",
-        "object",
-        "string"
-      ],
-      "correct": 2
     },
     {
       "q": "Which of the following correctly explains the difference between 'var', 'let', and 'const' in JavaScript?",
@@ -15340,16 +15045,6 @@ const QUESTION_BANK = {
         "[6]",
         "[4, 6]",
         "[5, 6]"
-      ],
-      "correct": 1
-    },
-    {
-      "q": "What is a closure in JavaScript?",
-      "options": [
-        "A function that can only be called once",
-        "A function that has access to variables in its outer lexical scope even after the outer function has returned",
-        "A function with no parameters",
-        "A method used to close a browser window"
       ],
       "correct": 1
     },
@@ -16741,16 +16436,6 @@ const QUESTION_BANK = {
       "note": null
     },
     {
-      "q": ") How to get information about browser?",
-      "options": [
-        "Browser",
-        "version",
-        "navigator"
-      ],
-      "correct": 2,
-      "note": null
-    },
-    {
       "q": ") Which of the following can be impplemented using animation?",
       "options": [
         "Fireworks",
@@ -16916,17 +16601,6 @@ const QUESTION_BANK = {
       ],
       "correct": 0,
       "note": "fuzzy-matched answer text 'A -> True' -> option 'True'"
-    },
-    {
-      "q": "What is the command line tool introduced for the JS engine in Java 8?",
-      "options": [
-        "jjs",
-        "jss",
-        "jfs",
-        "jbd"
-      ],
-      "correct": 0,
-      "note": null
     },
     {
       "q": "Which of the following rules allows users to import style rules from other style sheets?",
@@ -17139,15 +16813,6 @@ const QUESTION_BANK = {
         "List.create"
       ],
       "correct": 0
-    },
-    {
-      "q": "Which Java Class has natural sorting implemented ?",
-      "options": [
-        "LinkedHashSet.",
-        "TreeSet",
-        "HashSet"
-      ],
-      "correct": 1
     },
     {
       "q": "Which implementation of Set would you choose if you want the iterator of Set to give objects in the order they were inserted?",
@@ -17496,14 +17161,6 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "JSON-RPC is a remote procedure call protocol.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "correct": 0
-    },
-    {
       "q": "console.log(x); var x = 5; What is logged?",
       "options": [
         "5",
@@ -17514,30 +17171,12 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "Promises are more advanced than Observables.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "correct": 1
-    },
-    {
       "q": "Which class is used to create a black navigation bar in Bootstrap?",
       "options": [
         ".navbar-default",
         ".navbar-black",
         ".navbar-dark",
         ".navbar-inverse"
-      ],
-      "correct": 3
-    },
-    {
-      "q": "The .container-fluid class provides",
-      "options": [
-        "Fixed width container",
-        "Table format",
-        "A form",
-        "Full width container"
       ],
       "correct": 3
     },
@@ -17582,26 +17221,6 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "----- is an HTML specification used to add more information to HTML tags.",
-      "options": [
-        "Macrodata",
-        "Microdata",
-        "Minidata",
-        "Modifydata"
-      ],
-      "correct": 1
-    },
-    {
-      "q": "What is the purpose of the mimeTypes property of a plug-in entry?",
-      "options": [
-        "Contains MIME properties",
-        "Contains MIME sizes",
-        "Contains MIME types",
-        "Contains MIME methods"
-      ],
-      "correct": 2
-    },
-    {
       "q": "Which of the following can be implemented using CSS/JS animation?",
       "options": [
         "Fireworks",
@@ -17610,45 +17229,6 @@ const QUESTION_BANK = {
         "All of the mentioned"
       ],
       "correct": 3
-    },
-    {
-      "q": "Which is the property that represents the content displayed in the window?",
-      "options": [
-        "document",
-        "content",
-        "window",
-        "frame"
-      ],
-      "correct": 0
-    },
-    {
-      "q": "How can we make methods available on all objects?",
-      "options": [
-        "Object.add(methods)",
-        "Object.methods(add)",
-        "Object.add.methods(...)",
-        "Object.prototype"
-      ],
-      "correct": 3
-    },
-    {
-      "q": "The four kinds of class members are______",
-      "options": [
-        "Instance methods, Instance fields, Static method, Dynamic method",
-        "Instance fields, Instance methods, Class fields, Class methods",
-        "Instance fields, non-Instance fields, Dynamic methods, Global methods",
-        "Global methods, Local methods, Dynamic methods, Static methods"
-      ],
-      "correct": 1
-    },
-    {
-      "q": "Which field is required in <input>?",
-      "options": [
-        "required",
-        "minlength",
-        "Both"
-      ],
-      "correct": 0
     },
     {
       "q": "How can we add/delete elements in an array and return the removed item?",
@@ -17779,16 +17359,6 @@ const QUESTION_BANK = {
         "Object.prototype"
       ],
       "correct": 3
-    },
-    {
-      "q": "The four kinds of class members are:",
-      "options": [
-        "Instance methods, Instance fields, Static method, Dynamic method",
-        "Instance fields, Instance methods, Class fields, Class methods",
-        "Instance fields, non-Instance fields, Dynamic methods, Global methods",
-        "Global methods, Local methods, Dynamic methods, Static methods"
-      ],
-      "correct": 1
     },
     {
       "q": "What is the output of:<br><code>console.log(x);<br>var x = 5;</code>",
@@ -17973,16 +17543,6 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "An object's ______ is a reference to another object from which properties are inherited.",
-      "options": [
-        "Characteristics",
-        "Prototype",
-        "Class",
-        "Extensible flag"
-      ],
-      "correct": 1
-    },
-    {
       "q": "A linkage of a series of prototype objects is called a",
       "options": [
         "prototype stack",
@@ -18013,7 +17573,7 @@ const QUESTION_BANK = {
       "correct": 2
     }
   ],
-  angular: [
+  "angular": [
     {
       "q": "Which command is used to create a new Angular project using the CLI?",
       "options": [
@@ -19382,23 +18942,6 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "When you apply an Angular ‘pipe’ , it changes the value of the underlying component’s member variable as well.",
-      "options": [
-        "A . TRUE.",
-        "FALSE."
-      ],
-      "correct": 1
-    },
-    {
-      "q": "What’s the best way to inject one service into another in Angular ?",
-      "options": [
-        "A . A service cannot be injected in another service.",
-        "Through constructor of depending service.",
-        "By instantiating using a new operator."
-      ],
-      "correct": 1
-    },
-    {
       "q": "In Angular, how can you set a header in every http request ?",
       "options": [
         "Use HttpClientInterceptor.",
@@ -19406,46 +18949,6 @@ const QUESTION_BANK = {
         "Set as a request header parameter."
       ],
       "correct": 0
-    },
-    {
-      "q": "In Angular, you can pass data from parent component to child component using _______.",
-      "options": [
-        "A : ‘@Output()’",
-        "B . ‘@Input()’",
-        "Input.",
-        "Output"
-      ],
-      "correct": 1
-    },
-    {
-      "q": "In Angular, you can pass data from child component to parent component using ________",
-      "options": [
-        "A : ‘@Output’",
-        "B . ‘@Input’",
-        "Input",
-        "Output"
-      ],
-      "correct": 0
-    },
-    {
-      "q": "In Angular , one can create a local HTML reference of an HTML tag using a variable , which starts with character ___ .",
-      "options": [
-        "@",
-        "#",
-        "*",
-        "&",
-        "48. If you provide a service in two Angular components, in the \"providers\" section of @Component decorator, how many",
-        "instances of service shall get created?",
-        "4",
-        "2",
-        "3",
-        "49. In Angular routing , which of these tags is used to show the selected route component dynamically ?",
-        "<router></router>",
-        "<router-output></router-output>",
-        "<router-outlet></router-outlet>",
-        "<router-input></router-input>"
-      ],
-      "correct": 2
     },
     {
       "q": "Which method of Angular RouterModule should be called for providing all routes in AppModule?",
@@ -19536,17 +19039,6 @@ const QUESTION_BANK = {
         "None of above"
       ],
       "correct": 2,
-      "note": null
-    },
-    {
-      "q": "On the opposite side of event bindings (()) lie Angular's square-bracket syntax ([]) which signify a . . . . . .",
-      "options": [
-        "property binding",
-        "class binding",
-        "style binding",
-        "both A & B"
-      ],
-      "correct": 0,
       "note": null
     },
     {
@@ -19812,17 +19304,6 @@ const QUESTION_BANK = {
       "note": null
     },
     {
-      "q": "Which of these Angular services can be injected in your component to the dynamic mode navigation?",
-      "options": [
-        "Routing",
-        "RouterService",
-        "RoutingService",
-        "Router"
-      ],
-      "correct": 3,
-      "note": null
-    },
-    {
       "q": "In Angular application there can be atmost one <router-outlet> can be used for routing",
       "options": [
         "True",
@@ -20019,36 +19500,6 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "Route ____ allow us to pass values in our url to our component so we can dynamically change our view content.",
-      "options": [
-        "pipes",
-        "modules",
-        "variables",
-        "parameters"
-      ],
-      "correct": 3
-    },
-    {
-      "q": "To use observables, Angular uses a third-party library called ____.",
-      "options": [
-        "ng2-bootstrap",
-        "angular-cli",
-        "numeral",
-        "Reactive Extensions (RxJS)"
-      ],
-      "correct": 3
-    },
-    {
-      "q": "Observables help you manage ____ data.",
-      "options": [
-        "synchronous",
-        "asynchronous",
-        "Both asynchronous & synchronous",
-        "None of above"
-      ],
-      "correct": 2
-    },
-    {
       "q": "We subscribe to the observable ourselves using the actual ____ method.",
       "options": [
         "subscribe()",
@@ -20059,40 +19510,12 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "A promise represents the final result of an ____ operation.",
-      "options": [
-        "asynchronous",
-        "synchronous"
-      ],
-      "correct": 0
-    },
-    {
-      "q": "The promise becomes ____ after resolving or rejecting.",
-      "options": [
-        "mutable",
-        "ignored",
-        "immutable",
-        "recurring"
-      ],
-      "correct": 2
-    },
-    {
       "q": "Which of the following is not a built-in pipe in Angular?",
       "options": [
         "DatePipe",
         "CurrencyPipe",
         "DataPipe",
         "PercentPipe"
-      ],
-      "correct": 2
-    },
-    {
-      "q": "If you chain multiple pipes together, they are executed ____.",
-      "options": [
-        "in parallel",
-        "LIFO order",
-        "in the order in which you specify them",
-        "none of above"
       ],
       "correct": 2
     },
@@ -20117,26 +19540,6 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "Data bindings are applied as ____ or as special sequences of characters in strings.",
-      "options": [
-        "expressions",
-        "attributes on HTML elements",
-        "elements itself",
-        "none of above"
-      ],
-      "correct": 1
-    },
-    {
-      "q": "Attribute binding is similar to property binding but is tied to the ____ rather than the DOM property.",
-      "options": [
-        "Page attribute",
-        "DOM attribute",
-        "Root attribute",
-        "HTML attribute"
-      ],
-      "correct": 3
-    },
-    {
       "q": "To make your applications ready for animations, you must include the AngularJS Animate library and refer to the ____ module.",
       "options": [
         "ng-repeat",
@@ -20157,16 +19560,6 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Animations are fired using animation property bindings which are prefixed with an ____ symbol.",
-      "options": [
-        "&",
-        "#",
-        "$",
-        "@"
-      ],
-      "correct": 3
-    },
-    {
       "q": "____ is an animation-specific function designed to be used inside Angular's animation DSL language, used to kick off a reusable animation created using animation().",
       "options": [
         "useAnimation",
@@ -20175,26 +19568,6 @@ const QUESTION_BANK = {
         "All of above"
       ],
       "correct": 0
-    },
-    {
-      "q": "It's always possible to make use of animation input parameters by setting even more data via the ____ property.",
-      "options": [
-        "options.param",
-        "option.params",
-        "option.param",
-        "options.params"
-      ],
-      "correct": 3
-    },
-    {
-      "q": "Which of the following bootstrap styles are used to create a justified tabs navigation?",
-      "options": [
-        ".nav, .nav-tabs",
-        ".nav, .nav-pills",
-        ".nav, .nav-pills, .nav-stacked",
-        ".nav, .nav-tabs, .nav-justified"
-      ],
-      "correct": 3
     },
     {
       "q": "Bootstrap's grid system allows up to",
@@ -20207,58 +19580,12 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "On the opposite side of event bindings (()) lie Angular's square-bracket syntax ([]) which signify a ____.",
-      "options": [
-        "property binding",
-        "class binding",
-        "style binding",
-        "both A & B"
-      ],
-      "correct": 0
-    },
-    {
-      "q": "What does the Angular CLI do when you execute npm start / ng serve?",
-      "options": [
-        "It builds the application for production and starts deployment.",
-        "It compiles the application and starts a web server to serve the application to the browser.",
-        "It starts the default editor for the application.",
-        "It installs the packages defined in package.json."
-      ],
-      "correct": 1
-    },
-    {
-      "q": "In Angular / RxJS, when should you unsubscribe from a Subscription?",
-      "options": [
-        "There is no need to unsubscribe. Angular routing handles it.",
-        "Unsubscribe them in ngOnDestroy."
-      ],
-      "correct": 1
-    },
-    {
       "q": "When you apply an Angular 'pipe', it changes the value of the underlying component's member variable as well.",
       "options": [
         "True",
         "False"
       ],
       "correct": 1
-    },
-    {
-      "q": "What's the best way to inject one service into another in Angular?",
-      "options": [
-        "A service cannot be injected in another service.",
-        "Through constructor of depending service.",
-        "By instantiating using a new operator."
-      ],
-      "correct": 1
-    },
-    {
-      "q": "In Angular, how can you set a header in every http request?",
-      "options": [
-        "Use HttpClientInterceptor.",
-        "Extend HttpClient class.",
-        "Set as a request header parameter."
-      ],
-      "correct": 0
     },
     {
       "q": "In Angular, you can pass data from parent component to child component using ____.",
@@ -20296,26 +19623,6 @@ const QUESTION_BANK = {
         "4",
         "2",
         "3"
-      ],
-      "correct": 1
-    },
-    {
-      "q": "In Angular routing, which of these tags is used to show the selected route component dynamically?",
-      "options": [
-        "<router></router>",
-        "<router-output></router-output>",
-        "<router-outlet></router-outlet>",
-        "<router-input></router-input>"
-      ],
-      "correct": 2
-    },
-    {
-      "q": "In Angular, one can create a local HTML reference of an HTML tag using a variable which starts with character ____",
-      "options": [
-        "@",
-        "#",
-        "\"",
-        "&"
       ],
       "correct": 1
     },
@@ -20383,36 +19690,12 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "Three main components of Routing are:",
-      "options": [
-        "RouteObject",
-        "RouterOutlet",
-        "RouterState",
-        "RouterLink"
-      ],
-      "correct": [
-        0,
-        1,
-        3
-      ]
-    },
-    {
       "q": "Route ____ allow you to pass values in the URL to a component so you can dynamically change view content.",
       "options": [
         "pipes",
         "modules",
         "variables",
         "parameters"
-      ],
-      "correct": 3
-    },
-    {
-      "q": "To use observables, Angular uses a third-party library called:",
-      "options": [
-        "ng2-bootstrap",
-        "angular-cli",
-        "numeral",
-        "Reactive Extensions (RxJS)"
       ],
       "correct": 3
     },
@@ -20445,16 +19728,6 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "If you chain multiple pipes together, they are executed:",
-      "options": [
-        "in parallel",
-        "in LIFO order",
-        "in the order in which you specify them",
-        "none of the above"
-      ],
-      "correct": 2
-    },
-    {
       "q": "The ____ pipe waits for a promise (or observable) and returns the most recent value received, updating the view.",
       "options": [
         "sync",
@@ -20473,16 +19746,6 @@ const QUESTION_BANK = {
         "@Pipe"
       ],
       "correct": 3
-    },
-    {
-      "q": "Data bindings are applied as ____, or as special sequences of characters in strings.",
-      "options": [
-        "expressions",
-        "attributes on HTML elements",
-        "elements themselves",
-        "none of the above"
-      ],
-      "correct": 1
     },
     {
       "q": "To make animations work, you include the Animate library and refer to the ____ module in your application.",
@@ -20607,26 +19870,6 @@ const QUESTION_BANK = {
       ]
     },
     {
-      "q": "Observables help you manage ______ data.",
-      "options": [
-        "synchronous",
-        "asynchronous",
-        "Both synchronous & asynchronous",
-        "None of the above"
-      ],
-      "correct": 1
-    },
-    {
-      "q": "A Promise becomes ______ after resolving or rejecting.",
-      "options": [
-        "mutable",
-        "ignored",
-        "immutable",
-        "recurring"
-      ],
-      "correct": 2
-    },
-    {
       "q": "Scope acts as glue between controller and view.",
       "options": [
         "True",
@@ -20644,14 +19887,6 @@ const QUESTION_BANK = {
     },
     {
       "q": "AngularJS expressions behave in the same way as ng-bind directives.",
-      "options": [
-        "False",
-        "True"
-      ],
-      "correct": 1
-    },
-    {
-      "q": "AngularJS expressions are written inside double braces like {{ expression }}.",
       "options": [
         "False",
         "True"
@@ -20681,14 +19916,6 @@ const QUESTION_BANK = {
         "False"
       ],
       "correct": 0
-    },
-    {
-      "q": "AngularJS uses two-way data binding.",
-      "options": [
-        "False",
-        "True"
-      ],
-      "correct": 1
     },
     {
       "q": "Templates can be a single file (like index.html) or multiple views combined into one page.",
@@ -20731,16 +19958,6 @@ const QUESTION_BANK = {
       "options": [
         "True",
         "False"
-      ],
-      "correct": 0
-    },
-    {
-      "q": "AngularJS expressions are written using:",
-      "options": [
-        "Double braces like {{ expression }}",
-        "Single braces like {expression}",
-        "Small brackets like (expression)",
-        "Square brackets like [expression]"
       ],
       "correct": 0
     },
@@ -21039,7 +20256,7 @@ const QUESTION_BANK = {
       "correct": 0
     }
   ],
-  typescript: [
+  "typescript": [
     {
       "q": "What is the primary purpose of TypeScript over plain JavaScript?",
       "options": [
@@ -21726,26 +20943,6 @@ const QUESTION_BANK = {
       "note": null
     },
     {
-      "q": "To change the datatype from one type to another,we require",
-      "options": [
-        "TypeOperator",
-        "TypeAssertion",
-        "InferredTyping"
-      ],
-      "correct": 1,
-      "note": null
-    },
-    {
-      "q": "For a variable,Without Specifying any data type is",
-      "options": [
-        "InferredTyping",
-        "TypeOperator",
-        "TypeAssertion"
-      ],
-      "correct": 0,
-      "note": null
-    },
-    {
       "q": "Internal Modules are known as namespaces in Typescript.",
       "options": [
         "True",
@@ -21794,17 +20991,6 @@ const QUESTION_BANK = {
       "note": null
     },
     {
-      "q": "Which object oriented terms are supported by Typescript?",
-      "options": [
-        "Modules",
-        "Classes",
-        "Interfaces",
-        "All of these"
-      ],
-      "correct": 3,
-      "note": null
-    },
-    {
       "q": "For a variable,Without Specifying any datatype is",
       "options": [
         "InferredTyping",
@@ -21823,17 +21009,6 @@ const QUESTION_BANK = {
         "tst abc.ts"
       ],
       "correct": 2,
-      "note": null
-    },
-    {
-      "q": "Typescript is a",
-      "options": [
-        "Strongly typed",
-        "Object oriented",
-        "Compiled Language",
-        "All the above"
-      ],
-      "correct": 3,
       "note": null
     },
     {
@@ -21856,37 +21031,6 @@ const QUESTION_BANK = {
         "Void"
       ],
       "correct": 0,
-      "note": null
-    },
-    {
-      "q": "Which of the following are true",
-      "options": [
-        "we can use printf in ts(typescript)",
-        "we can use console.log in ts(typescript)"
-      ],
-      "correct": 1,
-      "note": null
-    },
-    {
-      "q": "Supertype of all datatypes in typescript",
-      "options": [
-        "number",
-        "Enum",
-        "Void",
-        "Any"
-      ],
-      "correct": 3,
-      "note": null
-    },
-    {
-      "q": "List some features of Typescript?",
-      "options": [
-        "Typescript can be compiled to all major versions of Javascript(ES3,ES5,ES6,ES7)",
-        "Typescript can be used for cross –browser development and is an open source project",
-        "Typescript is a superset of JavaScript that provides typed nature to your code",
-        "All of the above"
-      ],
-      "correct": 3,
       "note": null
     },
     {
@@ -22570,15 +21714,6 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "To change the datatype from one type to another, we require:",
-      "options": [
-        "TypeOperator",
-        "TypeAssertion",
-        "InferredTyping"
-      ],
-      "correct": 1
-    },
-    {
       "q": "For a variable, without specifying any data type, TypeScript uses:",
       "options": [
         "InferredTyping",
@@ -22596,26 +21731,6 @@ const QUESTION_BANK = {
         "None of the above — it's a compile-time error"
       ],
       "correct": 3
-    },
-    {
-      "q": "function fun1(...params) { console.log(params.length); }\nfun1(); fun1(5); fun1(5, 6, 7);\nWhich concept does this resemble?",
-      "options": [
-        "String Interpolation",
-        "Tagged Templates",
-        "Spread Operator / Rest Parameters",
-        "Object Destructuring"
-      ],
-      "correct": 2
-    },
-    {
-      "q": "How would you define a string type variable with the value 'bar' in TypeScript?",
-      "options": [
-        "let string: foo = 'bar';",
-        "let foo: string = 'bar';",
-        "let string foo = 'bar';",
-        "let foo (string) = 'bar';"
-      ],
-      "correct": 1
     },
     {
       "q": "In TypeScript, code is compiled — it internally becomes JavaScript, and type validations happen at compile time.",
@@ -22766,7 +21881,7 @@ const QUESTION_BANK = {
       "correct": 1
     }
   ],
-  react: [
+  "react": [
     {
       "q": "What command is used to create a new React application using Create React App?",
       "options": [
@@ -23932,32 +23047,6 @@ const QUESTION_BANK = {
       "note": null
     },
     {
-      "q": "When is it recommended to pass this.setState a function instead of an object",
-      "options": [
-        "When the new state should completely replace the old state .",
-        "When the new state does not depend on the old state.",
-        "When the new state depends on the old state.",
-        "When using this.setState in React, there are scenarios where passing a function instead of an object is recommended. Let’s explore the options:",
-        "When the new state should completely replace the old state: In this case, you can directly use an object to update the state. For example:",
-        "JavaScript",
-        "this.setState({ quantity: 2 });",
-        "AI-generated code. Review and use carefully. More info on FAQ.",
-        "This approach is straightforward and readable.",
-        "When the new state does not depend on the old state: If the updated state doesn’t rely on the previous state or any other external factors, using an object is sufficient.",
-        "When the new state depends on the old state: Here’s where passing a function becomes useful. When the updated state relies on the current state (or props), using a function ensures safety and prevents race conditions. For instance:",
-        "JavaScript",
-        "this.setState((prevState) => ({ counter: prevState.counter + 1 }));",
-        "AI-generated code. Review and use carefully. More info on FAQ.",
-        "In this example, we access the previous state (prevState) to calculate the next state.",
-        "In summary:",
-        "Use an object when the state update is straightforward.",
-        "Use a function when the update depends on the previous state or props1234.",
-        "Therefore, the correct answer is C. When the new state depends on the old state. 😊"
-      ],
-      "correct": 2,
-      "note": null
-    },
-    {
       "q": "What syntax do you use to render the App component into an HTML element with id \"root\"?",
       "options": [
         "ReactDOM.render(App, document.getElementById(\"root\"));",
@@ -24004,21 +23093,6 @@ const QUESTION_BANK = {
         "parameters"
       ],
       "correct": 3,
-      "note": null
-    },
-    {
-      "q": ". Three main components of Routing are . . . . . . . . . . .",
-      "options": [
-        "RouteObject",
-        "RouterOutlet",
-        "RouterState",
-        "RouterLink"
-      ],
-      "correct": [
-        0,
-        1,
-        3
-      ],
       "note": null
     },
     {
@@ -24170,15 +23244,6 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": ".Which of the following API is a MUST for every React Component ?",
-      "options": [
-        "getInitialState.",
-        "render",
-        "renderComponent."
-      ],
-      "correct": 2
-    },
-    {
       "q": "You can also use an ES6 class to define a component in React.",
       "options": [
         "True.",
@@ -24195,16 +23260,6 @@ const QUESTION_BANK = {
         "this.values"
       ],
       "correct": 2
-    },
-    {
-      "q": "What are the advantages of React?",
-      "options": [
-        "React can be used on client as well as server side.",
-        "Using React increases readability and makes maintainability easier. Component and Data patterns improve readability and thus make it easier for maintaining larger apps.",
-        "React can be used with any other framework (Backbone.js, Angular.js), as it is just a view layer.",
-        "All of the above"
-      ],
-      "correct": 3
     },
     {
       "q": "How does React handle the Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) standard?",
@@ -24316,17 +23371,6 @@ const QUESTION_BANK = {
       "note": null
     },
     {
-      "q": "How does React handle the Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) standard ?",
-      "options": [
-        "aria -* HTML attributes are fully supported in JSX where most DOM properties and attributes in React are camelCased , these",
-        "attributes should be lowercase.",
-        "React processes aria - * attributes separately and updates the DOM for accessibility if the user requires it.",
-        "aria-* attributes should be converted to camelCase like other attributes; For example: className, onChange and so on.",
-        "React is yet to support the WAI-ARIA standard."
-      ],
-      "correct": 3
-    },
-    {
       "q": "Which of the following API is a MUST for every React component? render",
       "options": [
         "getInitialState",
@@ -24375,32 +23419,6 @@ const QUESTION_BANK = {
         "this.values"
       ],
       "correct": 3
-    },
-    {
-      "q": "Which of the following API is a MUST for every React component?",
-      "options": [
-        "getInitialState",
-        "render",
-        "renderComponent"
-      ],
-      "correct": 2
-    },
-    {
-      "q": "True or false: the only thing that can change the data inside a store is the store itself.",
-      "options": [
-        "False",
-        "True"
-      ],
-      "correct": 1
-    },
-    {
-      "q": "What does the \"webpack\" command do?",
-      "options": [
-        "Runs React Local Development Server.",
-        "Transpiles all the JavaScript down into one file.",
-        "Both A and B."
-      ],
-      "correct": 2
     },
     {
       "q": "Which of the following APIs is a MUST for every React Component?",
@@ -24792,7 +23810,7 @@ const QUESTION_BANK = {
       "correct": 0
     }
   ],
-  devops: [
+  "devops": [
     {
       "q": "What is the difference between 'git fetch' and 'git pull'?",
       "options": [
@@ -26779,7 +25797,7 @@ const QUESTION_BANK = {
       "correct": 3
     }
   ],
-  htmlcss: [
+  "htmlcss": [
     {
       "q": "What is the correct HTML5 doctype declaration?",
       "options": [
@@ -28649,7 +27667,6 @@ const QUESTION_BANK = {
       ],
       "correct": 1
     },
-
     {
       "q": "The best way to detect when a user has completed a form is",
       "options": [
@@ -28879,15 +27896,6 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Which of the following API is a MUST for every React component?",
-      "options": [
-        "getInitialState",
-        "render",
-        "renderComponent"
-      ],
-      "correct": 2
-    },
-    {
       "q": "At the highest level, React components have lifecycle events that fall into _______.",
       "options": [
         "Initialization",
@@ -28896,37 +27904,6 @@ const QUESTION_BANK = {
         "All of the above"
       ],
       "correct": 3
-    },
-    {
-      "q": "What are the advantages of React?",
-      "options": [
-        "React can be used on client as well as server side.",
-        "Using React increases readability and makes maintainability easier. Component and Data patterns improve readability and thus",
-        "make it easier for maintaining larger apps.",
-        "React can be used with any other framework (Backbone.js, Angular.js), as it is just a view layer.",
-        "All of the above"
-      ],
-      "correct": 3
-    },
-    {
-      "q": "How does React handle the Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) standard?",
-      "options": [
-        "aria-* HTML attributes are fully supported in JSX where most DOM properties and attributes in React are camelCased, these",
-        "attributes should be lowercase.",
-        "React processes aria-* attributes separately and updates the DOM for accessibility if the user requires it.",
-        "aria-* attributes should be converted to camelCase like other attributes. For example: className, onChange, and so on",
-        "React is yet to support the WAI-ARIA standard."
-      ],
-      "correct": 3
-    },
-    {
-      "q": "What does the \"webpack\" command do?",
-      "options": [
-        "Transpiles all the Javascript down into one file",
-        "Runs react local development server",
-        "Both A and B"
-      ],
-      "correct": 2
     },
     {
       "q": "What is React in MVC?",
@@ -29606,17 +28583,6 @@ const QUESTION_BANK = {
       "note": null
     },
     {
-      "q": "Which event occurs when the user clicks on the HTML element?",
-      "options": [
-        "onmouseover",
-        "onchange",
-        "onmouseclick",
-        "onclick"
-      ],
-      "correct": 3,
-      "note": null
-    },
-    {
       "q": "Which of the following media queries would apply to a tablet reporting a screen width of 768px?",
       "options": [
         "@media only screen and (min-width: 1140px){}",
@@ -29773,15 +28739,6 @@ const QUESTION_BANK = {
       ]
     },
     {
-      "q": "Whenever you are assigning two classes to a tag, you must separate them with a",
-      "options": [
-        "Space",
-        "Comma",
-        "Dash"
-      ],
-      "correct": 0
-    },
-    {
       "q": "Which of the following values are accepted by the float property?",
       "options": [
         "left",
@@ -29809,16 +28766,6 @@ const QUESTION_BANK = {
         "right"
       ],
       "correct": 3
-    },
-    {
-      "q": "Which of the following properties sets the distance between an element's right border and the rightmost edge of its content?",
-      "options": [
-        "auto",
-        "padding-left",
-        "padding-right",
-        "padding-top"
-      ],
-      "correct": 2
     },
     {
       "q": "The correct HTML tag to left align the content inside a table cell is:",
@@ -29859,16 +28806,6 @@ const QUESTION_BANK = {
         "<pre>"
       ],
       "correct": 0
-    },
-    {
-      "q": "Which is the correct CSS syntax?",
-      "options": [
-        "body color-black",
-        "{body color-black}",
-        "body {color:black;}",
-        "{body;color;black}"
-      ],
-      "correct": 2
     },
     {
       "q": "Which Bootstrap classes create a vertical pills navigation?",
@@ -30009,16 +28946,6 @@ const QUESTION_BANK = {
         "pattern"
       ],
       "correct": 0
-    },
-    {
-      "q": "____________ contains the navigation menu, or other navigation functionality for the page.",
-      "options": [
-        "section",
-        "header",
-        "nav",
-        "aside"
-      ],
-      "correct": 2
     },
     {
       "q": "What does the <aside> tag in HTML do?",
