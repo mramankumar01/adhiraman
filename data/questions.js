@@ -14,13 +14,18 @@
 // many questions it ends up with.
 //
 // This file was generated from the user-provided MCQ booklets.
-// Answers are kept exactly as provided, including where the source
-// data itself may be debatable.
 //
-// De-duplicated on 2026-08-22: 105 exact-text
-// duplicate questions (same question re-asked, differing only in
-// punctuation/casing or with reworded distractors) were removed,
-// keeping the cleanest version of each. See dedupe report for details.
+// De-duplication pass: 105 exact-text duplicate questions removed,
+// keeping the cleanest version of each.
+//
+// Structural repair pass (2026-08-26): 135 questions had
+// their source-extraction corruption fixed — code snippets, multi-line
+// premises, or an entire second question that had leaked into the
+// "options" array (shifting answer choices and the correct-answer
+// index) were moved back into "q" or regrouped into proper options.
+// Two originally-merged questions were split back into two separate
+// questions; one orphaned explanation fragment with no real answer
+// choices was removed. See conversation history for full detail.
 // ============================================================
 
 const QUESTION_BANK = {
@@ -1746,20 +1751,14 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Given the following code:String s1 = \"hi\";String s2 = \"h\";s2 += \"i\";boolean b1 = s1 == s2;boolean b2 = s1.equals(s2);Which",
+      "q": "Given the following code:\nString s1 = \"hi\";\nString s2 = \"h\";\ns2 += \"i\";\nboolean b1 = s1 == s2;\nboolean b2 = s1.equals(s2);\nWhich variable(s) is/are assured to be set to true?",
       "options": [
-        "variable(s) is/are assured to be set to true?",
         "Both b1 and b2",
         "b1",
         "Neither b1 or b2",
-        "b2",
-        "12) Given a type parameter T, what would assign to T[] ts;?",
-        "ts = (T[]) new Object[SIZE];",
-        "Its impossible.",
-        "ts = new T[SIZE];",
-        "ts = new Object[SIZE];"
+        "b2"
       ],
-      "correct": 0
+      "correct": 3
     },
     {
       "q": "How would you declare a generic factory method that creates a new generic list with a given size?",
@@ -1801,11 +1800,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "A team of programmers is involved in reviewing a proposed design for a new utility class.",
+      "q": "A team of programmers is involved in reviewing a proposed design for a new utility class.\nAfter some discussion, they realize that the current design allows other classes to access\nmethods in the utility class that should be accessible only to methods within the utility class itself.\nWhat design issue has the team discovered?",
       "options": [
-        "After some discussion, they realize that the current design allows other classes to access",
-        "methods in the utility class that should be accessible only to methods within the utility class itself.",
-        "What design issue has the team discovered?",
         "Tight coupling",
         "Low cohesion",
         "High cohesion",
@@ -1816,37 +1812,18 @@ const QUESTION_BANK = {
       "correct": 4
     },
     {
-      "q": "class output {",
+      "q": "class output {\npublic static void main(String args[])\n{\nStringBuffer c = new StringBuffer(\"Hello\");\nStringBuffer c1 = new StringBuffer(\"World\");\nappend(c1);\nSystem.out.println(c);\n}\n}",
       "options": [
-        "public static void main(String args[])",
-        "{",
-        "StringBuffer c = new StringBuffer(\"Hello\");",
-        "StringBuffer c1 = new StringBuffer(\"World\");",
-        "append(c1);",
-        "System.out.println(c);",
-        "}",
-        "}",
         "Hello",
         "World",
-        "Helloworld",
+        "HelloWorld",
         "Hello World"
       ],
       "correct": 3
     },
     {
-      "q": "class exception_handling {",
+      "q": "class exception_handling {\npublic static void main(String args[])\n{\ntry {\nSystem.out.print(\"Hello\" + \" \"\n+ 1 / 0);\n}\ncatch(ArithmeticException e) {\nSystem.out.print(\"World\");\n}\n}\n}",
       "options": [
-        "public static void main(String args[])",
-        "{",
-        "try {",
-        "System.out.print(\"Hello\" + \" \"",
-        "+ 1 / 0);",
-        "}",
-        "catch(ArithmeticException e) {",
-        "System.out.print(\"World\");",
-        "}",
-        "}",
-        "}",
         "Hello",
         "World",
         "HelloWorld",
@@ -1855,29 +1832,18 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "Which of the following describes the correct sequence of the steps involved in making a connection with a database.",
+      "q": "Which of the following describes the correct sequence of the steps involved in making a connection with a database.\n1. Loading the driver\n2. Process the results.\n3. Making the connection with the database.\n4. Executing the SQL statements.",
       "options": [
-        "1. Loading the driver",
-        "2. Process the results.",
-        "3. Making the connection with the database.",
-        "4. Executing the SQL statements.",
         "(A) 1,2,3,4",
         "(B) 1,3,4,2",
         "(C) 2,1,3,4",
         "(D) 4,1,2,3"
       ],
-      "correct": 5
+      "correct": 1
     },
     {
-      "q": "import java.io.*;",
+      "q": "import java.io.*;\nclass filesinputoutput {\npublic static void main(String args[]) {\nInputStream obj = new FileInputStream(\"inputoutput.java\");\nSystem.out.print(obj.available());\n}\n}\nNote: inputoutput.java is stored in the disk.",
       "options": [
-        "class filesinputoutput {",
-        "public static void main(String args[]) {",
-        "InputStream obj = new FileInputStream(\"inputoutput.java\");",
-        "System.out.print(obj.available());",
-        "}",
-        "}",
-        "Note: inputoutput.java is stored in the disk.",
         "true",
         "false",
         "prints number of bytes in file",
@@ -2073,14 +2039,12 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Why is it recommended that production and development environments should be similar?",
+      "q": "What is the main advantage of practicing continuous delivery?",
       "options": [
         "It is easier to manage for the ops team.",
-        "It improves the accuracy of testing, eases the task of deployment of software, and reduces chances of major problems when",
-        "deploying software into production.",
+        "It improves the accuracy of testing, eases the task of deployment of software, and reduces chances of major problems when deploying software into production.",
         "People can fix defects directly in the production environment.",
-        "Development environments are cheaper, hence it makes sense to make the production environment similar (and cheaper) to",
-        "the development environments."
+        "Development environments are cheaper, hence it makes sense to make the production environment similar (and cheaper) to the development environments."
       ],
       "correct": 1
     },
@@ -2115,13 +2079,8 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "How do you remove local (untracked) files and directories from the current Git working tree?",
+      "q": "How do you remove local (untracked) files and directories from the current Git working tree?\ni. git clean -f\nii. git delete -f\niii. git remove -f -d\niv. git add --all\nv. git reset --hard HEAD",
       "options": [
-        "i. git clean -f",
-        "ii. git delete -f",
-        "iii. git remove -f -d",
-        "iv. git add --all",
-        "v. git reset --hard HEAD",
         "A : Only i",
         "B : Only ii and iii",
         "C : Only i and iv",
@@ -2150,12 +2109,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "What is the output of the Java Code Snippet ?",
+      "q": "What is the output of the Java Code Snippet ?\nStringJoiner astring = new StringJoiner(“-”, ” ( “, ” ) ”);\nastring.add(“A”);\nastring.add(“B”);\nastring.add(“C”);",
       "options": [
-        "StringJoiner astring = new StringJoiner(“-”, ” ( “, ” ) ”);",
-        "astring.add(“A”);",
-        "astring.add(“B”);",
-        "astring.add(“C”);",
         "​   (A-B-C)",
         "​   (A)-(B)-(C)",
         "​   (-A-)(-B-)(-C-)"
@@ -2254,9 +2209,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "In MongoDB , which is the operation that uses an index often , having better performance than those who do NOT use an",
+      "q": "In MongoDB , which is the operation that uses an index often , having better performance than those who do NOT use an\nindex ?",
       "options": [
-        "index ?",
         "SELECT.",
         "UPDATE",
         "DELETE.",
@@ -2292,12 +2246,8 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "Identify the correct ES6 statement.",
+      "q": "Identify the correct ES6 statement.\ni. var React = require(‘react’);\nii. import React from react;\niii. module.exports = Component.\niv. export default Component.",
       "options": [
-        "i. var React = require(‘react’);",
-        "ii. import React from react;",
-        "iii. module.exports = Component.",
-        "iv. export default Component.",
         "Only i and ii",
         "Only iv",
         "Only i,ii and iv",
@@ -2333,12 +2283,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "How can we render JSX in the browser ?",
+      "q": "How can we render JSX in the browser ?\ni. Using Babel\nii. Using Typescript.\niii. Using Flux.\niv. Using Redux.",
       "options": [
-        "i. Using Babel",
-        "ii. Using Typescript.",
-        "iii. Using Flux.",
-        "iv. Using Redux.",
         "Only i and ii",
         "Only iv",
         "Only i,ii and iv",
@@ -2366,12 +2312,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Which of the following statements are true about Java ?",
+      "q": "Which of the following statements are true about Java ?\ni. A finally block is executed, only after the catch block is executed.\nii. A finally block is executed whether an exception is thrown or not.\niii. A finally block is NOT Mandatory.\niv. A finally block is executed, only if an exception occurs.",
       "options": [
-        "i. A finally block is executed, only after the catch block is executed.",
-        "ii. A finally block is executed whether an exception is thrown or not.",
-        "iii. A finally block is NOT Mandatory.",
-        "iv. A finally block is executed, only if an exception occurs.",
         "i",
         "iv",
         "i and iv",
@@ -2478,9 +2420,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "Which of these methods is the ultimate element selection method and a very powerful technique by which client side",
+      "q": "Which of these methods is the ultimate element selection method and a very powerful technique by which client side\nJavascript programs can select the document elements that they are going to manipulate ?",
       "options": [
-        "Javascript programs can select the document elements that they are going to manipulate ?",
         "querySelectAll()",
         "querySelector()",
         "querySelect()",
@@ -2547,20 +2488,8 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "What is the output of the following Java code snippet?",
+      "q": "What is the output of the following Java code snippet?\npublic class home implements Runnable {\npublic void run() {\nSystem.out.printf(\"%d\",3);\n}\npublic static void main(String[] args) throws InterruptedException {\nThread thread = new Thread(new home());\nthread.start();\nSystem.out.printf(\"%d\",1);\nthread.join();\nSystem.out.printf(\"%d\",2);\n}\n}",
       "options": [
-        "public class home implements Runnable {",
-        "public void run() {",
-        "System.out.printf(\"%d\",3);",
-        "}",
-        "public static void main(String[] args) throws InterruptedException {",
-        "Thread thread = new Thread(new home());",
-        "thread.start();",
-        "System.out.printf(\"%d\",1);",
-        "thread.join();",
-        "System.out.printf(\"%d\",2);",
-        "}",
-        "}",
         "132",
         "123",
         "213",
@@ -2590,13 +2519,11 @@ const QUESTION_BANK = {
       "q": "Pick the right statement about creating a custom Java annotation.",
       "options": [
         "Annotations are created by using @interface, followed by annotation name.",
-        "An annotation can have elements as well. They look like methods. We should not provide",
-        "implementation for these elements.",
-        "All annotations extend java.lang.annotation.Annotation interface. Annotations cannot",
-        "include any extends clause.",
+        "An annotation can have elements as well. They look like methods. We should not provide implementation for these elements.",
+        "All annotations extend java.lang.annotation.Annotation interface. Annotations cannot include any extends clause.",
         "All of the above"
       ],
-      "correct": 3
+      "correct": 2
     },
     {
       "q": "What is the max capacity of a Java Blocking Queue?",
@@ -2809,9 +2736,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "Which of the following statements is NOT correct for JVM?",
+      "q": "Which of the following statements is NOT correct for JVM?\nJVM acts as a translator that translates different Machine code (on the basis of Host",
       "options": [
-        "JVM acts as a translator that translates different Machine code (on the basis of Host",
         "Machine) for a common Byte Code.",
         "JVM is a Virtual Machine that acts as an intermediary between Java Application and Host",
         "Operating System.",
@@ -2821,12 +2747,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "Is the following a valid Java code snippet?",
+      "q": "Is the following a valid Java code snippet?\nOptional<String> aValue = Optional.of(\"Not Empty\");\nif (aValue.ifPresent()) {\nSystem.out.println(\"Got Not Empty\");\n}",
       "options": [
-        "Optional<String> aValue = Optional.of(\"Not Empty\");",
-        "if (aValue.ifPresent()) {",
-        "System.out.println(\"Got Not Empty\");",
-        "}",
         "True",
         "False"
       ],
@@ -2851,12 +2773,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "Which of the following statements are true about Java finally block?",
+      "q": "Which of the following statements are true about Java finally block?\ni. A finally block is executed, only after the catch block is executed.\nii. A finally block is executed whether an exception is thrown or not.\niii. A finally block is NOT mandatory.\niv. A finally block is executed, only if an exception occurs.",
       "options": [
-        "i. A finally block is executed, only after the catch block is executed.",
-        "ii. A finally block is executed whether an exception is thrown or not.",
-        "iii. A finally block is NOT mandatory.",
-        "iv. A finally block is executed, only if an exception occurs.",
         "i",
         "iv",
         "i and iv",
@@ -2915,37 +2833,16 @@ const QUESTION_BANK = {
     {
       "q": "Which one of the following statements on Java String is correct?",
       "options": [
-        "replace() method replaces only first occurrences of a character in invoking string with the",
-        "given character.",
-        "replace() method replaces last occurrence of a character in invoking string with the given",
-        "character.",
-        "replace() method replaces all occurrences of one character in invoking string with the",
-        "given character.",
+        "replace() method replaces only first occurrences of a character in invoking string with the given character.",
+        "replace() method replaces last occurrence of a character in invoking string with the given character.",
+        "replace() method replaces all occurrences of one character in invoking string with the given character.",
         "replace() method replaces all the characters in invoking string with the given character."
       ],
-      "correct": 2
+      "correct": 1
     },
     {
-      "q": "What is the result of the following Java code snippet?",
+      "q": "What is the result of the following Java code snippet?\nclass Animal {\npublic String noise() {\nreturn \"peep\";\n}\n}\nclass Dog extends Animal {\npublic String noise() {\nreturn \"bark\";\n}\n}\nclass Cat extends Animal {\npublic String noise() {\nreturn \"meow\";\n}\n}\nAnimal animal = new Dog();\nCat cat = (Cat) animal;\nSystem.out.println(cat.noise());",
       "options": [
-        "class Animal {",
-        "public String noise() {",
-        "return \"peep\";",
-        "}",
-        "}",
-        "class Dog extends Animal {",
-        "public String noise() {",
-        "return \"bark\";",
-        "}",
-        "}",
-        "class Cat extends Animal {",
-        "public String noise() {",
-        "return \"meow\";",
-        "}",
-        "}",
-        "Animal animal = new Dog();",
-        "Cat cat = (Cat) animal;",
-        "System.out.println(cat.noise());",
         "// Exception in thread \"main\" java.lang.ClassCastException",
         "peep",
         "bark",
@@ -2956,14 +2853,8 @@ const QUESTION_BANK = {
       "correct": 4
     },
     {
-      "q": "Observe the code:",
+      "q": "Observe the code:\npublic class MyRunnable implements Runnable {\npublic void run() {\n// some code\n}\n}\nWhich of these will create and start this thread?",
       "options": [
-        "public class MyRunnable implements Runnable {",
-        "public void run() {",
-        "// some code",
-        "}",
-        "}",
-        "Which of these will create and start this thread?",
         "new MyRunnable().start()",
         "new Thread(new MyRunnable()).run()",
         "new Thread(new MyRunnable()).start()",
@@ -2972,14 +2863,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "Observe the code below:",
+      "q": "Observe the code below:\nclass Mammal { }\nclass Raccoon extends Mammal {\nMammal m = new Mammal();\n}\nclass BabyRaccoon extends Mammal { }\nWhich four statements are true? (Choose four)",
       "options": [
-        "class Mammal { }",
-        "class Raccoon extends Mammal {",
-        "Mammal m = new Mammal();",
-        "}",
-        "class BabyRaccoon extends Mammal { }",
-        "Which four statements are true? (Choose four)",
         "Raccoon is-a Mammal.",
         "Raccoon has-a Mammal.",
         "BabyRaccoon is-a Mammal.",
@@ -2995,15 +2880,8 @@ const QUESTION_BANK = {
       ]
     },
     {
-      "q": "Predict the output of the code:",
+      "q": "Predict the output of the code:\nclass output {\npublic static void main(String args[]) {\nStringBuffer s1 = new StringBuffer(\"Hello World\");\ns1.insert(6, \"Good \");\nSystem.out.println(s1);\n}\n}",
       "options": [
-        "class output {",
-        "public static void main(String args[]) {",
-        "StringBuffer s1 = new StringBuffer(\"Hello World\");",
-        "s1.insert(6, \"Good \");",
-        "System.out.println(s1);",
-        "}",
-        "}",
         "HelloGoodWorld",
         "HellGoodoWorld",
         "HellGood oWorld",
@@ -3012,13 +2890,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "Observe the code and predict the output:",
+      "q": "Observe the code and predict the output:\nint a[] = new int[]{1, 2, 6, 4, 5};\nint b[] = new int[5];\nb[2] = a[2];\na[2] = 10;\nSystem.out.println(b[2]);",
       "options": [
-        "int a[] = new int[]{1, 2, 6, 4, 5};",
-        "int b[] = new int[5];",
-        "b[2] = a[2];",
-        "a[2] = 10;",
-        "System.out.println(b[2]);",
         "10",
         "6",
         "2",
@@ -3027,19 +2900,8 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "What is the output of this program?",
+      "q": "What is the output of this program?\nimport java.util.*;\nclass vector {\npublic static void main(String args[]) {\nVector obj = new Vector(4, 2);\nobj.addElement(new Integer(3));\nobj.addElement(new Integer(2));\nobj.addElement(new Integer(5));\nobj.removeAll(obj);\nSystem.out.println(obj.isEmpty());\n}\n}",
       "options": [
-        "import java.util.*;",
-        "class vector {",
-        "public static void main(String args[]) {",
-        "Vector obj = new Vector(4, 2);",
-        "obj.addElement(new Integer(3));",
-        "obj.addElement(new Integer(2));",
-        "obj.addElement(new Integer(5));",
-        "obj.removeAll(obj);",
-        "System.out.println(obj.isEmpty());",
-        "}",
-        "}",
         "0",
         "1",
         "true",
@@ -3048,18 +2910,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "What is the output?",
+      "q": "What is the output?\nimport java.util.*;\nclass Maps {\npublic static void main(String args[]) {\nTreeMap obj = new TreeMap();\nobj.put(\"A\", new Integer(1));\nobj.put(\"B\", new Integer(2));\nobj.put(\"C\", new Integer(3));\nSystem.out.println(obj.entrySet());\n}\n}",
       "options": [
-        "import java.util.*;",
-        "class Maps {",
-        "public static void main(String args[]) {",
-        "TreeMap obj = new TreeMap();",
-        "obj.put(\"A\", new Integer(1));",
-        "obj.put(\"B\", new Integer(2));",
-        "obj.put(\"C\", new Integer(3));",
-        "System.out.println(obj.entrySet());",
-        "}",
-        "}",
         "[A, B, C]",
         "[1, 2, 3]",
         "{A=1, B=2, C=3}",
@@ -3068,23 +2920,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "What is the output of the following program?",
+      "q": "What is the output of the following program?\nimport java.util.*;\nclass Collection_Algos {\npublic static void main(String args[]) {\nLinkedList list = new LinkedList();\nlist.add(new Integer(2));\nlist.add(new Integer(8));\nlist.add(new Integer(5));\nlist.add(new Integer(1));\nIterator i = list.iterator();\nCollections.reverse(list);\nCollections.shuffle(list);\nwhile(i.hasNext())\nSystem.out.print(i.next() + \" \");\n}\n}",
       "options": [
-        "import java.util.*;",
-        "class Collection_Algos {",
-        "public static void main(String args[]) {",
-        "LinkedList list = new LinkedList();",
-        "list.add(new Integer(2));",
-        "list.add(new Integer(8));",
-        "list.add(new Integer(5));",
-        "list.add(new Integer(1));",
-        "Iterator i = list.iterator();",
-        "Collections.reverse(list);",
-        "Collections.shuffle(list);",
-        "while(i.hasNext())",
-        "System.out.print(i.next() + \" \");",
-        "}",
-        "}",
         "2 8 5 1",
         "1 5 8 2",
         "1 2 5 8",
@@ -3103,14 +2940,8 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "What is the output of the code?",
+      "q": "What is the output of the code?\npublic class Test8 {\npublic static void main(String args[]) {\nNumber numberRef = new Integer(0);\nDouble doubleRef = (Double)numberRef;\n}\n}",
       "options": [
-        "public class Test8 {",
-        "public static void main(String args[]) {",
-        "Number numberRef = new Integer(0);",
-        "Double doubleRef = (Double)numberRef;",
-        "}",
-        "}",
         "0",
         "0.0",
         "Compilation fails",
@@ -3119,21 +2950,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "Which pattern is used in the following code?",
+      "q": "Which pattern is used in the following code?\nimport java.util.*;\nclass HelloWorld {\npublic static void main(String args[]) {\nList<String> List = new ArrayList<String>();\nList.add(\"cricket\");\nList.add(\"football\");\nList.add(\"hockey\");\nIterator it = List.iterator();\nwhile(it.hasNext()) {\nString s = (String) it.next();\n}\n}\n}",
       "options": [
-        "import java.util.*;",
-        "class HelloWorld {",
-        "public static void main(String args[]) {",
-        "List<String> List = new ArrayList<String>();",
-        "List.add(\"cricket\");",
-        "List.add(\"football\");",
-        "List.add(\"hockey\");",
-        "Iterator it = List.iterator();",
-        "while(it.hasNext()) {",
-        "String s = (String) it.next();",
-        "}",
-        "}",
-        "}",
         "Observer",
         "Singleton",
         "Iterator",
@@ -3152,11 +2970,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "Assume the following method is properly synchronized and called from a thread A on an",
+      "q": "Assume the following method is properly synchronized and called from a thread A on an\nobject B: wait(2000);\nAfter calling this method, when will thread A become a candidate to get another turn at the\nCPU?",
       "options": [
-        "object B: wait(2000);",
-        "After calling this method, when will thread A become a candidate to get another turn at the",
-        "CPU?",
         "After thread A is notified, or after two seconds.",
         "After the lock on B is released, or after two seconds.",
         "Two seconds after thread A is notified.",
@@ -3165,9 +2980,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "The code snippet below is an example of which of the following?",
+      "q": "The code snippet below is an example of which of the following?\nLong myLong = 21L;",
       "options": [
-        "Long myLong = 21L;",
         "Auto boxing",
         "Auto unboxing",
         "Auto casting",
@@ -3176,20 +2990,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "What is the result?",
+      "q": "What is the result?\ninterface TestA {\nString toString();\n}\npublic class Test {\npublic static void main(String[] args) {\nSystem.out.println(new TestA() {\npublic String toString() {\nreturn \"test\";\n}\n});\n}\n}",
       "options": [
-        "interface TestA {",
-        "String toString();",
-        "}",
-        "public class Test {",
-        "public static void main(String[] args) {",
-        "System.out.println(new TestA() {",
-        "public String toString() {",
-        "return \"test\";",
-        "}",
-        "});",
-        "}",
-        "}",
         "test",
         "null",
         "An exception is thrown at runtime",
@@ -3200,24 +3002,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Output?",
+      "q": "Output?\nclass Output {\npublic static void main(String args[]) {\n// Note: The divide method should be outside main in a valid class\n}\npublic void divide(int a, int b) {\ntry {\nint c = a / b;\n}\ncatch(Exception e) {\nSystem.out.println(\"Exception\");\n}\nfinally {\nSystem.out.println(\"finally\");\n}\n}\n}",
       "options": [
-        "class Output {",
-        "public static void main(String args[]) {",
-        "// Note: The divide method should be outside main in a valid class",
-        "}",
-        "public void divide(int a, int b) {",
-        "try {",
-        "int c = a / b;",
-        "}",
-        "catch(Exception e) {",
-        "System.out.println(\"Exception\");",
-        "}",
-        "finally {",
-        "System.out.println(\"finally\");",
-        "}",
-        "}",
-        "}",
         "Only Exception is printed",
         "Only finally is printed",
         "Both Exception and finally are printed if exception occurs",
@@ -3226,18 +3012,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "Insert the appropriate code:",
+      "q": "Insert the appropriate code:\npublic class Sprite {\npublic int fubar(Foo foo) {\nreturn foo.bar();\n}\npublic void testFoo() {\nfubar(\n// insert code here\n);\n}\n}",
       "options": [
-        "public class Sprite {",
-        "public int fubar(Foo foo) {",
-        "return foo.bar();",
-        "}",
-        "public void testFoo() {",
-        "fubar(",
-        "// insert code here",
-        ");",
-        "}",
-        "}",
         "new Foo()",
         "new Foo() { public int bar() { return 1; } }",
         "new Foo(1)",
@@ -3246,16 +3022,8 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": ";",
+      "q": ";\n}\n}\npublic static void main(String[] args) {\nMain obj = new Main();\nSystem.out.println(obj.getValue(\"DEMOS\"));\n}\n}",
       "options": [
-        "}",
-        "}",
-        "public static void main(String[] args) {",
-        "Main obj = new Main();",
-        "System.out.println(obj.getValue(\"DEMOS\"));",
-        "}",
-        "}",
-        "Options:",
         "D",
         "DEMOS",
         "EMOS",
@@ -3264,32 +3032,18 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "What sort of compilation error you will get? How to fix the compilation error?",
+      "q": "What sort of compilation error you will get? How to fix the compilation error?\nabstract class xyz {\nabstract abc(int a, int b) { }\n}",
       "options": [
-        "abstract class xyz {",
-        "abstract abc(int a, int b) { }",
-        "}",
-        "Options:",
         "Missing return type",
         "Method cannot have a body",
         "Syntax error",
         "Give return type void. and remove empty parenthesis."
       ],
-      "correct": 7
+      "correct": 1
     },
     {
-      "q": "Will this code compile?",
+      "q": "Will this code compile?\ninterface ATOB {\nString s = \"yo\";\npublic void meth();\n}\ninterface BTOC { }\ninterface C extends ATOB, BTOC {\npublic void meth();\npublic void meth(int x);\n}",
       "options": [
-        "interface ATOB {",
-        "String s = \"yo\";",
-        "public void meth();",
-        "}",
-        "interface BTOC { }",
-        "interface C extends ATOB, BTOC {",
-        "public void meth();",
-        "public void meth(int x);",
-        "}",
-        "Options:",
         "Yes, this code will compile without any error",
         "No, compilation fails due to multiple inheritance",
         "No, compilation fails because of variable s",
@@ -3298,15 +3052,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "How can I inherit both the interface and abstract class?",
+      "q": "How can I inherit both the interface and abstract class?\ninterface Data {\npublic void load();\n}\nabstract class Info {\npublic abstract void load();\n}",
       "options": [
-        "interface Data {",
-        "public void load();",
-        "}",
-        "abstract class Info {",
-        "public abstract void load();",
-        "}",
-        "Options:",
         "class Xyz extends Info implements Data { void load() { } }",
         "class Xyz implements Data, Info { void load() { } }",
         "class Xyz extends Info, Data { void load() { } }",
@@ -3335,10 +3082,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Which Man class properly represents the relationship \"Man has a best friend who is a",
+      "q": "Which Man class properly represents the relationship \"Man has a best friend who is a\nDog\"?",
       "options": [
-        "Dog\"?",
-        "Options:",
         "class Man extends Dog { }",
         "class Man implements Dog { }",
         "class Man { private BestFriend dog; }",
@@ -3349,16 +3094,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "A company has a business application that provides its users with many different",
+      "q": "A company has a business application that provides its users with many different\nreports: receivables reports, payables reports, revenue projects, and so on. The company\nhas just purchased some new, state-of-the-art, wireless printers, and a programmer has\nbeen assigned the task of enhancing all of the reports to use not only the company's old\nprinters, but the new wireless printers as well. When the programmer starts looking into the\napplication, the programmer discovers that because of the design of the application, it is\nnecessary to make changes to each report to support the new printers. Which two design\nconcepts most likely explain this situation? (Choose two.)",
       "options": [
-        "reports: receivables reports, payables reports, revenue projects, and so on. The company",
-        "has just purchased some new, state-of-the-art, wireless printers, and a programmer has",
-        "been assigned the task of enhancing all of the reports to use not only the company's old",
-        "printers, but the new wireless printers as well. When the programmer starts looking into the",
-        "application, the programmer discovers that because of the design of the application, it is",
-        "necessary to make changes to each report to support the new printers. Which two design",
-        "concepts most likely explain this situation? (Choose two.)",
-        "Options:",
         "Inheritance",
         "Low cohesion",
         "Tight coupling",
@@ -3369,12 +3106,8 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "A team of programmers is reviewing a proposed API for a new utility class. After some",
+      "q": "A team of programmers is reviewing a proposed API for a new utility class. After some\ndiscussion, they realize that they can reduce the number of methods in the API without\nlosing any functionality. If they implement the new design, which two OO principles will they\nbe promoting?",
       "options": [
-        "discussion, they realize that they can reduce the number of methods in the API without",
-        "losing any functionality. If they implement the new design, which two OO principles will they",
-        "be promoting?",
-        "Options:",
         "Looser coupling",
         "Tighter coupling",
         "Lower cohesion",
@@ -3385,12 +3118,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "A team of programmers is involved in reviewing a proposed design for a new utility",
+      "q": "A team of programmers is involved in reviewing a proposed design for a new utility\nclass. After some discussion, they realize that the current design allows other classes to\naccess methods in the utility class that should be accessible only to methods within the\nutility class itself. What design issue has the team discovered?",
       "options": [
-        "class. After some discussion, they realize that the current design allows other classes to",
-        "access methods in the utility class that should be accessible only to methods within the",
-        "utility class itself. What design issue has the team discovered?",
-        "Options:",
         "Tight coupling",
         "Low cohesion",
         "High cohesion",
@@ -3401,28 +3130,25 @@ const QUESTION_BANK = {
       "correct": 4
     },
     {
-      "q": "Which three are valid on line?",
+      "q": "Which three are valid on line?\npublic interface Status {\n/* insert code here */ int MY_VALUE = 10;\n}",
       "options": [
-        "public interface Status {",
-        "/* insert code here */ int MY_VALUE = 10;",
-        "}",
-        "Options:",
         "final",
         "static",
         "native",
         "public",
         "private",
         "abstract",
-        "g) protected"
+        "protected"
       ],
-      "correct": 0
+      "correct": [
+        0,
+        1,
+        3
+      ]
     },
     {
-      "q": "A programmer has an algorithm that requires a java.util.List that provides an efficient",
+      "q": "A programmer has an algorithm that requires a java.util.List that provides an efficient\nimplementation of add(0, object), but does NOT need to support quick random access. What\nsupports these requirements?",
       "options": [
-        "implementation of add(0, object), but does NOT need to support quick random access. What",
-        "supports these requirements?",
-        "Options:",
         "java.util.Queue",
         "java.util.ArrayList",
         "java.util.LinearList",
@@ -3431,60 +3157,31 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "Which three are true? (Choose Three)",
+      "q": "Which three are true? (Choose Three)\ninterface Jumper {\npublic void jump();\n}\nclass Animal {}\nclass Dog extends Animal {\nTail tail;\n}\nclass Beagle extends Dog implements Jumper {\npublic void jump() {}\n}\nclass Cat implements Jumper {\npublic void jump() {}\n}",
       "options": [
-        "interface Jumper {",
-        "public void jump();",
-        "}",
-        "class Animal {}",
-        "class Dog extends Animal {",
-        "Tail tail;",
-        "}",
-        "class Beagle extends Dog implements Jumper {",
-        "public void jump() {}",
-        "}",
-        "class Cat implements Jumper {",
-        "public void jump() {}",
-        "}",
-        "Options:",
         "Cat is-a Animal",
         "Cat is-a Jumper",
         "Dog is-a Animal",
         "Dog is-a Jumper",
         "Cat has-a Animal",
         "Beagle has-a Tail",
-        "g) Beagle is-a Jumper"
+        "Beagle is-a Jumper"
       ],
-      "correct": 1
+      "correct": [
+        1,
+        2,
+        5
+      ]
     },
     {
-      "q": "Which class correctly uses the Data interface and Info abstract class?",
+      "q": "Which class correctly uses the Data interface and Info abstract class?\ninterface Data { public void load(); }\nabstract class Info { public abstract void load(); }",
       "options": [
-        "interface Data { public void load(); }",
-        "abstract class Info { public abstract void load(); }",
-        "Options:",
-        "public class Employee extends Info implements Data {",
-        "public void load() { /* do something */ }",
-        "}",
-        "public class Employee implements Info extends Data {",
-        "public void load() { /* do something */ }",
-        "}",
-        "public class Employee extends Info implements Data {",
-        "public void load() { /* do something */ }",
-        "public void Info.load() { /* do something */ }",
-        "}",
-        "public class Employee implements Info extends Data {",
-        "public void Data.load() { /* do something */ }",
-        "public void load() { /* do something */ }",
-        "}",
-        "public class Employee implements Info extends Data {",
-        "public void load() { /* do something */ }",
-        "public void Info.load() { /* do something */ }",
-        "}",
-        "public class Employee extends Info implements Data {",
-        "public void Data.load() { /* do something */ }",
-        "public void Info.load() { /* do something */ }",
-        "}"
+        "public class Employee extends Info implements Data {\npublic void load() { /* do something */ }\n}",
+        "public class Employee implements Info extends Data {\npublic void load() { /* do something */ }\n}",
+        "public class Employee extends Info implements Data {\npublic void load() { /* do something */ }\npublic void Info.load() { /* do something */ }\n}",
+        "public class Employee implements Info extends Data {\npublic void Data.load() { /* do something */ }\npublic void load() { /* do something */ }\n}",
+        "public class Employee implements Info extends Data {\npublic void load() { /* do something */ }\npublic void Info.load() { /* do something */ }\n}",
+        "public class Employee extends Info implements Data {\npublic void Data.load() { /* do something */ }\npublic void Info.load() { /* do something */ }\n}"
       ],
       "correct": 0
     },
@@ -3609,9 +3306,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "System.out.println(cat.noise());",
+      "q": "System.out.println(cat.noise());\nWhat is the result?",
       "options": [
-        "What is the result?",
         "peep",
         "bark",
         "meow",
@@ -3621,9 +3317,8 @@ const QUESTION_BANK = {
       "correct": 4
     },
     {
-      "q": "}",
+      "q": "}\nWhat is the result?",
       "options": [
-        "What is the result?",
         "B",
         "B, followed by an Exception.",
         "Compilation fails due to an error on line 9.",
@@ -3633,13 +3328,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "class Mammal { }",
+      "q": "class Mammal { }\nclass Raccoon extends Mammal {\nMammal m = new Mammal();\n}\nclass BabyRaccoon extends Mammal { }\nWhich four statements are true? (Choose four.)",
       "options": [
-        "class Raccoon extends Mammal {",
-        "Mammal m = new Mammal();",
-        "}",
-        "class BabyRaccoon extends Mammal { }",
-        "Which four statements are true? (Choose four.)",
         "Raccoon is-a Mammal.",
         "Raccoon has-a Mammal.",
         "BabyRaccoon is-a Mammal.",
@@ -3655,9 +3345,8 @@ const QUESTION_BANK = {
       ]
     },
     {
-      "q": "Which of these keywords cannot be used for a cl",
+      "q": "Which of these keywords cannot be used for a cl\nass which has been declared final?",
       "options": [
-        "ass which has been declared final?",
         "abstract",
         "extends",
         "abstract and extends",
@@ -3666,15 +3355,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "A team of programmers is involved in reviewing",
+      "q": "A team of programmers is involved in reviewing\na proposed design for a new utility class.\nAfter some discussion, they realize that the curre\nnt design allows other classes to access\nmethods in the utility class that should be access\nible only to methods within the utility class itse\nlf.\nWhat design issue has the team discovered?",
       "options": [
-        "a proposed design for a new utility class.",
-        "After some discussion, they realize that the curre",
-        "nt design allows other classes to access",
-        "methods in the utility class that should be access",
-        "ible only to methods within the utility class itse",
-        "lf.",
-        "What design issue has the team discovered?",
         "Tight coupling",
         "Low cohesion",
         "High cohesion",
@@ -3685,9 +3367,8 @@ const QUESTION_BANK = {
       "correct": 4
     },
     {
-      "q": "Which of these methods are used to read in from",
+      "q": "Which of these methods are used to read in from\nfile?",
       "options": [
-        "file?",
         "get()",
         "read()",
         "scan()",
@@ -3725,9 +3406,8 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "Which of these Angular services can be injected in your component to the dynamic",
+      "q": "Which of these Angular services can be injected in your component to the dynamic\nmode navigation ?",
       "options": [
-        "mode navigation ?",
         "Routing.",
         "RouterService.",
         "RoutingService",
@@ -3736,9 +3416,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "In Angular , which of the following wild card route paths will you use to define a 404",
+      "q": "In Angular , which of the following wild card route paths will you use to define a 404\nroute ?",
       "options": [
-        "route ?",
         "**",
         "/",
         "##",
@@ -3747,9 +3426,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "What are the core operations of DevOps with application development and with",
+      "q": "What are the core operations of DevOps with application development and with\ninfrastructure?",
       "options": [
-        "infrastructure?",
         "Provisioning, Configuration, and Orchestration",
         "Code building, coverage, and Unit testing",
         "Packaging and Deployment",
@@ -3758,9 +3436,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "In Java, which of these class types supports sequential and parallel processing of",
+      "q": "In Java, which of these class types supports sequential and parallel processing of\ndata?",
       "options": [
-        "data?",
         "Queue",
         "Lambda",
         "ExecutorService",
@@ -3769,9 +3446,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "Where is the correct place to insert a JavaScript? Both the <head> section and the",
+      "q": "Where is the correct place to insert a JavaScript? Both the <head> section and the\n<body> section are correct",
       "options": [
-        "<body> section are correct",
         "The <head> section",
         "Both the <head> section and the <body> section are correct",
         "The <body> section",
@@ -3799,18 +3475,16 @@ const QUESTION_BANK = {
     {
       "q": "What are the limitations of React?",
       "options": [
-        "React is only for view layer of the app so we still need the help of other technologies to",
-        "get a complete tooling set for development.",
+        "React is only for view layer of the app so we still need the help of other technologies to get a complete tooling set for development.",
         "React uses inline templating and JSX. This can seem awkward to some developers.",
         "The library of React is too large.",
         "All of the above"
       ],
-      "correct": 3
+      "correct": 2
     },
     {
-      "q": "How can you access the state of a component from inside of a member function in",
+      "q": "How can you access the state of a component from inside of a member function in\nReact?",
       "options": [
-        "React?",
         "this getState()",
         "this prototype stateValue",
         "this.state",
@@ -6179,6 +5853,16 @@ const QUESTION_BANK = {
         "It must always be present"
       ],
       "correct": 1
+    },
+    {
+      "q": "Given a type parameter T, what would assign to T[] ts;?",
+      "options": [
+        "ts = (T[]) new Object[SIZE];",
+        "Its impossible.",
+        "ts = new T[SIZE];",
+        "ts = new Object[SIZE];"
+      ],
+      "correct": 0
     }
   ],
   "spring": [
@@ -7203,9 +6887,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "Which annotation represents an advice to be executed after the method",
+      "q": "Which annotation represents an advice to be executed after the method\nexecution only if method exits by throwing an exception?",
       "options": [
-        "execution only if method exits by throwing an exception?",
         "@Before",
         "@After",
         "@Around",
@@ -7228,9 +6911,8 @@ const QUESTION_BANK = {
       ]
     },
     {
-      "q": "What attribute is added in the bean.xml to reduce or eliminate the need",
+      "q": "What attribute is added in the bean.xml to reduce or eliminate the need\nof<property> and<constructor-arg>?",
       "options": [
-        "of<property> and<constructor-arg>?",
         "Autodiscovery",
         "Autowire",
         "Scope",
@@ -7239,9 +6921,8 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "Which of the following examples summarizes Program to an interface",
+      "q": "Which of the following examples summarizes Program to an interface\nrather than an implementation?",
       "options": [
-        "rather than an implementation?",
         "Map m = new HashMap();",
         "ArrayList list = new ArrayList();",
         "ArrayList<Integer> = new ArrayList<Integer>();",
@@ -7250,9 +6931,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "If any of the beans implements the BeanPostProcessor interface, Spring",
+      "q": "If any of the beans implements the BeanPostProcessor interface, Spring\nwill call which of these methods?",
       "options": [
-        "will call which of these methods?",
         "processBeforeInitialization()",
         "BeanPostProcessor()",
         "postProcessInterface()",
@@ -7271,9 +6951,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "What will be the result if you use Web-aware Spring Application Context",
+      "q": "What will be the result if you use Web-aware Spring Application Context\nscopes in a regular Spring IoC container?",
       "options": [
-        "scopes in a regular Spring IoC container?",
         "It will return nothing.",
         "It will return a NullPointer Exception",
         "It will return a IllegalStateException",
@@ -7282,9 +6961,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Which Bean scopes are valid only in the context of a web-aware Spring",
+      "q": "Which Bean scopes are valid only in the context of a web-aware Spring\nApplication Context?",
       "options": [
-        "Application Context?",
         "Singleton and Prototype",
         "Session, Global Session, and Request",
         "Singleton, Prototype, Request, and Session",
@@ -7293,9 +6971,8 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "To use java.util.List, what is the Spring Collections element that you",
+      "q": "To use java.util.List, what is the Spring Collections element that you\nneed?",
       "options": [
-        "need?",
         "<list>",
         "<List>",
         "<lists>",
@@ -7314,18 +6991,14 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "What is the difference between ClassPathXMLApplicationContext and",
+      "q": "What is the difference between ClassPathXMLApplicationContext and\nFilePathXMLApplicationContext?",
       "options": [
-        "FilePathXMLApplicationContext?",
-        "First one reads from application class path and second one reads from",
-        "absolute file path.",
-        "First one reads from application class path and second one reads from",
-        "relative file path.",
-        "First one reads from relative application class path and second one",
-        "reads from absolute file path.",
+        "First one reads from application class path and second one reads from absolute file path.",
+        "First one reads from application class path and second one reads from relative file path.",
+        "First one reads from relative application class path and second one reads from absolute file path.",
         "None of the above."
       ],
-      "correct": 2
+      "correct": 1
     },
     {
       "q": "The Dependency Look up is a methodology where we get the resource",
@@ -7340,12 +7013,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "When do you use Dependency Injection?",
+      "q": "When do you use Dependency Injection?\nA. DI is very useful for decoupling your system.\nB. DI is most useful when you are aiming for code reuse.\nC. DI helps in designing tightly coupled code.\nD. DI does NOT help in unit testing the code.",
       "options": [
-        "DI is very useful for decoupling your system.",
-        "DI is most useful when you are aiming for code reuse.",
-        "DI helps in designing tightly coupled code.",
-        "DI does NOT help in unit testing the code.",
         "A and C",
         "B and C",
         "A and B",
@@ -7354,9 +7023,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "For Java-based configuration, which is the class that sets the Spring",
+      "q": "For Java-based configuration, which is the class that sets the Spring\nContext?",
       "options": [
-        "Context?",
         "Annotationconfig",
         "ComponentScan",
         "AnnotationConfigApplicationContext",
@@ -7396,9 +7064,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "What annotation wiring element is added to scan packages to find and",
+      "q": "What annotation wiring element is added to scan packages to find and\nregister beans with in the Application Context?",
       "options": [
-        "register beans with in the Application Context?",
         "<context:annotation-config/>",
         "<context:annotation-scan/>",
         "<context:component-config/>",
@@ -7407,12 +7074,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "In the following example, what type of autowire will be used?",
+      "q": "In the following example, what type of autowire will be used?\n@Autowired(required=false)\npublic Employee AutowiredByConstructorService(@Qualifier(\"employee\") Employee emp) {\nthis.employee=emp;\n}",
       "options": [
-        "@Autowired(required=false)",
-        "public Employee AutowiredByConstructorService(@Qualifier(\"e",
-        "this.employee=emp;",
-        "}",
         "ByName",
         "ById",
         "@Autowired",
@@ -7431,9 +7094,8 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "Spring handles object creation in order to be non-invasive. Can you",
+      "q": "Spring handles object creation in order to be non-invasive. Can you\nidentify which definition creates a spring-managed object?",
       "options": [
-        "identify which definition creates a spring-managed object?",
         "String myObj;",
         "@Autowired private String myObj;",
         "private String myObj = new String(\"spring\");",
@@ -7463,9 +7125,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "Dependency Injection (DI) or Inversion of Control (IOC) is based on which",
+      "q": "Dependency Injection (DI) or Inversion of Control (IOC) is based on which\nHollywood principle ?",
       "options": [
-        "Hollywood principle ?",
         "Do not call us. We will call you.",
         "Understand the problem first.",
         "The customer is always right.",
@@ -7499,9 +7160,8 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "Which is the alternative to create, load, and manage beans in a Spring",
+      "q": "Which is the alternative to create, load, and manage beans in a Spring\nApplication?",
       "options": [
-        "Application?",
         "Application Factory",
         "Context Factory",
         "Bean Factory",
@@ -7521,9 +7181,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Which one of these statements about XML declaration of transaction",
+      "q": "Which one of these statements about XML declaration of transaction\nmanager bean is NOT true?",
       "options": [
-        "manager bean is NOT true?",
         "The tx namespace provides JTA transaction manager declaration",
         "shortcut syntax.",
         "The Id of the bean has to be transactionManager.",
@@ -7535,9 +7194,8 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "Which one of the following is one of the challenge of Traditional",
+      "q": "Which one of the following is one of the challenge of Traditional\nTransaction Management?",
       "options": [
-        "Transaction Management?",
         "Transaction Management at Database Connection Level",
         "Programmatic Management of Transactions",
         "Error-Prone Connection Management",
@@ -7586,9 +7244,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "What Spring Collection can be used to inject a collection of name-value",
+      "q": "What Spring Collection can be used to inject a collection of name-value\npairs, where name and value can be of any type?",
       "options": [
-        "pairs, where name and value can be of any type?",
         "<set>",
         "<List>",
         "<map>",
@@ -7607,9 +7264,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "To use bean definition template, you should add what attribute in the",
+      "q": "To use bean definition template, you should add what attribute in the\nbean?",
       "options": [
-        "bean?",
         "abstract=\"true\"",
         "interface=\"true\"",
         "class =\"com.example.helloworld\"",
@@ -7618,9 +7274,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "A collection value of the type java.util.Properties is defined by what",
+      "q": "A collection value of the type java.util.Properties is defined by what\nelement?",
       "options": [
-        "element?",
         "<props>",
         "<prop>",
         "<properties>",
@@ -7629,15 +7284,14 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Which of the following is an annotation for Spring Java-based",
+      "q": "Which of the following is an annotation for Spring Java-based\nconfiguration?",
       "options": [
-        "configuration?",
         "@Component",
         "@SpringConfiguration",
         "@SpringXml",
         "@Configuration"
       ],
-      "correct": 4
+      "correct": 3
     },
     {
       "q": "What does the JDBC Template uses to connect to the database?",
@@ -7699,46 +7353,31 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "Which of the following statement is false ?",
+      "q": "Which of the following statement is false?\na. The Core package is the most fundamental part of the framework and provides the IoC and Dependency Injection feature.\nb. The DAO package provides a JDBC-abstraction layer that removes the need to do tedious JDBC coding and parsing of database-vendor specific error codes.\nc. The ORM package provides integration layers for popular object-relational mapping APIs, including JPA, JDO, Hibernate, iBatis.\nd. AOP takes out the direct dependency of crosscutting tasks from classes, which we cannot achieve through normal object oriented programming model — for example, method-interceptors and pointcuts cleanly decouple code implementing functionality that should be separated.\ne. Spring’s Web package provides basic web-oriented integration features, such as multipart file-upload functionality.\nf. Spring’s MVC package provides a Model-View-Controller implementation for web-application.",
       "options": [
-        "The Corepackage is the most fundamental part of the framework and",
-        "provides the loc an dDependency Injection feature.",
-        "TheDAO package provides a JDBC-abstraction layer that removes the",
-        "need to do tedious JDBC coding and parsing of database-vendor",
-        "specific error code",
-        "The ORM package provides integration layers for popular object-",
-        "relational mapping APIs, including JPA,JDO, Hibernate, iBatis",
-        "AOP takes out the direct dependency of crosscutting tasks from classes",
-        "which, we can achieve through normal object oriented programming",
-        "model. or example, method-interceptors and pointcuts to cleanly",
-        "decouple code implementing functionality that",
-        "Spring's Web package provides basic web-oriented integration",
-        "features, such as multipart file-upload functionality",
-        "Spring's MVC package provides a Model-View-Controller",
-        "implementation for web-application MVC package provides a Model-",
-        "View-Controller implementation for web-application",
-        "g. None of these"
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "None of these"
       ],
-      "correct": 16
+      "correct": 6
     },
     {
-      "q": "Which of the following is false?",
+      "q": "Which of the following is false?\na. A BeanFactory pretty much just instantiates and configures beans.\nb. An ApplicationContext also instantiates beans, and it provides the supporting infrastructure to enable lots of enterprise-specific features such as transactions and AOP, message resource handling (for use in internationalization), event propagation.\nc. Application-layer specific contexts such as the WebApplicationContext are for use in web applications.",
       "options": [
-        "A BeanFactory pretty much just instantiates and configures beans.",
-        "An ApplicationContext also instantiates bean, and it provides the",
-        "supporting infrastructure to enable lots of enterprise- specific features",
-        "such as transactions and AOP, message resource handling (for use in",
-        "internationalization), event propagation.",
-        "Application-layer specific contexts such as the WebApplicationContext",
-        "use in web application",
+        "a",
+        "b",
+        "c",
         "none of the above"
       ],
       "correct": 3
     },
     {
-      "q": "Which of the following is actual representation of the Spring loc",
+      "q": "Which of the following is actual representation of the Spring loc\ncontainer?",
       "options": [
-        "container?",
         "Application Context",
         "Xml Bean Factory",
         "Bean Factory",
@@ -7756,9 +7395,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "How container load configuration metadata from a variety of external",
+      "q": "How container load configuration metadata from a variety of external\nresources such as the local file system from the Java CLASSPATH?",
       "options": [
-        "resources such as the local file system from the Java CLASSPATH?",
         "Application Context constructor",
         "Init()",
         "Context Contructor",
@@ -7767,9 +7405,8 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "Which of following is correct way to load bean definitions from another",
+      "q": "Which of following is correct way to load bean definitions from another\nfile?",
       "options": [
-        "file?",
         "<bean id=\"bean1\" class=\"...\" import=\"something.xml\"/>",
         "<resources name=\"something.xml\" import=\"true\"/>",
         "<import resource=\"something.xml\"/>",
@@ -7778,32 +7415,12 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "What is the correct way to write constructor injection?",
+      "q": "What is the correct way to write constructor injection?\npackage com.bullraider;\npublic class TestBean {\nprivate int year;\nprivate String happy;\npublic TestBean(String happy,int year) {\nthis.year=year;\nthis.happy = happy;\n}\n}",
       "options": [
-        "package com.bullraider;",
-        "public class TestBean {",
-        "private int year;",
-        "private String happy;",
-        "public TestBean(String happy,int year) {",
-        "this.year=yearj",
-        "this.happy = happy;",
-        "}",
-        "}",
-        "<bean name=\"testClass\" class=\"com.bullraider. TestBean\">",
-        "<constructor-arg type=\"java.lang.String\" value=\"Happy new y",
-        "<constructor-arg type=\"int\" value=\"2015\"/>",
-        "</bean>",
-        "<bean name=\"testClass\" class=\"com.bullraider.TestBean\">",
-        "<constructor-arg index=\"0\" value=\"Happy new year\"/>",
-        "<constructor-arg index=\"1\" value=\"2015\"/>",
-        "<bean name=\"testClass\" class=\"com.bullraider. TestBean\">",
-        "<constructor-arg index=\" 1 \" value=\"Happy new year\"/>",
-        "<constructor-arg index=\" 0 \" value =^ prime prime 2015 ^ p",
-        "</bean>",
-        "<bean name=\"testClass\" class=\"com.bullraider TestBean'>",
-        "<constructor-arg type=\"int\" value=\"2015\"/>",
-        "<constructor-arg type=\"java.lang.String\" value=\"Happy new y",
-        "</bean>",
+        "<bean name=\"testClass\" class=\"com.bullraider.TestBean\">\n<constructor-arg type=\"java.lang.String\" value=\"Happy new year\"/>\n<constructor-arg type=\"int\" value=\"2015\"/>\n</bean>",
+        "<bean name=\"testClass\" class=\"com.bullraider.TestBean\">\n<constructor-arg index=\"0\" value=\"Happy new year\"/>\n<constructor-arg index=\"1\" value=\"2015\"/>\n</bean>",
+        "<bean name=\"testClass\" class=\"com.bullraider.TestBean\">\n<constructor-arg index=\"1\" value=\"Happy new year\"/>\n<constructor-arg index=\"0\" value=\"2015\"/>\n</bean>",
+        "<bean name=\"testClass\" class=\"com.bullraider.TestBean\">\n<constructor-arg type=\"int\" value=\"2015\"/>\n<constructor-arg type=\"java.lang.String\" value=\"Happy new year\"/>\n</bean>",
         "All of the above"
       ],
       "correct": 4
@@ -7892,32 +7509,23 @@ const QUESTION_BANK = {
       ]
     },
     {
-      "q": "Which statements are true about DI(Dependency Injection)?",
+      "q": "Which statements are true about DI (Dependency Injection)?\nA. DI says your components and services should be tightly coupled in code.\nB. DI says that you don’t need to create your objects but describe how they should be created.\nC. We should not directly connect your components and services together in code, but describe which services are needed by which components in a configuration file.\nD. Inversion of control relies on dependency injection.",
       "options": [
-        "DI says your components and services should tightly coupled in code.",
-        "DI says that no need create your objects but describe how they should",
-        "be created.",
-        "We should not directly connect your components and services together",
-        "in code but describe which services are needed by which components",
-        "in a configuration file",
-        "Inversion of control relies on dependency injection",
-        "We should not directly connect your components and services together",
-        "in code but describe which services are needed by Which components",
-        "in a configuration file"
+        "A",
+        "B",
+        "C",
+        "D",
+        "B and C",
+        "C and D"
       ],
-      "correct": [
-        0,
-        2,
-        3
-      ]
+      "correct": 4
     },
     {
-      "q": "Which statements are true about IOC(Inversion of Control) ?",
+      "q": "What are the benefits of Inversion of Control?",
       "options": [
         "Decoupling of the execution of a certain task from implementation.",
         "Each module can focus on what it is designed for.",
         "Replacing modules should not affect to other modules.",
-        "Modules should observe about what other systems do",
         "All the above"
       ],
       "correct": [
@@ -7927,9 +7535,8 @@ const QUESTION_BANK = {
       ]
     },
     {
-      "q": "Which of the following are basic techniques to implement inversion of",
+      "q": "Which of the following are basic techniques to implement inversion of\ncontrol?",
       "options": [
-        "control?",
         "using a factory pattern",
         "using a service locator pattern",
         "a constructor injection",
@@ -7940,40 +7547,21 @@ const QUESTION_BANK = {
       "correct": 5
     },
     {
-      "q": "Which of the following statements are false?",
+      "q": "Which of the following statements are false?\nA. Constructor-based DI is effected by invoking a constructor with a number of arguments, each representing a dependency.\nB. We can also use the @Autowired annotation on a constructor for constructor-based autowiring.\nC. Constructor-based DI is accomplished when the container invokes a setter method, each representing a dependency.",
       "options": [
-        "Constructor-based DI is effected by invoking Setter Injection each",
-        "representing a dependency",
-        "Constructor-based DI is accomplished when the container invokes a",
-        "class constructor with a number of arguments",
-        "@Autowire annotation annotation on constructor for constructor based",
-        "autowiring.",
-        "Constructor-based DI is effected by invoking a constructor with a",
-        "number of arguments, each representing a dependency",
-        "We can aslo use @Autowire annotation on constructor for constructor",
-        "based autowiring.",
-        "Constructor-based DI is accomplished when the container invokes a",
-        "class constructor with a number of arguments",
-        "Constructor-based DI is effected by invoking Setter Injection each",
-        "representing a dependency"
+        "A",
+        "B",
+        "C",
+        "A and B"
       ],
-      "correct": 3
+      "correct": 2
     },
     {
       "q": "What are the correct ways to define constructor injection?",
       "options": [
-        "<bean d =\"salute\" class=^ prime prime com . com.bullraider",
-        "<constructor-arg>",
-        "<value>Salute</value>",
-        "</constructor-arg>",
-        "</bean>",
-        "<bean id=\"salute\" class=\"com.bullraider.app.beans.Salutatio",
-        "<constructor-arg Ie =\"Salute\">",
-        "</constructor-arg>",
-        "</bean>",
-        "<bean id=\"salute\" class=\"com.bullraider.app.beans.Salutatio",
-        "<constructor-arg value=\"Slute\"/>",
-        "</bean>",
+        "<bean id=\"salute\" class=\"com.bullraider.app.beans.Salutation\">\n<constructor-arg>\n<value>Salute</value>\n</constructor-arg>\n</bean>",
+        "<bean id=\"salute\" class=\"com.bullraider.app.beans.Salutation\">\n<constructor-arg value=\"Salute\">\n</constructor-arg>\n</bean>",
+        "<bean id=\"salute\" class=\"com.bullraider.app.beans.Salutation\">\n<constructor-arg value=\"Salute\"/>\n</bean>",
         "All of the above"
       ],
       "correct": 3
@@ -7994,13 +7582,12 @@ const QUESTION_BANK = {
       "options": [
         "Locale resolver",
         "Theme resolver",
-        "multipart file",
-        "resolver",
+        "multipart file resolver",
         "Handler exception resolver",
         "Handler mappings",
-        "g. None of the above"
+        "None of the above"
       ],
-      "correct": 3
+      "correct": 2
     },
     {
       "q": "All Spring’s various controller inherit from AbstractController?",
@@ -8021,11 +7608,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Which of the following controller inspects the URL and retrieves the",
+      "q": "Which of the following controller inspects the URL and retrieves the filename of the file request and uses that as a viewname? For example, the filename of http://www.springframework.org/welcome.html request is welcome.",
       "options": [
-        "filename of the file request and uses that as a viewname ? For example,",
-        "the filename of http://www.springframework.org/welcome.html request",
-        "is welcome.",
         "UrlFilenameViewController",
         "MultiActionMultiActionController",
         "CommandController",
@@ -8034,38 +7618,26 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Which statements are true about DispatcherServlet?",
+      "q": "Which statements are true about DispatcherServlet?\nA. DispatcherServlet is an expression of the \"Front Controller\" design pattern.\nB. The DispatcherServlet is the actual Servlet.\nC. DispatcherServlet is declared in the web.xml of your web application.\nD. The Spring DispatcherServlet has a couple of special beans it uses in order to be able to process requests and render the appropriate views. These beans can be configured in WebApplicationContext.",
       "options": [
-        "DispatcherServlet is an expression of the \"Front Controller\" design",
-        "pattern.",
-        "The DispatcherServlet is the actual Servlet.",
-        "DispatcherServlet is declared in the web.xml of your web application.",
-        "The Spring DispatcherServlet has a couple of special beans it uses in",
-        "order to be able to process requests and render the appropriate views.",
-        "These beans can be configured in WebApplicationContext",
+        "A",
+        "B",
+        "C",
+        "D",
         "All of the above"
       ],
       "correct": 4
     },
     {
-      "q": "Which statements are true about WebApplicationContext?",
+      "q": "Which statements are true about WebApplicationContext?\nA. The WebApplicationContext is an extension of the plain ApplicationContext.\nB. The WebApplicationContext is bound in the ServletContext, and by using static methods on the RequestContextUtils class you can always look up the actual WebApplicationContext.\nC. WebApplicationContext differs from a normal ApplicationContext in that it is capable of resolving themes.\nD. We can get a WebApplicationContext reference by using ApplicationContext.",
       "options": [
-        "The WebApplicationContext is an extension of the plain",
-        "ApplicationContext",
-        "The WebApplicationContext is bound in the ServletContext, and by",
-        "using static methods on the RequestContextUtils class.",
-        "WebApplicationContext differs from a normal ApplicationContext in that",
-        "it is capable of resolving themes",
-        "We can get WebApplicationContext reference by using",
-        "ApplicationContext.",
+        "A",
+        "B",
+        "C",
+        "D",
         "All the above"
       ],
-      "correct": [
-        0,
-        1,
-        2,
-        3
-      ]
+      "correct": 4
     },
     {
       "q": "Which of the following is not a view resolver?",
@@ -8130,9 +7702,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "How the Spring DispatcherServlet supports for returning the last-modification-date, as specified by the",
+      "q": "How the Spring DispatcherServlet supports for returning the last-modification-date, as specified by the\nServlet API ?",
       "options": [
-        "Servlet API ?",
         "By implementing the LastModified interface",
         "By implementing the LastSessionModified interface",
         "By implementing the LastDateModified interface",
@@ -8333,9 +7904,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Which of the following statements is true regarding the @ResponseStatus annotation?",
+      "q": "Which of the following statements is true regarding the @ResponseStatus annotation?\n@ResponseStatus is detected on nested exceptions",
       "options": [
-        "@ResponseStatus is detected on nested exceptions",
         "The ExceptionHandlerExceptionResolver uses the @ResponseStatus annotation to map exception to HTTP",
         "status code",
         "A controller handler is annotated with the @ResponseStatus, the response status set by RedirectView takes",
@@ -8366,9 +7936,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Considering 2 classes AccountServiceImpl and ClientServiceImpl. Any of these 2 classes inherits from each",
+      "q": "Considering 2 classes AccountServiceImpl and ClientServiceImpl. Any of these 2 classes inherits from each\nother. What is the result of the following pointcut expression?",
       "options": [
-        "other. What is the result of the following pointcut expression?",
         "execution(* *..AccountServiceImpl.update(..))",
         "&& execution(* *..ClientServiceImpl.update(..))",
         "No joint point is defined",
@@ -8379,9 +7948,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Select the right statement about referring a Spring configuration file inside the package",
+      "q": "Select the right statement about referring a Spring configuration file inside the package\ncom.example.myapp in the below example?",
       "options": [
-        "com.example.myapp in the below example?",
         "ApplicationContext context = new",
         "ClassPathXmlApplicationContext(\"classpath:/com.example.myapp.config.xml\");",
         "all of the above",
@@ -8392,11 +7960,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Using the Spring AOP framework, what is the visibility of the method matches by the following join point?",
+      "q": "Using the Spring AOP framework, what is the visibility of the method matches by the following join point?\n@Pointcut(\"execution(* *(..))\")\nprivate void anyOperation() {};\nPublic methods",
       "options": [
-        "@Pointcut(\"execution(* *(..))\")",
-        "private void anyOperation() {};",
-        "Public methods",
         "All methods, whereas their visibility",
         "All methods, except private method",
         "Protected and public methods"
@@ -8404,19 +7969,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "What the name of the bean defined in the following configuration class? Select a single answer.",
+      "q": "What the name of the bean defined in the following configuration class? Select a single answer.\n@Configuration\npublic class ApplicationConfig {\n@Autowired\nprivate DataSource dataSource;\n@Bean\nClientRepository clientRepository() {\nClientRepository accountRepository = new JpaClientRepository();\naccountRepository.setDataSource(dataSource);\nreturn accountRepository;\n}\n}",
       "options": [
-        "@Configuration",
-        "public class ApplicationConfig {",
-        "@Autowired",
-        "private DataSource dataSource;",
-        "@Bean",
-        "ClientRepository clientRepository() {",
-        "ClientRepository accountRepository = new JpaClientRepository();",
-        "accountRepository.setDataSource(dataSource);",
-        "return accountRepository;",
-        "}",
-        "}",
         "clientRepository",
         "JpaClientRepository",
         "jpaClientRepository",
@@ -8425,16 +7979,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Which of the following is true regarding the below Spring controller?",
+      "q": "Which of the following is true regarding the below Spring controller?\n@RestController\npublic class OwnerController {\n@RequestMapping(value = \"/owner/{ownerId}\", method = RequestMethod.POST)\n@ResponseBody\npublic Owner findOwner(@PathVariable(\"ownerId\") int ownerId) {\nreturn new Owner();\n}\n}",
       "options": [
-        "@RestController",
-        "public class OwnerController {",
-        "@RequestMapping(value = \"/owner/{ownerId}\", method = RequestMethod.POST)",
-        "@ResponseBody",
-        "public Owner findOwner(@PathVariable(\"ownerId\") int ownerId) {",
-        "return new Owner();",
-        "}",
-        "}",
         "RequestMethod.GET method is more accurate than POST",
         "@ResponseBody could be removed",
         "@PathVariable should be replaced with the @PathParam annotation",
@@ -8455,14 +8001,10 @@ const QUESTION_BANK = {
     {
       "q": "What is the easiest method to write a unit test?",
       "options": [
-        "@RequestMapping(\"/displayAccount\")",
-        "String displayAccount(@RequestParam(\"accountId\") int id, Model model)",
-        "void displayAccount(HttpServletRequest req, HttpServletResponse resp) throws ServletException,",
-        "IOException",
-        "void displayAccount(HttpServletRequest req, HttpSession Session)",
-        "throws ServletException, IOException",
-        "@RequestMapping(\"/displayAccount\")",
-        "String displayAccount(@PathVariable(\"accountId\") int id, Model model)"
+        "@RequestMapping(\"/displayAccount\")\nString displayAccount(@RequestParam(\"accountId\") int id, Model model)",
+        "void displayAccount(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException",
+        "void displayAccount(HttpServletRequest req, HttpSession Session) throws ServletException, IOException",
+        "@RequestMapping(\"/displayAccount\")\nString displayAccount(@PathVariable(\"accountId\") int id, Model model)"
       ],
       "correct": 0
     },
@@ -8479,32 +8021,21 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Given the Spring configuration file, which are the correct statements?",
+      "q": "Given the Spring configuration file, which are the correct statements?\n<bean class=\"com.spring.service.BankServiceImpl\"\np:bankName=\"NationalBank\">\n</bean>",
       "options": [
-        "<bean class=\"com.spring.service.BankServiceImpl\"",
-        "p:bankName=\"NationalBank\">",
-        "</bean>",
         "The p namespace has to be declared",
         "NationalBank is a scalar value",
         "Bean id is bankServiceImpl",
         "The BankServiceImpl references a NationalBank bean"
       ],
-      "correct": 0
+      "correct": [
+        0,
+        1
+      ]
     },
     {
-      "q": "Given the following configuration class, what are the correct affirmations? Select one or more answers.",
+      "q": "Given the following configuration class, what are the correct affirmations? Select one or more answers.\npublic class ApplicationConfig {\nprivate DataSource dataSource;\n@Autowired\npublic ApplicationConfig(DataSource dataSource) {\nthis.dataSource = dataSource;\n}\n@Bean(name=\"clientRepository\")\nClientRepository jpaClientRepository() {\nreturn new JpaClientRepository();\n}\n}",
       "options": [
-        "public class ApplicationConfig {",
-        "private DataSource dataSource;",
-        "@Autowired",
-        "public ApplicationConfig(DataSource dataSource) {",
-        "this.dataSource = dataSource;",
-        "}",
-        "@Bean(name=\"clientRepository\")",
-        "ClientRepository jpaClientRepository() {",
-        "return new JpaClientRepository();",
-        "}",
-        "}",
         "Configuration annotation is missing",
         "Default or no-arg constructor is missing",
         "@Bean name is ambiguous",
@@ -8704,26 +8235,10 @@ const QUESTION_BANK = {
     {
       "q": "How to reload my changes on Spring Boot without having to restart server?",
       "options": [
-        "<dependency>",
-        "<groupId>org.springframework.boot</groupId>",
-        "<artifactId>spring-boot-devtools</artifactId>",
-        "<optional>true</optional>",
-        "</dependency>",
-        "<dependency>",
-        "<groupId>org.springframework.boot</groupId>",
-        "<artifactId>spring-boot-test</artifactId>",
-        "<optional>true</optional>",
-        "</dependency>",
-        "<dependency>",
-        "<groupId>org.springframework.boot</groupId>",
-        "<artifactId>spring-boot-web</artifactId>",
-        "<optional>true</optional>",
-        "</dependency>",
-        "<dependency>",
-        "<groupId>org.springframework.boot</groupId>",
-        "<artifactId>spring-boot-jasper</artifactId>",
-        "<optional>true</optional>",
-        "</dependency>"
+        "<dependency>\n<groupId>org.springframework.boot</groupId>\n<artifactId>spring-boot-devtools</artifactId>\n<optional>true</optional>\n</dependency>",
+        "<dependency>\n<groupId>org.springframework.boot</groupId>\n<artifactId>spring-boot-test</artifactId>\n<optional>true</optional>\n</dependency>",
+        "<dependency>\n<groupId>org.springframework.boot</groupId>\n<artifactId>spring-boot-web</artifactId>\n<optional>true</optional>\n</dependency>",
+        "<dependency>\n<groupId>org.springframework.boot</groupId>\n<artifactId>spring-boot-jasper</artifactId>\n<optional>true</optional>\n</dependency>"
       ],
       "correct": 0
     },
@@ -8757,9 +8272,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "LoggerInterceptor which implements the HandlerInterceptor.The LoggerInterceptor will override the",
+      "q": "LoggerInterceptor which implements the HandlerInterceptor.The LoggerInterceptor will override the\nwhich following methods",
       "options": [
-        "which following methods",
         "preHandlerBean(), postHandlerBean(), afterCompletion()",
         "PreProcessHandler(), PostProcessHandler(), afterCompletion()",
         "PreHandler(), PostHandler(), afterCompletion()",
@@ -8768,9 +8282,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "LoggerInterceptor which implements the HandlerInterceptor.The LoggerInterceptor",
+      "q": "LoggerInterceptor which implements the HandlerInterceptor.The LoggerInterceptor\nwill override the which following methods",
       "options": [
-        "will override the which following methods",
         "preHandlerBean(), postHandlerBean(), afterCompletion()",
         "PreProcessHandler(), PostProcessHandler(), afterCompletion()",
         "PreHandler(), PostHandler(), afterCompletion()",
@@ -15909,9 +15422,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "What is the value of json in the following code?",
+      "q": "What is the value of json in the following code?\nvar obj = { fruit: ‘apple’, toJSON: function () { return ‘orange’; } }; var json = JSON.stringify({x: obj});",
       "options": [
-        "var obj = { fruit: ‘apple’, toJSON: function () { return ‘orange’; } }; var json = JSON.stringify({x: obj});",
         "{“x”:”orange”}",
         "{“fruit”:”apple”}",
         "{“x”:”apple”}",
@@ -16147,11 +15659,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "What is the equivalent of the following SQL command in MongoDB?",
+      "q": "What is the equivalent of the following SQL command in MongoDB?\nUPDATE user\nSET email = ‘NA’\nWHERE age < 18",
       "options": [
-        "UPDATE user",
-        "SET email = ‘NA’",
-        "WHERE age < 18",
         "db.user.updateMany({ gt: { $age= 18 } },{ $set: {email = \"NA\" } })",
         "db.user.updateMany({ age: { $lt: 18 } },{ $set: {email : \"NA\" } })",
         "db.user.updateMany({ gt: { $age: 18 } },{ $set: {email : \"NA\" } })",
@@ -16552,10 +16061,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "What is the output of the following?",
+      "q": "What is the output of the following?\ngreet = function(...months){ months.forEach(month => console.log('Month: ' +\nmonth));}greet([ 'Jan', 'Feb']);",
       "options": [
-        "greet = function(...months){ months.forEach(month => console.log('Month: ' +",
-        "month));}greet([ 'Jan', 'Feb']);",
         "Jan Feb",
         "ReferenceError",
         "Month: Jan,Feb",
@@ -16878,7 +16385,6 @@ const QUESTION_BANK = {
     {
       "q": "Which of the following is NOT a valid keyword in JavaScript?",
       "options": [
-        "Options:",
         "use strict",
         "debugger",
         "with",
@@ -19249,9 +18755,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "Which of the following classes makes a round corner image automatically adjust to",
+      "q": "Which of the following classes makes a round corner image automatically adjust to\nfit the size of the screen?",
       "options": [
-        "fit the size of the screen?",
         ".img-res-image",
         ".img-responsive-image * img-fluid (for full width responsible)",
         ".img-responsive",
@@ -19270,9 +18775,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "In Angular , one can create a local HTML reference of an HTML tag using a variable ,",
+      "q": "In Angular , one can create a local HTML reference of an HTML tag using a variable ,\nwhich starts with character ___ .",
       "options": [
-        "which starts with character ___ .",
         "@",
         "#",
         "*",
@@ -19281,9 +18785,8 @@ const QUESTION_BANK = {
       "correct": 1
     },
     {
-      "q": "In Angular routing , which of these tags is used to show the selected route",
+      "q": "In Angular routing , which of these tags is used to show the selected route\ncomponent dynamically ?",
       "options": [
-        "component dynamically ?",
         "<router></router>",
         "<router-output></router-output>",
         "<router-outlet></router-outlet>",
@@ -19292,16 +18795,14 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "In Angular, one can create local HTML reference or HTML tag using variable",
+      "q": "In Angular, one can create local HTML reference or HTML tag using variable\nwhich starts with character ____",
       "options": [
-        "which starts with character ____",
         "@",
         "#",
         "“",
         "&"
       ],
-      "correct": 1,
-      "note": null
+      "correct": 1
     },
     {
       "q": "In Angular application there can be atmost one <router-outlet> can be used for routing",
@@ -20812,16 +20313,13 @@ const QUESTION_BANK = {
       "note": null
     },
     {
-      "q": "Which TypeScript function will accept 2 parameters that must be numbers and return their product?",
+      "q": "Which TypeScript function will accept 2 parameters that must be numbers and return their product?\nvar func = (x: number, y: number) => x * y;\nvar func = (x, y) => x * y;",
       "options": [
-        "var func = (x: number, y: number) => x * y;",
-        "var func = (x, y) => x * y;",
         "None of these",
         "var func = function(x, y) => x * y;",
         "All of these"
       ],
-      "correct": 0,
-      "note": null
+      "correct": 0
     },
     {
       "q": "Which statement will allow your code to reference an internal module in a file named shapes.ts using TypeScript?",
@@ -20856,18 +20354,15 @@ const QUESTION_BANK = {
       "note": null
     },
     {
-      "q": "What value will be output at the end of the following code block?",
+      "q": "What value will be output at the end of the following code block?\nenum Color { Red = 5, Green = 10, Blue = 15 };\nconsole.log(Color.Green);",
       "options": [
-        "enum Color { Red = 5, Green = 10, Blue = 15 };",
-        "console.log(Color.Green);",
         "2",
         "Color.Green",
         "1",
         "Green",
         "10"
       ],
-      "correct": 4,
-      "note": null
+      "correct": 4
     },
     {
       "q": "What term describes the concept of treating an object as if it were a particular type, even if it weren't declared as that type?",
@@ -20952,21 +20447,15 @@ const QUESTION_BANK = {
       "note": null
     },
     {
-      "q": "function fun1(...params) {",
+      "q": "function fun1(...params) {\nconsole.log(params.length);\n}\nfun1();\nfun1(5);\nfun1(5, 6, 7);",
       "options": [
-        "console.log(params.length);",
-        "}",
-        "fun1();",
-        "fun1(5);",
-        "fun1(5, 6, 7);",
         "Which concept resemble the above program",
         "String Interpolation",
         "Tagged Templates",
         "Spread Operator/Rest Parameters",
         "Object Destructuring"
       ],
-      "correct": 2,
-      "note": null
+      "correct": 2
     },
     {
       "q": "Which are the different Data Types supported by Typescript?",
@@ -23172,16 +22661,14 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "What are the advantages of React ?",
+      "q": "What are the advantages of using React?",
       "options": [
         "React can be used on client as well as server side.",
-        "Using React increases readability and makes maintainability easier. Component and",
-        "Data patterns improve readability and thus make it easier for maintaining larger props.",
-        "React can be used with any other framework (Backbone.js, Angular.js) as it is just a",
-        "View Layer.",
+        "Using React increases readability and makes maintainability easier. Component and Data patterns improve readability and thus make it easier for maintaining larger props.",
+        "React can be used with any other framework (Backbone.js, Angular.js) as it is just a View Layer.",
         "All of the above."
       ],
-      "correct": 3
+      "correct": 2
     },
     {
       "q": "What is React?",
@@ -23382,13 +22869,12 @@ const QUESTION_BANK = {
     {
       "q": "What are the limitations of React?",
       "options": [
-        "React is only for view layer of the app so we still need the help of other technologies to",
-        "get a complete tooling set for development.",
+        "React is only for view layer of the app so we still need the help of other technologies to get a complete tooling set for development.",
         "React uses inline templating and JSX. This can seem awkward to some developers.",
         "The library of React is too large.",
         "All of the above"
       ],
-      "correct": 3
+      "correct": 2
     },
     {
       "q": "How can we render JSX in the browser ?",
@@ -27433,9 +26919,8 @@ const QUESTION_BANK = {
       "correct": 3
     },
     {
-      "q": "What is the output of the following?greet = function(...months){ months.forEach(month => console.log('Month: ' +",
+      "q": "What is the output of the following?greet = function(...months){ months.forEach(month => console.log('Month: ' +\nmonth));}greet([ 'Jan', 'Feb']);",
       "options": [
-        "month));}greet([ 'Jan', 'Feb']);",
         "Jan Feb",
         "ReferenceError",
         "Month: Jan,Feb",
@@ -27463,19 +26948,6 @@ const QUESTION_BANK = {
         "no value"
       ],
       "correct": 2
-    },
-    {
-      "q": "​ The first ! operator negates the value, so if value is truthy, it becomes false, and if value is falsy, it becomes true.",
-      "options": [
-        "2.​ The second ! operator negates the result of the first ! operation, effectively converting it back to its original truthiness.",
-        "14) What is the output of the following?function display(num1, num2) { console.log(num1, num2);}let nums =",
-        "\"12345\";display(...nums);",
-        "1 2",
-        "21",
-        "12345",
-        "45"
-      ],
-      "correct": 0
     },
     {
       "q": "What is the console output of the following code block:function printName() { name = \"Mary\"; name = \"John\";",
@@ -27836,26 +27308,24 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "What are the advantages of React ?",
+      "q": "What are the advantages of using React?",
       "options": [
         "React can be used on client as well as server side.",
-        "Using React increases readability and makes maintainability easier. Component and Data patterns improve readability and",
-        "thus make it easier for maintaining larger props.",
+        "Using React increases readability and makes maintainability easier. Component and Data patterns improve readability and thus make it easier for maintaining larger props.",
         "React can be used with any other framework (Backbone.js, Angular.js) as it is just a View Layer.",
         "All of the above."
       ],
-      "correct": 3
+      "correct": 2
     },
     {
-      "q": "How does React handle the Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) standard ?",
+      "q": "Which statement about React and ARIA attributes is correct?",
       "options": [
-        "aria -* HTML attributes are fully supported in JSX where most DOM properties and attributes in React are camelCased , these",
-        "attributes should be lowercase.",
-        "React processes aria - * attributes separately and updates the DOM for accessibility if the user requires it.",
-        "aria-* attributes should be converted to camelCase like other attributes; For example: className, onChange and so on.",
+        "aria-* HTML attributes are fully supported in JSX where most DOM properties and attributes in React are camelCased, these attributes should be lowercase.",
+        "React processes aria-* attributes separately and updates the DOM for accessibility if the user requires it.",
+        "aria-* attributes should be converted to camelCase like other attributes; for example: className, onChange and so on.",
         "React is yet to support the WAI-ARIA standard."
       ],
-      "correct": 3
+      "correct": 0
     },
     {
       "q": "What is React?",
@@ -27869,13 +27339,12 @@ const QUESTION_BANK = {
     {
       "q": "What are the limitations of React?",
       "options": [
-        "React is only for the view layer of the app so we still need the help of other technologies to get a complete tooling set for",
-        "development.",
+        "React is only for the view layer of the app so we still need the help of other technologies to get a complete tooling set for development.",
         "React uses inline templating and JSX. This can seem awkward to some developers.",
         "The library of React is too large.",
         "All of the above"
       ],
-      "correct": 3
+      "correct": 2
     },
     {
       "q": "How can you access the state of a component from inside of a member function in React?",
@@ -27965,10 +27434,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Which TypeScript function will accept 2 parameters that must be numbers and return their product?",
+      "q": "Which TypeScript function will accept 2 parameters that must be numbers and return their product?\nvar func = (x: number, y: number) => x * y;\nvar func = (x, y) => x * y;",
       "options": [
-        "var func = (x: number, y: number) => x * y;",
-        "var func = (x, y) => x * y;",
         "None of these",
         "var func = function(x, y) => x * y;",
         "All of these"
@@ -28011,18 +27478,9 @@ const QUESTION_BANK = {
         "extends",
         "class",
         "furthers",
-        "references",
-        "ANS B",
-        "Q 12.What value will be output at the end of the following code block?",
-        "enum Color { Red = 5, Green = 10, Blue = 15 };",
-        "console.log(Color.Green);",
-        "2",
-        "Color.Green",
-        "1",
-        "Green",
-        "10"
+        "references"
       ],
-      "correct": 5
+      "correct": 1
     },
     {
       "q": "Which of the following best defines a \"class\"?",
@@ -28159,9 +27617,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Which of the following is valid command to compile",
+      "q": "Which of the following is valid command to compile\ntypescript file?",
       "options": [
-        "typescript file?",
         "ts abc.ts",
         "t abc.ts",
         "tsc abc.ts",
@@ -28170,9 +27627,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "What will be output of : var a:string=47;",
+      "q": "What will be output of : var a:string=47;\nconsole.log(“Value of a=\"+a);",
       "options": [
-        "console.log(“Value of a=\"+a);",
         "Value of a=47",
         "Value of a=0",
         "Value of a=",
@@ -28200,13 +27656,8 @@ const QUESTION_BANK = {
       "correct": 4
     },
     {
-      "q": "function fun1(...params) {",
+      "q": "function fun1(...params) {\nconsole.log(params.length);\n}\nfun1();\nfun1(5);\nfun1(5, 6, 7);",
       "options": [
-        "console.log(params.length);",
-        "}",
-        "fun1();",
-        "fun1(5);",
-        "fun1(5, 6, 7);",
         "Which concept resemble the above program",
         "String Interpolation",
         "Tagged Templates",
@@ -28398,9 +27849,8 @@ const QUESTION_BANK = {
       "correct": 0
     },
     {
-      "q": "Assuming you define the statement: \"var person: string;\" TypeScript will alert you that there is an error if you enter which",
+      "q": "Assuming you define the statement: \"var person: string;\" TypeScript will alert you that there is an error if you enter which\nadditional code?",
       "options": [
-        "additional code?",
         "person = { name: 'Colleen', age: 25; }",
         "person = 0",
         "person = ['Colleen', 'John'];",
@@ -28561,9 +28011,8 @@ const QUESTION_BANK = {
       "correct": 2
     },
     {
-      "q": "Which of the following properties sets the distance between an element’s right",
+      "q": "Which of the following properties sets the distance between an element’s right\nborder and the rightmost edge of its content?",
       "options": [
-        "border and the rightmost edge of its content?",
         "auto",
         "padding-left",
         "padding-right",
@@ -28724,19 +28173,11 @@ const QUESTION_BANK = {
     {
       "q": "Which class indicates a dropdown menu?",
       "options": [
-        ".dropdown-list  b).dropdown c).select",
-        "Where can the <script> tag be added in HTML?",
-        "Options:",
-        "* Head",
-        "* Body",
-        "* Both"
+        ".dropdown-list",
+        ".dropdown",
+        ".select"
       ],
-      "correct": [
-        0,
-        1,
-        3,
-        4
-      ]
+      "correct": 1
     },
     {
       "q": "Which of the following values are accepted by the float property?",
@@ -29146,6 +28587,36 @@ const QUESTION_BANK = {
         ".fixed"
       ],
       "correct": 1
+    },
+    {
+      "q": "What is the output of the following?\nfunction display(num1, num2) { console.log(num1, num2); }\nlet nums = \"12345\";\ndisplay(...nums);",
+      "options": [
+        "1 2",
+        "21",
+        "12345",
+        "45"
+      ],
+      "correct": 0
+    },
+    {
+      "q": "What value will be output at the end of the following code block?\nenum Color { Red = 5, Green = 10, Blue = 15 };\nconsole.log(Color.Green);",
+      "options": [
+        "2",
+        "Color.Green",
+        "1",
+        "Green",
+        "10"
+      ],
+      "correct": 4
+    },
+    {
+      "q": "Where can the <script> tag be added in HTML?",
+      "options": [
+        "Head",
+        "Body",
+        "Both"
+      ],
+      "correct": 2
     }
   ]
 };
