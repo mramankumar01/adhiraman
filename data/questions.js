@@ -2440,7 +2440,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: ';\n}\n}\npublic static void main(String[] args) {\nMain obj = new Main();\nSystem.out.println(obj.getValue("DEMOS"));\n}\n}',
+      q: 'What is the output of the following code?\n\nclass Main {\n    String getValue(String word) {\n        System.out.println(word);\n        if (word.length() == 1) {\n            return "";\n        } else {\n            return getValue(word.substring(0, word.length() - 1)) + word.charAt(word.length() - 1);\n        }\n    }\n    public static void main(String[] args) {\n        Main obj = new Main();\n        System.out.println(obj.getValue("DEMOS"));\n    }\n}',
       options: ["D", "DEMOS", "EMOS", "Empty String"],
       correct: 2,
     },
@@ -2681,7 +2681,7 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "class Mammal { }\nclass Raccoon extends Mammal {\nMammal m = new Mammal();\n}\nclass BabyRaccoon extends Mammal { }\nWhich four statements are true? (Choose four.)",
+      q: "class Mammal { }\nclass Raccoon extends Mammal {\nMammal m = new Mammal();\n}\nclass BabyRaccoon extends Mammal { }\nWhich statements are true?",
       options: [
         "Raccoon is-a Mammal.",
         "Raccoon has-a Mammal.",
@@ -3668,14 +3668,16 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "Which of these are true? (multiple correct — select the most complete option)",
+      q: "class Mammal { }\nclass Raccoon extends Mammal {\nMammal m = new Mammal();\n}\nclass BabyRaccoon extends Mammal { }\nWhich statements are true?",
       options: [
-        "Raccoon is-a Mammal; Raccoon has-a Mammal; BabyRaccoon is-a Mammal; BabyRaccoon is-a BabyRaccoon",
-        "Only Raccoon is-a Mammal",
-        "BabyRaccoon is-a Raccoon",
-        "None of the above",
+        "Raccoon is-a Mammal.",
+        "Raccoon has-a Mammal.",
+        "BabyRaccoon is-a Mammal.",
+        "BabyRaccoon is-a Raccoon.",
+        "BabyRaccoon has-a Mammal.",
+        "BabyRaccoon is-a BabyRaccoon.",
       ],
-      correct: 0,
+      correct: [0, 1, 2, 5],
     },
     {
       q: "The sendError() method of HttpServletResponse is equivalent to invoking setStatus() with which parameter?",
@@ -12871,14 +12873,8 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to manage the",
-      options: [
-        "subscription yourself.",
-        "subscribe()",
-        "subs()",
-        "subscribed()",
-        "None of above",
-      ],
+      q: "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to manage the subscription yourself.",
+      options: ["subscribe()", "subs()", "subscribed()", "None of above"],
       correct: 0,
     },
     {
@@ -13185,14 +13181,8 @@ const QUESTION_BANK = {
       note: null,
     },
     {
-      q: "Using the . . . . . . animation function, the parent animation can allow the child animation to run at the exact",
-      options: [
-        "correct time.",
-        "animateChild",
-        "childAnimate",
-        "animateInner",
-        "innerChild",
-      ],
+      q: "Using the . . . . . . animation function, the parent animation can allow the child animation to run at the exact correct time.",
+      options: ["animateChild", "childAnimate", "animateInner", "innerChild"],
       correct: 0,
       note: null,
     },
@@ -22927,9 +22917,8 @@ const QUESTION_BANK = {
       correct: 4,
     },
     {
-      q: "function fun1(...params) {\nconsole.log(params.length);\n}\nfun1();\nfun1(5);\nfun1(5, 6, 7);",
+      q: "function fun1(...params) {\nconsole.log(params.length);\n}\nfun1();\nfun1(5);\nfun1(5, 6, 7);\nWhich concept resemble the above program?",
       options: [
-        "Which concept resemble the above program",
         "String Interpolation",
         "Tagged Templates",
         "Spread Operator/Rest Parameters",
@@ -23796,14 +23785,8 @@ const QUESTION_BANK = {
     },
     // IBM Cloud Microservices – Angular (8)
     {
-      q: "EventEmitter class’s simple interface, which basically encompass two methods . . . . . . . . . can therefore be used to trigger",
-      options: [
-        "custom events and listen to events as well, both synchronously or asynchronously.",
-        "exit()",
-        "superscript()",
-        "subscribe()",
-        "emit()",
-      ],
+      q: "EventEmitter class’s simple interface, which basically encompass two methods . . . . . . . . . can therefore be used to trigger custom events and listen to events as well, both synchronously or asynchronously.",
+      options: ["exit()", "superscript()", "subscribe()", "emit()"],
       correct: 2,
     },
     {
@@ -24073,8 +24056,8 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "Shift-left concept refers to moving everything to the earlier phase in the ________",
-      options: ["cycle.", "Requirement", "Development", "Design", "Testing"],
+      q: "Shift-left concept refers to moving everything to the earlier phase in the ________ cycle.",
+      options: ["Requirement", "Development", "Design", "Testing"],
       correct: 1,
     },
   ],
@@ -24666,7 +24649,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: ';\n}\n}\npublic static void main(String[] args) {\nMain obj = new Main();\nSystem.out.println(obj.getValue("DEMOS"));\n}\n}',
+      q: 'What is the output of the following code?\n\nclass Main {\n    String getValue(String word) {\n        System.out.println(word);\n        if (word.length() == 1) {\n            return "";\n        } else {\n            return getValue(word.substring(0, word.length() - 1)) + word.charAt(word.length() - 1);\n        }\n    }\n    public static void main(String[] args) {\n        Main obj = new Main();\n        System.out.println(obj.getValue("DEMOS"));\n    }\n}',
       options: ["D", "DEMOS", "EMOS", "Empty String"],
       correct: 2,
     },
@@ -24763,14 +24746,8 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "Using the . . . . . . animation function, the parent animation can allow the child animation to run at the exact",
-      options: [
-        "correct time.",
-        "animateChild",
-        "childAnimate",
-        "animateInner",
-        "innerChild",
-      ],
+      q: "Using the . . . . . . animation function, the parent animation can allow the child animation to run at the exact correct time.",
+      options: ["animateChild", "childAnimate", "animateInner", "innerChild"],
       correct: 0,
     },
     {
@@ -25172,9 +25149,8 @@ const QUESTION_BANK = {
     },
     // IBM Cloud Microservices – HTML5, CSS and Bootstrap (6)
     {
-      q: "function fun1(...params) {\nconsole.log(params.length);\n}\nfun1();\nfun1(5);\nfun1(5, 6, 7);",
+      q: "function fun1(...params) {\nconsole.log(params.length);\n}\nfun1();\nfun1(5);\nfun1(5, 6, 7);\nWhich concept resemble the above program?",
       options: [
-        "Which concept resemble the above program",
         "String Interpolation",
         "Tagged Templates",
         "Spread Operator/Rest Parameters",
@@ -25190,7 +25166,7 @@ const QUESTION_BANK = {
         "this.state",
         "this.values",
       ],
-      correct: 3,
+      correct: 2,
     },
     {
       q: "Which statement will allow your code to reference an internal module in a file named shapes.ts using TypeScript?",
@@ -25229,14 +25205,8 @@ const QUESTION_BANK = {
     },
     // IBM Cloud Microservices – JavaScript (7)
     {
-      q: "In the following command, what does the second parameter represent?",
-      options: [
-        "db.collection.find( { qty: { $gt: 6 } }, { name: 1, wins: 1 } )",
-        "Read Concern",
-        "Projection",
-        "Write Concern",
-        "Query",
-      ],
+      q: "In the following command, what does the second parameter represent?\ndb.collection.find( { qty: { $gt: 6 } }, { name: 1, wins: 1 } )",
+      options: ["Read Concern", "Projection", "Write Concern", "Query"],
       correct: 1,
     },
     {
@@ -25252,7 +25222,7 @@ const QUESTION_BANK = {
         "A finally block is NOT Mandatory.",
         "A finally block is executed, only if an exception occurs.",
       ],
-      correct: 3,
+      correct: 1,
     },
     {
       q: "What does the optional chaining operator (?.) do in JavaScript?",
@@ -26142,8 +26112,8 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "Load Balancing improves the distribution of workloads across multiple computing resources , such as computers or a",
-      options: ["computer cluster.", "True.", "False."],
+      q: "Load Balancing improves the distribution of workloads across multiple computing resources , such as computers or a computer cluster.",
+      options: ["True.", "False."],
       correct: 0,
     },
     {
@@ -26471,7 +26441,6 @@ const QUESTION_BANK = {
     {
       q: "Where in an HTML document is the correct place to refer to an external style sheet?",
       options: [
-        "In the <head> section",
         "In the <body> section",
         "In the <head> section",
         "At the end of the document",
@@ -26669,14 +26638,16 @@ const QUESTION_BANK = {
   test7: [
     // IBM Cloud Microservices – Java (8)
     {
-      q: "Which of these are true? (multiple correct — select the most complete option)",
+      q: "class Mammal { }\nclass Raccoon extends Mammal {\nMammal m = new Mammal();\n}\nclass BabyRaccoon extends Mammal { }\nWhich statements are true?",
       options: [
-        "Raccoon is-a Mammal; Raccoon has-a Mammal; BabyRaccoon is-a Mammal; BabyRaccoon is-a BabyRaccoon",
-        "Only Raccoon is-a Mammal",
-        "BabyRaccoon is-a Raccoon",
-        "None of the above",
+        "Raccoon is-a Mammal.",
+        "Raccoon has-a Mammal.",
+        "BabyRaccoon is-a Mammal.",
+        "BabyRaccoon is-a Raccoon.",
+        "BabyRaccoon has-a Mammal.",
+        "BabyRaccoon is-a BabyRaccoon.",
       ],
-      correct: 0,
+      correct: [0, 1, 2, 5],
     },
     {
       q: "You can also use an ES6 class to define a component in React.",
