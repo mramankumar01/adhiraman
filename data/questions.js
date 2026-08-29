@@ -26806,14 +26806,8 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to manage the",
-      options: [
-        "subscription yourself.",
-        "subscribe()",
-        "subs()",
-        "subscribed()",
-        "None of above",
-      ],
+      q: "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to manage the subscription yourself.",
+      options: ["subscribe()", "subs()", "subscribed()", "None of above"],
       correct: 0,
     },
     // IBM Cloud Microservices – Angular (8)
