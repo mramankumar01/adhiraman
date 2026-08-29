@@ -1583,8 +1583,12 @@ const QUESTION_BANK = {
       correct: [0, 1],
     },
     {
-      q: "State whether the statement is true or false. Adopting Agile is necessary prior to embracing DevOps practices.",
-      options: ["True", "False"],
+      q: "State whether the statement is true or false.",
+      options: [
+        "Adopting Agile is necessary prior to embracing DevOps practices.",
+        "True",
+        "False",
+      ],
       correct: 1,
     },
     {
@@ -1798,8 +1802,14 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "Which of the below API Calls provides you the security information ? ) HttpServletRequest.isUserinRole(), 2) HttpServletRequest.getUserPrincipal()",
-      options: ["Only 1", "Only 2", "Both i and ii"],
+      q: "Which of the below API Calls provides you the security information ?",
+      options: [
+        "1) HttpServletRequest.isUserinRole()",
+        "2) HttpServletRequest.getUserPrincipal()",
+        "Only 1",
+        "Only 2",
+        "Both i and ii",
+      ],
       correct: 2,
     },
     {
@@ -1814,7 +1824,7 @@ const QUESTION_BANK = {
     {
       q: "What is used to dispatch requests to the WEB Application ?",
       options: [
-        "i. DispatcherServlet.",
+        "i. DispatchherServlet.",
         "Ii. ViewHandler.",
         "iii. ViewResolver.",
       ],
@@ -1826,8 +1836,12 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "In your Data Access Object (DAO) method , you neither need to surround your code with a try/catch block nor declare throwing an exception in the method signature.",
-      options: ["i. TRUE", "ii. FALSE."],
+      q: "In your Data Access Object (DAO) method , you neither need to surround your code with a try/catch block nor declare",
+      options: [
+        "throwing an exception in the method signature.",
+        "i. TRUE",
+        "ii. FALSE.",
+      ],
       correct: 1,
     },
     {
@@ -1930,8 +1944,8 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "Load Balancing improves the distribution of workloads across multiple computing resources , such as computers or a computer cluster.",
-      options: ["True.", "False."],
+      q: "Load Balancing improves the distribution of workloads across multiple computing resources , such as computers or a",
+      options: ["computer cluster.", "True.", "False."],
       correct: 0,
     },
     {
@@ -2217,10 +2231,10 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "Which of the following statements is NOT correct for JVM?",
+      q: "Which of the following statements is NOT correct for JVM?\nJVM acts as a translator that translates different Machine code (on the basis of Host Machine) for a common Byte Code.",
       options: [
-        "JVM acts as a translator that translates different Machine code (on the basis of Host Machine) for a common Byte Code.",
-        "JVM is a Virtual Machine that acts as an intermediary between Java Application and Host Operating System.",
+        "JVM is a Virtual Machine that acts as an intermediary between Java Application and Host",
+        "Operating System.",
         "JVM reads Byte Code and generates Machine Code.",
         "JVM reads Source Code and generates Byte Code.",
       ],
@@ -2273,7 +2287,8 @@ const QUESTION_BANK = {
     {
       q: "What is the difference between peek() and dequeue()?",
       options: [
-        "peek() returns the next item in line but dequeue() removes and returns the next item in line",
+        "peek() returns the next item in line but dequeue() removes and returns the next item in",
+        "line",
         "peek() and dequeue() return the next item in line",
         "peek() and dequeue() remove and return the next item in line",
       ],
@@ -2290,9 +2305,8 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: 'What is the result of the following Java code snippet?\nclass Animal {\npublic String noise() {\nreturn "peep";\n}\n}\nclass Dog extends Animal {\npublic String noise() {\nreturn "bark";\n}\n}\nclass Cat extends Animal {\npublic String noise() {\nreturn "meow";\n}\n}\nAnimal animal = new Dog();\nCat cat = (Cat) animal;\nSystem.out.println(cat.noise());',
+      q: 'What is the result of the following Java code snippet?\nclass Animal {\npublic String noise() {\nreturn "peep";\n}\n}\nclass Dog extends Animal {\npublic String noise() {\nreturn "bark";\n}\n}\nclass Cat extends Animal {\npublic String noise() {\nreturn "meow";\n}\n}\nAnimal animal = new Dog();\nCat cat = (Cat) animal;\nSystem.out.println(cat.noise());\n// Exception in thread "main" java.lang.ClassCastException',
       options: [
-        '// Exception in thread "main" java.lang.ClassCastException',
         "peep",
         "bark",
         "meow",
@@ -2471,17 +2485,12 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "Which implementation of Set would you choose if you want the iterator of Set to give",
-      options: [
-        "objects in the order they were inserted?",
-        "LinkedHashSet",
-        "TreeSet",
-        "HashSet",
-      ],
+      q: "Which implementation of Set would you choose if you want the iterator of Set to give objects in the order they were inserted?",
+      options: ["LinkedHashSet", "TreeSet", "HashSet"],
       correct: 0,
     },
     {
-      q: 'Which Man class properly represents the relationship "Man has a best friend who is a\nDog"?',
+      q: 'Which Man class properly represents the relationship "Man has a best friend who is a Dog"?',
       options: [
         "class Man extends Dog { }",
         "class Man implements Dog { }",
@@ -2493,7 +2502,7 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "A company has a business application that provides its users with many different\nreports: receivables reports, payables reports, revenue projects, and so on. The company\nhas just purchased some new, state-of-the-art, wireless printers, and a programmer has\nbeen assigned the task of enhancing all of the reports to use not only the company's old\nprinters, but the new wireless printers as well. When the programmer starts looking into the\napplication, the programmer discovers that because of the design of the application, it is\nnecessary to make changes to each report to support the new printers. Which two design\nconcepts most likely explain this situation? (Choose two.)",
+      q: "A company has a business application that provides its users with many different reports: receivables reports, payables reports, revenue projects, and so on. The company has just purchased some new, state-of-the-art, wireless printers, and a programmer has been assigned the task of enhancing all of the reports to use not only the company's old printers, but the new wireless printers as well. When the programmer starts looking into the application, the programmer discovers that because of the design of the application, it is necessary to make changes to each report to support the new printers. Which two design concepts most likely explain this situation? (Choose two.)",
       options: [
         "Inheritance",
         "Low cohesion",
@@ -2505,7 +2514,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "A team of programmers is reviewing a proposed API for a new utility class. After some\ndiscussion, they realize that they can reduce the number of methods in the API without\nlosing any functionality. If they implement the new design, which two OO principles will they\nbe promoting?",
+      q: "A team of programmers is reviewing a proposed API for a new utility class. After some discussion, they realize that they can reduce the number of methods in the API without losing any functionality. If they implement the new design, which two OO principles will they be promoting?",
       options: [
         "Looser coupling",
         "Tighter coupling",
@@ -2517,7 +2526,7 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "A team of programmers is involved in reviewing a proposed design for a new utility\nclass. After some discussion, they realize that the current design allows other classes to\naccess methods in the utility class that should be accessible only to methods within the\nutility class itself. What design issue has the team discovered?",
+      q: "A team of programmers is involved in reviewing a proposed design for a new utility class. After some discussion, they realize that the current design allows other classes to access methods in the utility class that should be accessible only to methods within the utility class itself. What design issue has the team discovered?",
       options: [
         "Tight coupling",
         "Low cohesion",
@@ -2542,7 +2551,7 @@ const QUESTION_BANK = {
       correct: [0, 1, 3],
     },
     {
-      q: "A programmer has an algorithm that requires a java.util.List that provides an efficient\nimplementation of add(0, object), but does NOT need to support quick random access. What\nsupports these requirements?",
+      q: "A programmer has an algorithm that requires a java.util.List that provides an efficient implementation of add(0, object), but does NOT need to support quick random access. What supports these requirements?",
       options: [
         "java.util.Queue",
         "java.util.ArrayList",
@@ -2602,7 +2611,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "Views that canít be resolved byInternalResourceViewResolver.",
+      q: "Views that can't be resolved byInternalResourceViewResolver.",
       options: [
         "redirect",
         "redirect:prefix",
@@ -2672,28 +2681,6 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "System.out.println(cat.noise());\nWhat is the result?",
-      options: [
-        "peep",
-        "bark",
-        "meow",
-        "Compilation fails.",
-        "An exception is thrown at runtime.",
-      ],
-      correct: 4,
-    },
-    {
-      q: "}\nWhat is the result?",
-      options: [
-        "B",
-        "B, followed by an Exception.",
-        "Compilation fails due to an error on line 9.",
-        "Compilation fails due to an error on line 15.",
-        "An Exception is thrown with no other output",
-      ],
-      correct: 3,
-    },
-    {
       q: "class Mammal { }\nclass Raccoon extends Mammal {\nMammal m = new Mammal();\n}\nclass BabyRaccoon extends Mammal { }\nWhich four statements are true? (Choose four.)",
       options: [
         "Raccoon is-a Mammal.",
@@ -2706,7 +2693,7 @@ const QUESTION_BANK = {
       correct: [0, 1, 2, 5],
     },
     {
-      q: "Which of these keywords cannot be used for a cl\nass which has been declared final?",
+      q: "Which of these keywords cannot be used for a class which has been declared final?",
       options: [
         "abstract",
         "extends",
@@ -2716,7 +2703,7 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "A team of programmers is involved in reviewing\na proposed design for a new utility class.\nAfter some discussion, they realize that the curre\nnt design allows other classes to access\nmethods in the utility class that should be access\nible only to methods within the utility class itse\nlf.\nWhat design issue has the team discovered?",
+      q: "A team of programmers is involved in reviewing a proposed design for a new utility class.After some discussion, they realize that the current design allows other classes to access methods in the utility class that should be accessible only to methods within the utility class itself.What design issue has the team discovered?",
       options: [
         "Tight coupling",
         "Low cohesion",
@@ -2728,7 +2715,7 @@ const QUESTION_BANK = {
       correct: 4,
     },
     {
-      q: "Which of these methods are used to read in from\nfile?",
+      q: "Which of these methods are used to read in from file?",
       options: ["get()", "read()", "scan()", "readFileInput()"],
       correct: 1,
     },
@@ -2743,22 +2730,22 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "In Angular , one can create local HTML reference or HTML tag using variable which",
-      options: ["starts with character ____", "@", "#", "“", "&"],
+      q: "In Angular , one can create local HTML reference or HTML tag using variable which starts with character ____",
+      options: ["@", "#", "“", "&"],
       correct: 1,
     },
     {
-      q: "Which of these Angular services can be injected in your component to the dynamic\nmode navigation ?",
-      options: ["Routing.", "RouterService.", "RoutingService", "Router"],
+      q: "Which of these Angular services can be injected in your component to the dynamic mode navigation ?",
+      options: ["Routing", "RouterService", "RoutingService", "Router"],
       correct: 3,
     },
     {
-      q: "In Angular , which of the following wild card route paths will you use to define a 404\nroute ?",
+      q: "In Angular , which of the following wild card route paths will you use to define a 404 route ?",
       options: ["**", "/", "##", "default"],
       correct: 0,
     },
     {
-      q: "What are the core operations of DevOps with application development and with\ninfrastructure?",
+      q: "What are the core operations of DevOps with application development and with infrastructure?",
       options: [
         "Provisioning, Configuration, and Orchestration",
         "Code building, coverage, and Unit testing",
@@ -2768,12 +2755,12 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "In Java, which of these class types supports sequential and parallel processing of\ndata?",
+      q: "In Java, which of these class types supports sequential and parallel processing of data?",
       options: ["Queue", "Lambda", "ExecutorService", "Streams"],
       correct: 3,
     },
     {
-      q: "Where is the correct place to insert a JavaScript? Both the <head> section and the\n<body> section are correct",
+      q: "Where is the correct place to insert a JavaScript?",
       options: [
         "The <head> section",
         "Both the <head> section and the <body> section are correct",
@@ -2807,7 +2794,7 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "How can you access the state of a component from inside of a member function in\nReact?",
+      q: "How can you access the state of a component from inside of a member function in React?",
       options: [
         "this getState()",
         "this prototype stateValue",
@@ -2817,7 +2804,7 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "Which of the following API is a MUST for every React component? render",
+      q: "Which of the following API is a MUST for every React component?",
       options: ["getInitialState", "render", "renderComponent"],
       correct: 1,
     },
@@ -3086,12 +3073,12 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "LinkedList with 2,8,5,1; Collections.reverse(list); Collections.shuffle(list); iterate with iterator obtained before shuffle. Output?",
+      q: "LinkedList with 2,8,5,1; Collections.reverse(list);\nCollections.shuffle(list);\niterate with iterator obtained before shuffle. Output?",
       options: ["2 8 5 1", "1 5 8 2", "1 2 5 8", "Any random order"],
       correct: 3,
     },
     {
-      q: "LinkedList with 2,8,5,1; Collections.reverse(list); Collections.sort(list); iterate with iterator obtained before sort. Output?",
+      q: "LinkedList with 2,8,5,1; Collections.reverse(list);\nCollections.sort(list);\niterate with iterator obtained before sort. Output?",
       options: ["2 8 5 1", "1 5 8 2", "1 2 5 8", "2 1 8 5"],
       correct: 2,
     },
@@ -3116,7 +3103,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "Which describes the correct sequence for making a database connection: (1) Loading the driver (2) Process results (3) Making the connection (4) Executing SQL statements?",
+      q: "Which describes the correct sequence for making a database connection:\n(1) Loading the driver\n(2) Process results\n(3) Making the connection\n(4) Executing SQL statements?",
       options: ["1,2,3,4", "1,3,4,2", "2,1,3,4", "4,1,2,3"],
       correct: 1,
     },
@@ -3150,7 +3137,7 @@ const QUESTION_BANK = {
       options: [
         "A finally block is executed, only after the catch block is executed.",
         "A finally block is executed whether an exception is thrown or not.",
-        "A finally block is NOT mandatory, and both statements (ii and iii) apply.",
+        "A finally block is NOT mandatory, and both statements (i and ii) apply.",
         "A finally block is executed only if an exception occurs.",
       ],
       correct: 2,
@@ -3196,12 +3183,12 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: 'StringJoiner astring = new StringJoiner("-", "( ", " )"); astring.add("A"); astring.add("B"); astring.add("C"); What is the output?',
+      q: 'StringJoiner astring = new StringJoiner("-", "( ", " )");\nastring.add("A");\nastring.add("B"); astring.add("C");\nWhat is the output?',
       options: ["(A-B-C)", "(A)-(B)-(C)", "(-A-)(-B-)(-C-)"],
       correct: 0,
     },
     {
-      q: "Which of the below API calls provide you security information? (1) HttpServletRequest.isUserinRole() (2) HttpServletRequest.getUserPrincipal()",
+      q: "Which of the below API calls provide you security information?\n(1) HttpServletRequest.isUserinRole()\n(2) HttpServletRequest.getUserPrincipal()",
       options: ["Only 1", "Only 2", "Both 1 and 2"],
       correct: 2,
     },
@@ -3221,12 +3208,12 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "Which statements are true about Java? (i) finally executed only after catch (ii) finally executed whether exception thrown or not (iii) finally not mandatory (iv) finally executed only if exception occurs",
+      q: "Which statements are true about Java?\n(i) finally executed only after catch\n(ii) finally executed whether exception thrown or not\n(iii) finally not mandatory\n(iv) finally executed only if exception occurs",
       options: ["i only", "iv only", "i and iv", "ii and iii"],
       correct: 3,
     },
     {
-      q: 'Optional<String> aValue = Optional.of("Not Empty"); if(aValue.isPresent()) { print("Got Not Empty"); } Is this a valid Java code snippet?',
+      q: 'Optional<String> aValue = Optional.of("Not Empty"); if(aValue.isPresent()) { print("Got Not Empty"); }\nIs this a valid Java code snippet?',
       options: ["True", "False"],
       correct: 0,
     },
@@ -3246,7 +3233,7 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "In JavaScript, what does 'if (!a[i]) continue;' do? (i) skips undefined elements (ii) skips null elements (iii) skips non-existent elements",
+      q: "In JavaScript, what does 'if (!a[i]) continue;' do?\n(i) skips undefined elements\n(ii) skips null elements (iii) skips non-existent elements",
       options: [
         "i and ii only",
         "ii and iii only",
@@ -3391,7 +3378,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "public class B { static int x; public static void main(String[] a){ System.out.println(B.x); } }\nWhat is printed?",
+      q: "public class B { static int x; public static void main(String[] a)\n{ System.out.println(B.x); } }\nWhat is printed?",
       options: [
         "prints 0",
         "Compile error",
@@ -3854,7 +3841,7 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "Identify the parts of a lambda expression in Java. (i) Name (ii) Parameter list (iii) Body (iv) Return Type",
+      q: "Identify the parts of a lambda expression in Java.\n(i) Name\n(ii) Parameter list\n(iii) Body (iv) Return Type",
       options: ["i", "iv", "i and iv", "ii and iii"],
       correct: 3,
     },
@@ -4520,7 +4507,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "int[] arr={1,2}; System.out.println(arr[2]); wrapped in try-catch (but not caught here) — what happens?",
+      q: "int[] arr={1,2};\nSystem.out.println(arr[2]); \nwrapped in try-catch (but not caught here) — what happens?",
       options: [
         "Prints 1",
         "Prints 2",
@@ -5647,12 +5634,12 @@ const QUESTION_BANK = {
       correct: [0, 1, 3],
     },
     {
-      q: "What attribute is added in the bean.xml to reduce or eliminate the need\nof<property> and<constructor-arg>?",
+      q: "What attribute is added in the bean.xml to reduce or eliminate the need of<property> and<constructor-arg>?",
       options: ["Autodiscovery", "Autowire", "Scope", "Auto-detect"],
       correct: 1,
     },
     {
-      q: "Which of the following examples summarizes Program to an interface\nrather than an implementation?",
+      q: "Which of the following examples summarizes Program to an interface rather than an implementation?",
       options: [
         "Map m = new HashMap();",
         "ArrayList list = new ArrayList();",
@@ -5662,7 +5649,7 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "If any of the beans implements the BeanPostProcessor interface, Spring\nwill call which of these methods?",
+      q: "If any of the beans implements the BeanPostProcessor interface, Spring will call which of these methods?",
       options: [
         "processBeforeInitialization()",
         "BeanPostProcessor()",
@@ -5674,7 +5661,7 @@ const QUESTION_BANK = {
     {
       q: "Which Collections elements does Spring support?",
       options: [
-        "List, hashmap, arraylist, andset",
+        "List, hashmap, arraylist, and set",
         "List, props, hashmaps, and arraylist",
         "List, set, map, and props",
         "Hashmaps, arraylist, list, and treemap",
@@ -5682,7 +5669,7 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "What will be the result if you use Web-aware Spring Application Context\nscopes in a regular Spring IoC container?",
+      q: "What will be the result if you use Web-aware Spring Application Context scopes in a regular Spring IoC container?",
       options: [
         "It will return nothing.",
         "It will return a NullPointer Exception",
@@ -5692,7 +5679,7 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "Which Bean scopes are valid only in the context of a web-aware Spring\nApplication Context?",
+      q: "Which Bean scopes are valid only in the context of a web-aware Spring Application Context?",
       options: [
         "Singleton and Prototype",
         "Session, Global Session, and Request",
@@ -5702,7 +5689,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "To use java.util.List, what is the Spring Collections element that you\nneed?",
+      q: "To use java.util.List, what is the Spring Collections element that you need?",
       options: ["<list>", "<List>", "<lists>", "util:list"],
       correct: 0,
     },
@@ -5717,7 +5704,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "What is the difference between ClassPathXMLApplicationContext and\nFilePathXMLApplicationContext?",
+      q: "What is the difference between ClassPathXMLApplicationContext and FilePathXMLApplicationContext?",
       options: [
         "First one reads from application class path and second one reads from absolute file path.",
         "First one reads from application class path and second one reads from relative file path.",
@@ -5727,10 +5714,8 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "The Dependency Look up is a methodology where we get the resource",
+      q: "The Dependency Look up is a methodology where we get the resource after demand. There can be various ways to get the resource. Types of Dependency Look up include:",
       options: [
-        "after demand. There can be various ways to get the resource. Types of",
-        "Dependency Look up include:",
         "Factory Method",
         "JNDI Method",
         "Key Word Method",
@@ -5744,7 +5729,7 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "For Java-based configuration, which is the class that sets the Spring\nContext?",
+      q: "For Java-based configuration, which is the class that sets the Spring Context?",
       options: [
         "Annotationconfig",
         "ComponentScan",
@@ -5785,7 +5770,7 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "What annotation wiring element is added to scan packages to find and\nregister beans with in the Application Context?",
+      q: "What annotation wiring element is added to scan packages to find and register beans within the Application Context?",
       options: [
         "<context:annotation-config/>",
         "<context:annotation-scan/>",
@@ -5810,7 +5795,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "Spring handles object creation in order to be non-invasive. Can you\nidentify which definition creates a spring-managed object?",
+      q: "Spring handles object creation in order to be non-invasive. Can you identify which definition creates a spring-managed object?",
       options: [
         "String myObj;",
         "@Autowired private String myObj;",
@@ -5825,9 +5810,8 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "The use of Autodiscovery and Autowire will reduce the amount of",
+      q: "The use of Autodiscovery and Autowire will reduce the amount of ___________.",
       options: [
-        "___________.",
         "Java code generated",
         "Methods generated",
         "XML Spring configurations",
@@ -5836,7 +5820,7 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "Dependency Injection (DI) or Inversion of Control (IOC) is based on which\nHollywood principle ?",
+      q: "Dependency Injection (DI) or Inversion of Control (IOC) is based on which Hollywood principle ?",
       options: [
         "Do not call us. We will call you.",
         "Understand the problem first.",
@@ -5851,12 +5835,12 @@ const QUESTION_BANK = {
       correct: [0, 2, 3],
     },
     {
-      q: "The use of the prototype scope is recommended for ______________ type of",
-      options: ["beans.", "Stateless", "Stateful", "Restless", "Restful"],
+      q: "The use of the prototype scope is recommended for ______________ type of beans.",
+      options: ["Stateless", "Stateful", "Restless", "Restful"],
       correct: 1,
     },
     {
-      q: "Which is the alternative to create, load, and manage beans in a Spring\nApplication?",
+      q: "Which is the alternative to create, load, and manage beans in a Spring Application?",
       options: [
         "Application Factory",
         "Context Factory",
@@ -5866,25 +5850,16 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "Java- based configuration allows bean definition and Spring",
-      options: [
-        "configuration to move out of _________.",
-        "XML files",
-        "Java code",
-        "Property files",
-        "All of the above",
-      ],
+      q: "Java-based configuration allows bean definition and Spring configuration to move out of _________.",
+      options: ["XML files", "Java code", "Property files", "All of the above"],
       correct: 0,
     },
     {
-      q: "Which one of these statements about XML declaration of transaction\nmanager bean is NOT true?",
+      q: "Which one of these statements about XML declaration of transaction manager bean is NOT true?",
       options: [
-        "The tx namespace provides JTA transaction manager declaration",
-        "shortcut syntax.",
+        "The tx namespace provides JTA transaction manager declaration shortcut syntax.",
         "The Id of the bean has to be transactionManager.",
-        "Depending on the application persistence technology, the",
-        "HibernateTransactionManager or the DataSourceTranasctionManager",
-        "could be used as bean class.",
+        "Depending on the application persistence technology, the HibernateTransactionManager or the DataSourceTranasctionManager could be used as bean class.",
         "A default transaction timeout could be given.",
       ],
       correct: 1,
@@ -5900,7 +5875,7 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "What does the JDBC Template users to connect to the database?",
+      q: "What does the JDBC Template uses to connect to the database?",
       options: [
         "A simple java bean with connection properties",
         "A data source bean configuration",
@@ -5935,7 +5910,7 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "What Spring Collection can be used to inject a collection of name-value\npairs, where name and value can be of any type?",
+      q: "What Spring Collection can be used to inject a collection of name-value pairs, where name and value can be of any type?",
       options: ["<set>", "<List>", "<map>", "<props>"],
       correct: 2,
     },
@@ -5950,7 +5925,7 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "To use bean definition template, you should add what attribute in the\nbean?",
+      q: "To use bean definition template, you should add what attribute in the bean?",
       options: [
         'abstract="true"',
         'interface="true"',
@@ -5960,12 +5935,12 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "A collection value of the type java.util.Properties is defined by what\nelement?",
+      q: "A collection value of the type java.util.Properties is defined by what element?",
       options: ["<props>", "<prop>", "<properties>", "<property>"],
       correct: 0,
     },
     {
-      q: "Which of the following is an annotation for Spring Java-based\nconfiguration?",
+      q: "Which of the following is an annotation for Spring Java-based configuration?",
       options: [
         "@Component",
         "@SpringConfiguration",
@@ -5985,7 +5960,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "Which of the following tasks are performed by a JDBCTemplate?",
+      q: "Which of the following tasks are performed by a JDBC Template?",
       options: [
         "Execute SQL query.",
         "Execute Update statements.",
@@ -6040,12 +6015,12 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "A bean is simply an object that is instantiated, assembled and otherwise",
-      options: ["managed by a Spring loc container.", "true", "false"],
+      q: "A bean is simply an object that is instantiated, assembled and otherwise managed by a Spring loc container.",
+      options: ["true", "false"],
       correct: 0,
     },
     {
-      q: "How container load configuration metadata from a variety of external\nresources such as the local file system from the Java CLASSPATH?",
+      q: "How container load configuration metadata from a variety of external resources such as the local file system from the Java CLASSPATH?",
       options: [
         "Application Context constructor",
         "Init()",
@@ -6055,7 +6030,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "Which of following is correct way to load bean definitions from another\nfile?",
+      q: "Which of following is correct way to load bean definitions from another file?",
       options: [
         '<bean id="bean1" class="..." import="something.xml"/>',
         '<resources name="something.xml" import="true"/>',
@@ -6094,7 +6069,7 @@ const QUESTION_BANK = {
     {
       q: "What are responsibilities included for bean factory do ?",
       options: [
-        "Instantiating Instantiating or sourcing application objects",
+        "Instantiating or sourcing application objects",
         "configuring such objects",
         "Assembling the dependencies between these objects",
         "Manage lifecycle of spring",
@@ -6104,14 +6079,12 @@ const QUESTION_BANK = {
     {
       q: "What are the responsibilities of XmlBeanFactory included ?",
       options: [
-        "This implementation allows you to express the objects that compose",
-        "your application",
+        "This implementation allows you to express the objects that compose your application",
         "Resolve inter-dependencies between such objects, in terms of XML",
-        "The XmlBeanFactory takes this XML configuration metadata and uses it",
-        "to create a fully configured system or application",
+        "The XmlBeanFactory takes this XML configuration metadata and uses it to create a fully configured system or application",
         "None of this above",
       ],
-      correct: [0, 1, 2, 4, 5],
+      correct: [0, 1, 2],
     },
     {
       q: "What are the correct ways to instantiate bean?",
@@ -6148,7 +6121,7 @@ const QUESTION_BANK = {
       correct: [0, 1, 2],
     },
     {
-      q: "Which of the following are basic techniques to implement inversion of\ncontrol?",
+      q: "Which of the following are basic techniques to implement inversion of control?",
       options: [
         "using a factory pattern",
         "using a service locator pattern",
@@ -6175,14 +6148,8 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: 'Spring Web MVC (and in Spring in general) is the "Open for extension,',
-      options: [
-        'closed for modification" principle. The reason that this principle is being',
-        "mentioned here is because a number of methods in the core classes in",
-        "Spring Web MVC are marked final.",
-        "true",
-        "false",
-      ],
+      q: 'Spring Web MVC (and in Spring in general) is the "Open for extension, closed for modification" principle. The reason that this principle is being mentioned here is because a number of methods in the core classes in Spring Web MVC are marked final.',
+      options: ["true", "false"],
       correct: 0,
     },
     {
@@ -6203,13 +6170,8 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "You can write your own controller by using",
-      options: [
-        "handleRequestInternal(HttpServletRequest, HttpServletResponse)",
-        "method from abstract controller and a ModelAndView object.",
-        "true",
-        "false",
-      ],
+      q: "You can write your own controller by using handleRequestInternal(HttpServletRequest, HttpServletResponse) method from abstract controller and a ModelAndView object.",
+      options: ["true", "false"],
       correct: 0,
     },
     {
@@ -6280,13 +6242,8 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: 'Spring Web MVC (and in Spring in general) is the "Open for extension, closed for modification"',
-      options: [
-        "principle.The reason that this principle is being mentioned here is because a number of methods in the core",
-        "classes in Spring Web MVC are marked final.",
-        "true",
-        "false",
-      ],
+      q: 'Spring Web MVC (and in Spring in general) is the "Open for extension, closed for modification" principle.The reason that this principle is being mentioned here is because a number of methods in the core classes in Spring Web MVC are marked final.',
+      options: ["true", "false"],
       correct: 2,
     },
     {
@@ -6301,8 +6258,8 @@ const QUESTION_BANK = {
     },
     {
       q: "Which of the following is advice supported by Aspect Annotation?",
-      options: ["@Before B. @After C. @AfterReturning", "All of the mentioned"],
-      correct: 1,
+      options: ["@Before", "@After", "@AfterReturning", "All of the mentioned"],
+      correct: 3,
     },
     {
       q: "Which advice is executed only when joint point returns or throws an exception?",
@@ -6310,8 +6267,8 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "How to inject Spring bean into domain objcts",
-      options: ["AOP", "XML C. AspectJ", "Java Based"],
+      q: "How to inject Spring bean into domain objects",
+      options: ["AOP", "XML", "AspectJ", "Java Based"],
       correct: 2,
     },
     {
@@ -6320,7 +6277,7 @@ const QUESTION_BANK = {
         "scope",
         "postProcessAfterInitialization()",
         "postProcessBeforeInitialization()",
-        "itís own constructor",
+        "it's own constructor",
       ],
       correct: 2,
     },
@@ -6335,7 +6292,7 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "Class used to have full access to the Spring contextís life cycle machinery and dependency injection.",
+      q: "Class used to have full access to the Spring context's life cycle machinery and dependency injection.",
       options: [
         "DelegatingFilterProxy",
         "WebApplicationContextUtils.getRequiredWeb()",
@@ -6345,7 +6302,7 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "Element used to specify access attributes for beanís methods.",
+      q: "Element used to specify access attributes for bean's methods.",
       options: [
         "security:protect",
         "security:intercept",
@@ -6355,7 +6312,7 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "Stated related to Spring Web flows",
+      q: "State related to Spring Web flows",
       options: ["view", "action", "decision", "all of the mentioned"],
       correct: 3,
     },
@@ -6370,9 +6327,8 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "How could you externalize constants from a Spring configuration file or a Spring annotation into a",
+      q: "How could you externalize constants from a Spring configuration file or a Spring annotation into a .properties file? Select one or more",
       options: [
-        ".properties file? Select one or more",
         "By using the <context:property-placeholder /> tag",
         "By using the <util:constant /> tag",
         "By declaring the ConstantPlaceholderConfigurer bean post processor",
@@ -6416,7 +6372,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "Annotation which allows a controllerís field to be assigned using Spring Expression Language(SpEL)",
+      q: "Annotation which allows a controller's field to be assigned using Spring Expression Language(SpEL)",
       options: ["@Value", "@After", "@Default", "@None"],
       correct: 0,
     },
@@ -6431,7 +6387,7 @@ const QUESTION_BANK = {
       correct: [0, 1],
     },
     {
-      q: "Publishing an applicationís data as a REST service requires.",
+      q: "Publishing an application's data as a REST service requires.",
       options: [
         "@RequestMapping",
         "@PathVariable",
@@ -6453,12 +6409,9 @@ const QUESTION_BANK = {
     {
       q: "Which of the following statements is true regarding the @ResponseStatus annotation?\n@ResponseStatus is detected on nested exceptions",
       options: [
-        "The ExceptionHandlerExceptionResolver uses the @ResponseStatus annotation to map exception to HTTP",
-        "status code",
-        "A controller handler is annotated with the @ResponseStatus, the response status set by RedirectView takes",
-        "precedence over the annotation value.",
-        "The @ResponseStatus annotation can go on a @RequestMapping method or a @RestController class or a",
-        "business exception class.",
+        "The ExceptionHandlerExceptionResolver uses the @ResponseStatus annotation to map exception to HTTP status code",
+        "A controller handler is annotated with the @ResponseStatus, the response status set by RedirectView takes precedence over the annotation value.",
+        "The @ResponseStatus annotation can go on a @RequestMapping method or a @RestController class or a business exception class.",
       ],
       correct: 0,
     },
@@ -6473,7 +6426,7 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "How to auto-inject into a field a Spring bean by its name? Select one or more answer choices.",
+      q: "How to auto-inject into a field a Spring bean by its name?",
       options: [
         "By using both the @Autowired and the @Qualifier Spring annotations",
         "By using the @Autowired annotation and naming the field with the bean name",
@@ -6483,10 +6436,8 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "Considering 2 classes AccountServiceImpl and ClientServiceImpl. Any of these 2 classes inherits from each\nother. What is the result of the following pointcut expression?",
+      q: "Considering 2 classes AccountServiceImpl and ClientServiceImpl. Any of these 2 classes inherits from each\nother. What is the result of the following pointcut expression?\nexecution(* *..AccountServiceImpl.update(..))\n&&\nexecution(* *..ClientServiceImpl.update(..))",
       options: [
-        "execution(* *..AccountServiceImpl.update(..))",
-        "&& execution(* *..ClientServiceImpl.update(..))",
         "No joint point is defined",
         "Matches public update methods of the 2 classes, whatever the arguments",
         "Matches any update methods of the 2 classes, whatever the arguments and method visibility",
@@ -6495,15 +6446,15 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "Select the right statement about referring a Spring configuration file inside the package\ncom.example.myapp in the below example?",
+      q: 'Select the right statement about referring a Spring configuration file inside the package\ncom.example.myapp in the below example?\nApplicationContext context = new ClassPathXmlApplicationContext("classpath:/com.example.myapp.config.xml");',
+
       options: [
-        "ApplicationContext context = new",
-        'ClassPathXmlApplicationContext("classpath:/com.example.myapp.config.xml");',
         "all of the above",
         "The classpath: prefix could be omitted",
         "Package name using the dot character is not well formatted",
         "The slash character preceding com.example could be omit",
       ],
+
       correct: 0,
     },
     {
@@ -6556,9 +6507,8 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "Select methodís signatures that match with the following pointcut:",
+      q: "Select method's signatures that match with the following pointcut:\nexecution(* com.test.service..*.*(*))",
       options: [
-        "execution(* com.test.service..*.*(*))",
         "void com.test.service.MyServiceImpl#transfert(Money amount)",
         "void com.test.service.account.MyServiceImpl#transfert(Money amount)",
         "void com.test.service.MyServiceImpl#transfert(Account account, Money amount)",
@@ -6588,9 +6538,8 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "Using JdbcTemplate, what is the Spring provided class you will use for result set parsing and merging",
+      q: "Using JdbcTemplate, what is the Spring provided class you will use for result set parsing and merging rows into a single object? Select a unique answer.",
       options: [
-        "rows into a single object? Select a unique answer.",
         "ResultSetExtractor",
         "RowMapper",
         "RowCallbackHandler",
@@ -6619,9 +6568,8 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "Is the following pointcut expression correct?",
+      q: "Is the following pointcut expression correct?\nexecution(* ArithmeticCalculator.*(..))",
       options: [
-        "execution(* ArithmeticCalculator.*(..))",
         "Yes",
         "No",
         "If every target class is in same package",
@@ -6790,16 +6738,6 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "LoggerInterceptor which implements the HandlerInterceptor.The LoggerInterceptor\nwill override the which following methods",
-      options: [
-        "preHandlerBean(), postHandlerBean(), afterCompletion()",
-        "PreProcessHandler(), PostProcessHandler(), afterCompletion()",
-        "PreHandler(), PostHandler(), afterCompletion()",
-        "none",
-      ],
-      correct: 2,
-    },
-    {
       q: "Which Annotation is used to refer to Pointcuts",
       options: ["@PointCut.", "@PointCutExecution.", "@PointCutBefore."],
       correct: 0,
@@ -6811,7 +6749,7 @@ const QUESTION_BANK = {
     },
     {
       q: "Which annotation is used to create Primary KEY :",
-      options: ["ForeignKey.", "ii. JoinedKey.", "iii. JoinColumn.", "ANS: C"],
+      options: ["ForeignKey", "JoinedKey", "JoinColumn"],
       correct: 2,
     },
     {
@@ -6825,9 +6763,9 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "Which endpoints are provided by Spring Boot to monitor metrics of individual",
+      q: "Which endpoints are provided by Spring Boot to monitor metrics of individual microservices?",
       options: [
-        "microservices? /actuator /health",
+        "/actuator /health",
         "/actuator",
         "/rest",
         "/logger",
@@ -6836,9 +6774,8 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "REST service endpoint comprises of which address? Starts with http:// and may end",
+      q: "REST service endpoint comprises of which address?",
       options: [
-        "with?",
         "Starts with http:// and may end with?",
         "No certain URL is specified",
         "Depends upon the platform used",
@@ -6856,8 +6793,8 @@ const QUESTION_BANK = {
       note: "answer was 'All of the above' -> marked all options correct",
     },
     {
-      q: "The __ attribute of a React form is called when the main action button inside the",
-      options: ["form is pressed.", "onSubmit", "onChange", "onComplete"],
+      q: "The __ attribute of a React form is called when the main action button inside the form is pressed.",
+      options: ["onSubmit", "onChange", "onComplete"],
       correct: 0,
       note: null,
     },
@@ -6899,7 +6836,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "Which of the below API Calls provides you the security information ? 1) HttpServletRequest.isUserinRole() 2) HttpServletRequest.getUserPrincipal()",
+      q: "Which of the below API Calls provides you the security information ?\n1) HttpServletRequest.isUserinRole()\n2) HttpServletRequest.getUserPrincipal()",
       options: ["Only 1", "Only 2", "Both i and ii"],
       correct: 2,
     },
@@ -7015,9 +6952,8 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "Using JdbcTemplate, what is the Spring provided class you will use for result set parsing and merging rows",
+      q: "Using JdbcTemplate, what is the Spring provided class you will use for result set parsing and merging rows into a single object? Select a unique answer.",
       options: [
-        "into a single object? Select a unique answer.",
         "ResultSetExtractor",
         "RowMapper",
         "RowCallbackHandler",
@@ -9915,7 +9851,7 @@ const QUESTION_BANK = {
         "Both A and B are valid",
         "db.articles.textSearch('mongodb')",
       ],
-      correct: 2,
+      correct: 0,
     },
     {
       q: "Write a query to delete the 'users' collection completely from the current database.",
@@ -10149,7 +10085,7 @@ const QUESTION_BANK = {
     },
     {
       q: "Which of the following code will give an error on the MongoDB command shell?",
-      options: ["use databasename", "show dbs", "USE databasename", "db"],
+      options: ["use databasename", "show dbs", "USE databasename", "Db"],
       correct: 2,
     },
     {
@@ -10172,7 +10108,7 @@ const QUESTION_BANK = {
       options: [
         "Secondary Indices are not available in MongoDB.",
         "MongoDB supports search by field, range queries and regular expression matches.",
-        "MongoDB can store the business subject in the minimal number of documents.",
+        "C .MongoDB can store the business subject in the minimal number of documents.",
       ],
       correct: 0,
     },
@@ -10184,6 +10120,7 @@ const QUESTION_BANK = {
     {
       q: "Where in an HTML document is the correct place to refer to an external style sheet?",
       options: [
+        "In the <head> section",
         "In the <body> section",
         "In the <head> section",
         "At the end of the document",
@@ -10257,7 +10194,7 @@ const QUESTION_BANK = {
     },
     {
       q: "Which one is NOT a spring data MongoDB annotation ?",
-      options: ["@Document", "@Field", "@Entity", "@Query"],
+      options: ["@Document", "@Field", "@Entity", "@Query."],
       correct: 2,
     },
     {
@@ -10371,7 +10308,7 @@ const QUESTION_BANK = {
     {
       q: "Which Java Collection types can you inject in a Spring application?",
       options: [
-        "Using list, set, map or collection tag",
+        "Using lit, set, map or collection tag",
         "Using list, set, props or collection tag",
         "Using list, set, map or props tag",
         "Using list, collection, map or props tag",
@@ -12923,8 +12860,9 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "JSON-RPC is a remote procedure call protocol to use observables, Angular uses a third-party library called . . . . . . .",
+      q: "JSON-RPC is a remote procedure call protocol",
       options: [
+        "38) To use observables, Angular uses a third-party library called . . . . . . .",
         "ng2-bootstrap",
         "angular-cli",
         "numeral",
@@ -12933,8 +12871,14 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to manage the subscription yourself.",
-      options: ["subscribe()", "subs()", "subscribed()", "None of above"],
+      q: "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to manage the",
+      options: [
+        "subscription yourself.",
+        "subscribe()",
+        "subs()",
+        "subscribed()",
+        "None of above",
+      ],
       correct: 0,
     },
     {
@@ -12960,15 +12904,15 @@ const QUESTION_BANK = {
         "Both asynchronous & synchronous",
         "None of above",
       ],
-      correct: 1,
+      correct: 2,
     },
     {
-      q: "Promises are more advanced than Observables.",
+      q: ". Promises are more advanced than Observables.",
       options: ["True", "False"],
       correct: 1,
     },
     {
-      q: "Which class is used to create a black navigation bar?",
+      q: ". Which class is used to create a black navigation bar?",
       options: [
         ".navbar-default",
         ".navbar-black",
@@ -12978,7 +12922,7 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "The .container-fluid class provides",
+      q: ". The .container-fluid class provides",
       options: [
         "Fixed width container",
         "Table format",
@@ -12993,17 +12937,17 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "How to get information about browsers?",
+      q: ") How to get information about browsers?",
       options: ["Browser", "version", "navigator"],
       correct: 2,
     },
     {
-      q: "----- is an HTML specification used to add more information to HTML tags.",
+      q: ") ----- is an HTML specification used to add more information to HTML tags.",
       options: ["Macrodata", "Microdata", "Minidata", "Modifydata"],
       correct: 1,
     },
     {
-      q: "What is the purpose of the mimeTypes property of a plug-in entry?",
+      q: ") What is the purpose of the mimeTypes property of a plug-in entry?",
       options: [
         "Contains MIME properties",
         "Contains MIME sizes",
@@ -13013,7 +12957,7 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "Which of the following can be implemented using animation?",
+      q: ") Which of the following can be implemented using animation?",
       options: [
         "Fireworks",
         "fade Effect",
@@ -13023,12 +12967,12 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "Which is the property that represents the content displayed in the window?",
+      q: ") Which is the property that represents the content displayed in the window?",
       options: ["document", "content", "window", "frame"],
       correct: 0,
     },
     {
-      q: "How can we make methods available on all objects?",
+      q: ") How can we make methods available on all objects?",
       options: [
         "Object.add(methods)",
         "Object.methods(add)",
@@ -13038,7 +12982,7 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "The four kinds of class members are______",
+      q: ") The four kinds of class members are______",
       options: [
         "Instance methods, Instance fields, Static method, Dynamic method",
         "Instance fields,Instance methods, Class fields, class methods",
@@ -13048,12 +12992,12 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "Which field is required in <input>",
+      q: ")Which field is required in <input>",
       options: ["required", "minlength", "Both"],
       correct: 0,
     },
     {
-      q: "How can we add/ delete in an array and return the removed item.",
+      q: ") How can we add/ delete in an array and return the removed item.",
       options: ["slice", "shift", "reverse", "splice"],
       correct: 3,
     },
@@ -13089,7 +13033,7 @@ const QUESTION_BANK = {
     },
     {
       q: "Which of the following code will give an error on the MongoDB command shell?",
-      options: ["use databasename", "show dbs", "USE databasename", "db"],
+      options: ["use databasename", "show dbs", "USE databasename", "Db"],
       correct: 2,
     },
     {
@@ -13113,8 +13057,14 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "Upon running the following command, what all the fields will be returned in the output? db.collection.find( { qty: { $gt: 6 } }, { name: 1, _id: 0 } )",
-      options: ["_id", "name", "_id, name", "name1, _id0"],
+      q: "Upon running the following command, what all the fields will be returned in the output?",
+      options: [
+        "db.collection.find( { qty: { $gt: 6 } }, { name: 1, _id: 0 } )",
+        "_id",
+        "name",
+        "_id, name",
+        "name1, _id0",
+      ],
       correct: 1,
     },
     {
@@ -13128,8 +13078,14 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "In the following command, what does the second parameter represent? db.collection.find( { qty: { $gt: 6 } }, { name: 1, wins: 1 } )",
-      options: ["Read Concern", "Projection", "Write Concern", "Query"],
+      q: "In the following command, what does the second parameter represent?",
+      options: [
+        "db.collection.find( { qty: { $gt: 6 } }, { name: 1, wins: 1 } )",
+        "Read Concern",
+        "Projection",
+        "Write Concern",
+        "Query",
+      ],
       correct: 1,
     },
     {
@@ -13322,8 +13278,10 @@ const QUESTION_BANK = {
       note: "fuzzy-matched answer text 'D.splice' -> option 'splice'",
     },
     {
-      q: "JSON.parse() function was developed as a safer alternative to",
+      q: ") There are three timing properties you can tune for every animated transition: the duration, the delay, and the",
       options: [
+        "easing function. They are all combined into a single transition timing string.",
+        "Q. JSON.parse() function was developed as a safer alternative to",
         "Go function()",
         "eval()",
         "Function() eval",
@@ -13383,8 +13341,9 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "What is the console output of the following code block:function printName() { name="Mary"; name = "John"; console.log(name);}",
+      q: "What is the console output of the following code block:function printName() { name",
       options: [
+        '= "Mary"; name = "John"; console.log(name);}',
         "Empty",
         "None",
         "John",
@@ -13623,9 +13582,12 @@ const QUESTION_BANK = {
     {
       q: "Which one of the following statements on Java String is correct?",
       options: [
-        "replace() method replaces only first occurrences of a character in invoking string with the given character.",
-        "replace() method replaces last occurrence of a character in invoking string with the given character.",
-        "replace() method replaces all occurrences of one character in invoking string with the given character.",
+        "replace() method replaces only first occurrences of a character in invoking string with the",
+        "given character.",
+        "replace() method replaces last occurrence of a character in invoking string with the given",
+        "character.",
+        "replace() method replaces all occurrences of one character in invoking string with the",
+        "given character.",
         "replace() method replaces all the characters in invoking string with the given character.",
       ],
       correct: 2,
@@ -13643,12 +13605,12 @@ const QUESTION_BANK = {
         "A finally block is NOT Mandatory.",
         "A finally block is executed, only if an exception occurs.",
       ],
-      correct: 1,
+      correct: 3,
     },
     {
       q: "Which of the following methods CANNOT be used to add array elements in Javascript ?",
       options: ["push()", "splice()", "shift()", "All can be used."],
-      correct: 2,
+      correct: 3,
     },
     {
       q: "Annotation added as an input parameter to the handler method.",
@@ -14945,9 +14907,8 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "AngularJS can show or hide HTML depending on the state of data in the model. You do so using a set of",
+      q: "AngularJS can show or hide HTML depending on the state of data in the model. You do so using a set of AngularJS directives such as . . . . . . which are created specifically for that purpose.",
       options: [
-        "AngularJS directives such as . . . . . . which are created specifically for that purpose.",
         "ng-shown, ng-hidden",
         "ng-show, ng-hide",
         "nt-show, nt-hide",
@@ -14956,14 +14917,8 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "EventEmitter class’s simple interface, which basically encompass two methods . . . . . . . . . can therefore be used to trigger",
-      options: [
-        "custom events and listen to events as well, both synchronously or asynchronously.",
-        "exit()",
-        "superscript()",
-        "subscribe()",
-        "emit()",
-      ],
+      q: "EventEmitter class’s simple interface, which basically encompass two methods . . . . . . . . . can therefore be used to trigger custom events and listen to events as well, both synchronously or asynchronously.",
+      options: ["exit()", "superscript()", "subscribe()", "emit()"],
       correct: 2,
     },
     {
@@ -15005,17 +14960,11 @@ const QUESTION_BANK = {
         "Both asynchronous & synchronous",
         "None of above",
       ],
-      correct: 1,
+      correct: 2,
     },
     {
-      q: "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to manage the",
-      options: [
-        "subscription yourself.",
-        "subscribe()",
-        "subs()",
-        "subscribed()",
-        "None of above",
-      ],
+      q: "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to manage the subscription yourself.",
+      options: ["subscribe()", "subs()", "subscribed()", "None of above"],
       correct: 0,
     },
     {
@@ -15049,8 +14998,8 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "The . . . . . decorator allows us to define the pipe name that is globally available for use in any template in the across",
-      options: ["application.", "@pipeName", "@pipeDeco", "$Pipe", "@Pipe"],
+      q: "The . . . . . decorator allows us to define the pipe name that is globally available for use in any template in the across application.",
+      options: ["@pipeName", "@pipeDeco", "$Pipe", "@Pipe"],
       correct: 3,
     },
     {
@@ -15084,24 +15033,13 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "To make your applications ready for animations, you must include the AngularJS Animate library and then you must refer to",
-      options: [
-        "the . . . . . module in your application.",
-        "ng-repeat",
-        "ngAnimation",
-        "ngAnimate",
-        "None of above",
-      ],
+      q: "To make your applications ready for animations, you must include the AngularJS Animate library and then you must refer to the . . . . . module in your application.",
+      options: ["ng-repeat", "ngAnimation", "ngAnimate", "None of above"],
       correct: 2,
     },
     {
       q: "Using the . . . . . . animation function, the parent animation can allow the child animation to run at the exact correct time.",
-      options: [
-        "animateChild",
-        "childAnimate",
-        "animateInner",
-        "innerChild",
-      ],
+      options: ["animateChild", "childAnimate", "animateInner", "innerChild"],
       correct: 0,
     },
     {
@@ -15110,9 +15048,8 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: ". . . . . . . is an animation-specific function that is designed to be used inside of Angular's animation DSL",
+      q: ". . . . . . . is an animation-specific function that is designed to be used inside of Angular's animation DSL language. It is used to kick off a reusable animation that is created using animation().",
       options: [
-        "language. It is used to kick off a reusable animation that is created using animation().",
         "useAnimation",
         "reuseAnimation",
         "in-useAnimation",
@@ -15141,7 +15078,7 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: ". Which of the following bootstrap styles are used to create a justified tabs navigation?",
+      q: "Which of the following bootstrap styles are used to create a justified tabs navigation?",
       options: [
         "nav, .nav-tabs",
         "nav, .nav-pills",
@@ -15240,7 +15177,7 @@ const QUESTION_BANK = {
         "A method of the AppModule",
         "A method of the routed component",
         "A method of the AppComponent",
-        "D .A method of the RouterModule",
+        "A method of the RouterModule",
       ],
       correct: 3,
     },
@@ -15340,55 +15277,31 @@ const QUESTION_BANK = {
       note: null,
     },
     {
-      q: "EventEmitter class’s simple interface, which basically encompass two methods . . . . . . . . . can therefore be",
-      options: [
-        "used to trigger custom events and listen to events as well, both synchronously or asynchronously.",
-        "exit()",
-        "superscript()",
-        "subscribe()",
-        "emit()",
-      ],
+      q: "EventEmitter class’s simple interface, which basically encompass two methods . . . . . . . . . can therefore be used to trigger custom events and listen to events as well, both synchronously or asynchronously.",
+      options: ["exit()", "superscript()", "subscribe()", "emit()"],
       correct: 2,
       note: null,
     },
     {
-      q: "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to",
-      options: [
-        "manage the subscription yourself.",
-        "subscribe()",
-        "subs()",
-        "subscribed()",
-        "None of above",
-      ],
+      q: "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to manage the subscription yourself.",
+      options: ["subscribe()", "subs()", "subscribed()", "None of above"],
       correct: 0,
       note: null,
     },
     {
-      q: "The . . . . . decorator allows us to define the pipe name that is globally available for use in any template in the",
-      options: [
-        "across application.",
-        "@pipeName",
-        "@pipeDeco",
-        "$Pipe",
-        "@Pipe",
-      ],
+      q: "The . . . . . decorator allows us to define the pipe name that is globally available for use in any template in the across application.",
+      options: ["@pipeName", "@pipeDeco", "$Pipe", "@Pipe"],
       correct: 3,
       note: null,
     },
     {
-      q: "To make your applications ready for animations, you must include the AngularJS Animate library and then",
-      options: [
-        "you must refer to the . . . . . module in your application.",
-        "ng-repeat",
-        "ngAnimation",
-        "ngAnimate",
-        "None of above",
-      ],
+      q: "To make your applications ready for animations, you must include the AngularJS Animate library and then you must refer to the . . . . . module in your application.",
+      options: ["ng-repeat", "ngAnimation", "ngAnimate", "None of above"],
       correct: 2,
       note: null,
     },
     {
-      q: ". Promises are more advanced than Observables.",
+      q: "Promises are more advanced than Observables.",
       options: ["True", "False"],
       correct: 1,
       note: null,
@@ -15404,7 +15317,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "AngularJS Expressions are written inside double braces like {{ expression}}.",
+      q: "AngularJS Expressions are written inside double braces like {{expression}}.",
       options: ["false", "true"],
       correct: 1,
     },
@@ -15494,49 +15407,23 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "Event Emitter class’s simple interface, which basically encompass two methods . . . .",
-      options: [
-        ". . . . . can therefore be used to trigger custom events and listen to events as well, both",
-        "synchronously or asynchronously.",
-        "exit()",
-        "superscript()",
-        "subscribe()",
-        "emit()",
-      ],
+      q: "Event Emitter class’s simple interface, which basically encompass two methods . . . .. . . . . can therefore be used to trigger custom events and listen to events as well, both synchronously or asynchronously.",
+      options: ["exit()", "superscript()", "subscribe()", "emit()"],
       correct: 2,
     },
     {
-      q: "The . . . . . . . . . directive substitutes the normal href property and makes it easier to",
-      options: [
-        "work with route links in Angular 2. Moreover if we want to navigate between routes, we",
-        "use the . . . . . . . . . . . directive.",
-        "RouterLinks",
-        "RouterLinking",
-        "RouterLink",
-        "RouterLinq",
-      ],
+      q: "The . . . . . . . . . directive substitutes the normal href property and makes it easier to work with route links in Angular 2. Moreover if we want to navigate between routes, we use the . . . . . . . . . . . directive.",
+      options: ["RouterLinks", "RouterLinking", "RouterLink", "RouterLinq"],
       correct: 2,
     },
     {
-      q: "Route . . . . . . . . . . allow us to pass values in our url to our component so we can",
-      options: [
-        "dynamically change our view content.",
-        "pipes",
-        "modules",
-        "variables",
-        "parameters",
-      ],
+      q: "Route . . . . . . . . . . allow us to pass values in our url to our component so we can dynamically change our view content.",
+      options: ["pipes", "modules", "variables", "parameters"],
       correct: 3,
     },
     {
-      q: "The . . . . . decorator allows us to define the pipe name that is globally available for",
-      options: [
-        "use in any template in the across application.",
-        "@pipeName",
-        "@pipeDeco",
-        "$Pipe",
-        "@Pipe",
-      ],
+      q: "The . . . . . decorator allows us to define the pipe name that is globally available for use in any template in the across application.",
+      options: ["@pipeName", "@pipeDeco", "$Pipe", "@Pipe"],
       correct: 3,
     },
     {
@@ -16829,9 +16716,8 @@ const QUESTION_BANK = {
       note: null,
     },
     {
-      q: "Which of the following will correctly import the items exported by this export statement?",
+      q: "Which of the following will correctly import the items exported by this export statement? export { GetUser as GetLibraryUser, GetBook as GetLibraryBook };",
       options: [
-        "export { GetUser as GetLibraryUser, GetBook as GetLibraryBook };",
         "import TypeScript from './library';",
         "import namespace from './library';",
         "import { GetLibraryUser, GetLibraryBook } from './library';",
@@ -16848,9 +16734,8 @@ const QUESTION_BANK = {
       note: null,
     },
     {
-      q: "function fun1(...params) {\nconsole.log(params.length);\n}\nfun1();\nfun1(5);\nfun1(5, 6, 7);",
+      q: "function fun1(...params) {\nconsole.log(params.length);\n}\nfun1();\nfun1(5);\nfun1(5, 6, 7); Which concept resemble the above program",
       options: [
-        "Which concept resemble the above program",
         "String Interpolation",
         "Tagged Templates",
         "Spread Operator/Rest Parameters",
@@ -16905,31 +16790,31 @@ const QUESTION_BANK = {
       note: null,
     },
     {
-      q: ") Typescript uses which datatype?",
+      q: "Typescript uses which datatype?",
       options: ["boolean", "string", "Number", "void", "All the above"],
       correct: 4,
       note: null,
     },
     {
-      q: ") How to declear variable in Typescript?",
+      q: "How to declare variable in Typescript?",
       options: ["Var", "Let", "Both"],
       correct: 2,
       note: null,
     },
     {
-      q: ") Default access modifier typescript?",
+      q: "Default access modifier typescript?",
       options: ["public", "private", "protected"],
       correct: 0,
       note: null,
     },
     {
-      q: ")How to implements inheritence in typescript?",
+      q: "How to implements inheritence in typescript?",
       options: ["implements", "extends"],
       correct: 1,
       note: null,
     },
     {
-      q: ") Typescript is co...........",
+      q: "Typescript is co...........",
       options: ["It supports overloading", "partial", "No"],
       correct: 0,
       note: null,
@@ -18597,25 +18482,25 @@ const QUESTION_BANK = {
       note: null,
     },
     {
-      q: "Route . . . . . . . . . . allow us to pass values in our url to our component so we can dynamically change our view",
-      options: ["content.", "pipes", "modules", "variables", "parameters"],
+      q: "Route . . . . . . . . . . allow us to pass values in our url to our component so we can dynamically change our view content.",
+      options: ["pipes", "modules", "variables", "parameters"],
       correct: 3,
       note: null,
     },
     {
-      q: ". Route . . . . . . . . . . allow us to pass values in our url to our component so we can dynamically change our",
-      options: ["view content.", "pipes", "modules", "variables", "parameters"],
+      q: ". Route . . . . . . . . . . allow us to pass values in our url to our component so we can dynamically change our view content.",
+      options: ["pipes", "modules", "variables", "parameters"],
       correct: 3,
       note: null,
     },
     {
       q: 'The string "api/route" in Express is an example of a...',
-      options: ["Middleware", "B .Route", "Error Handler"],
+      options: ["Middleware", "Route", "Error Handler"],
       correct: 1,
     },
     {
-      q: "The ______ attribute of a React form is called when the main action button inside the",
-      options: ["form is pressed.", "onSubmit", "onChange", "onComplete"],
+      q: "The ______ attribute of a React form is called when the main action button inside the form is pressed.",
+      options: ["onSubmit", "onChange", "onComplete"],
       correct: 0,
     },
     {
@@ -18645,8 +18530,8 @@ const QUESTION_BANK = {
     },
     {
       q: "Which of the following API is a MUST for every React Component ?",
-      options: ["getInitialState.", "render", "renderComponent."],
-      correct: 2,
+      options: ["getInitialState", "render", "renderComponent"],
+      correct: 1,
     },
     {
       q: "What are the advantages of using React?",
@@ -18698,7 +18583,7 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: ". What does the “webpack” command do ?",
+      q: "What does the “webpack” command do ?",
       options: [
         "Runs React Local Development Server.",
         "Transpiles all the Javascript down into one file.",
@@ -18729,7 +18614,7 @@ const QUESTION_BANK = {
         "aria-* attributes should be converted to camelCase like other attributes. For example: className, onChange, and so on",
         "React is yet to support the WAI-ARIA standard.",
       ],
-      correct: 3,
+      correct: 0,
     },
     {
       q: "What is the purpose of the useState hook?",
@@ -18811,7 +18696,7 @@ const QUESTION_BANK = {
       note: null,
     },
     {
-      q: "Which of the following API is a MUST for every React component? render",
+      q: "Which of the following API is a MUST for every React component?",
       options: ["getInitialState", "render", "renderComponent"],
       correct: 1,
     },
@@ -18836,16 +18721,6 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "appender. 2. logger 3. component.",
-      options: [
-        "Using Babel",
-        "Using Typescript.",
-        "Using Flux.",
-        "Using Redux.",
-      ],
-      correct: 1,
-    },
-    {
       q: "How can you access the state of a component from inside of a member function in React?",
       options: [
         "this.getState()",
@@ -18853,7 +18728,7 @@ const QUESTION_BANK = {
         "this.state",
         "this.values",
       ],
-      correct: 3,
+      correct: 2,
     },
     {
       q: "Which of the following APIs is a MUST for every React Component?",
@@ -18896,7 +18771,7 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "How can you access the state of a component from inside a member function (2)?",
+      q: "How can you access the state of a component from inside a member function?",
       options: [
         "this.getState()",
         "this.prototype.stateValue",
@@ -20282,8 +20157,8 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "Shift-left concept refers to moving everything to the earlier phase in the ________",
-      options: ["cycle.", "Requirement", "Development", "Design", "Testing"],
+      q: "Shift-left concept refers to moving everything to the earlier phase in the ________ cycle.",
+      options: ["Requirement", "Development", "Design", "Testing"],
       correct: 1,
     },
     {
@@ -20598,12 +20473,12 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: "What does it mean to publish a REST service in Spring? (i) Publishing data as JSON (ii) Publishing data as XML (iii) Sharing DB between microservices using DAO",
+      q: "What does it mean to publish a REST service in Spring?\n(i) Publishing data as JSON\n(ii) Publishing data as XML\n(iii) Sharing DB between microservices using DAO",
       options: ["Only i", "Only i and ii", "Only ii", "All of the above"],
       correct: 1,
     },
     {
-      q: "Which of the following statements is true about microservices architecture? (i) must deploy on same host (ii) supports high availability of individual microservices (iii) cannot be used with DevOps (iv) designed using bounded context communicating with other bounded contexts",
+      q: "Which of the following statements is true about microservices architecture?\n(i) must deploy on same host\n(ii) supports high availability of individual microservices\n(iii) cannot be used with DevOps\n(iv) designed using bounded context communicating with other bounded contexts",
       options: ["Only i", "Only ii", "Only ii and iv", "All of the above"],
       correct: 2,
     },
@@ -22494,8 +22369,8 @@ const QUESTION_BANK = {
       correct: 2,
     },
     {
-      q: 'What is the console output of the following code block:function printName() { name = "Mary"; name = "John"; console.log(name);}',
-      options: ["Empty", "None", "John", "Mary"],
+      q: 'What is the console output of the following code block:function printName() { name = "Mary"; name = "John";',
+      options: ["console.log(name);}", "Empty", "None", "John", "Mary"],
       correct: 2,
     },
     {
@@ -22554,7 +22429,7 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "What symbol identifies a generator function?",
+      q: "Q 6. What symbol identifies a generator function?",
       options: ["1. &", "2. @", "3. $", "4. *"],
       correct: 3,
     },
@@ -22969,8 +22844,9 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "Which of the following will correctly import the items exported by this export statement? export { GetUser as GetLibraryUser, GetBook as GetLibraryBook };",
+      q: "Which of the following will correctly import the items exported by this export statement?",
       options: [
+        "export { GetUser as GetLibraryUser, GetBook as GetLibraryBook };",
         "import TypeScript from './library';",
         "import namespace from './library';",
         "import { GetLibraryUser, GetLibraryBook } from './library';",
@@ -23051,8 +22927,9 @@ const QUESTION_BANK = {
       correct: 4,
     },
     {
-      q: "function fun1(...params) {\nconsole.log(params.length);\n}\nfun1();\nfun1(5);\nfun1(5, 6, 7); Which concept resemble the above program",
+      q: "function fun1(...params) {\nconsole.log(params.length);\n}\nfun1();\nfun1(5);\nfun1(5, 6, 7);",
       options: [
+        "Which concept resemble the above program",
         "String Interpolation",
         "Tagged Templates",
         "Spread Operator/Rest Parameters",
@@ -23322,8 +23199,8 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "____________ contains the navigation menu, or other navigation functionality for the page.",
-      options: ["section", "header", "nav", "aside"],
+      q: "____________ contains the navigation menu, or other navigation functionality for the",
+      options: ["page", "section", "header", "nav", "aside"],
       correct: 2,
     },
     {
@@ -23612,7 +23489,7 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "Which attribute is required to make an  <input> a mandatory field?",
+      q: "Which attribute is required to make an &lt;input&gt; a mandatory field?",
       options: [
         "required",
         "minlength",
@@ -23787,6 +23664,3505 @@ const QUESTION_BANK = {
       correct: 2,
     },
   ],
+  // ---- Test 1 (full-length, 60 Qs, matches official section weightage) ----
+  test1: [
+    // IBM Cloud Microservices – Java (8)
+    {
+      q: 'What is the output of the following Java code snippet?\npublic class home implements Runnable {\npublic void run() {\nSystem.out.printf("%d",3);\n}\npublic static void main(String[] args) throws InterruptedException {\nThread thread = new Thread(new home());\nthread.start();\nSystem.out.printf("%d",1);\nthread.join();\nSystem.out.printf("%d",2);\n}\n}',
+      options: ["132", "123", "213", "312"],
+      correct: 0,
+    },
+    {
+      q: "Which of the following is the immutable Java List static factory method ?",
+      options: ["List.of", "List.immutable.", "List.create"],
+      correct: 0,
+    },
+    {
+      q: "What is the command line tool introduced for the JS engine in Java 8 ?",
+      options: ["jjs", "jss", "jfs", "jbd"],
+      correct: 0,
+    },
+    {
+      q: "Identify the Java class used to create a new Process.",
+      options: ["ProcessBuilder", "ProcessFactory", "Process", "Thread"],
+      correct: 0,
+    },
+    {
+      q: "Pick the correct Java method reference usages.",
+      options: [
+        "object::instanceMethod",
+        "Class::staticMethod",
+        "Class::new",
+        "All of the above",
+      ],
+      correct: 3,
+    },
+    {
+      q: "Which one will allow traversing a Java collection in each direction?",
+      options: ["ListIterator", "Iterator", "MapIterator", "SetIterator"],
+      correct: 0,
+    },
+    {
+      q: "Pick the class that is NOT part of the Java collection framework.",
+      options: ["Map", "List", "Queue", "Struct"],
+      correct: 3,
+    },
+    {
+      q: "Java Functional Interface can be defined as _____.",
+      options: [
+        "Simple Abstract Markup",
+        "Simple Active Markup",
+        "Single Ambivalue Method",
+        "Single Abstract Method",
+      ],
+      correct: 3,
+    },
+    // IBM Cloud Microservices – HTML5, CSS and Bootstrap (6)
+    {
+      q: "Whenever you are assigning two classes to a tag , you must separate them with a",
+      options: ["Space", "Comma", "Dash"],
+      correct: 0,
+    },
+    {
+      q: "____________ contains the navigation menu, or other navigation functionality for the page",
+      options: ["section", "header", "nav", "aside"],
+      correct: 2,
+    },
+    {
+      q: "Which of the following properties sets the distance between an element’s right border and the rightmost edge of its content?",
+      options: ["auto", "padding-left", "padding-right", "Padding-top"],
+      correct: 2,
+    },
+    {
+      q: "Bootstrap's grid system allows up to how many columns across the page?",
+      options: ["6 columns", "12 columns", "16 columns", "24 columns"],
+      correct: 1,
+    },
+    {
+      q: "Which CSS property is used to change the font of an element?",
+      options: ["font", "font-family", "font-style", "font-weight"],
+      correct: 1,
+    },
+    {
+      q: "Choose the correct HTML element to define important text.",
+      options: ["<strong>", "<important>", "<b>", "<pre>"],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – JavaScript (7)
+    {
+      q: "What built-in functions allows you to convert a string into an integer?",
+      options: ["toInt()", "parseInt()", "toInteger()", "parseString()"],
+      correct: 1,
+    },
+    {
+      q: "What is a function in JavaScript?",
+      options: [
+        "An instance of a class",
+        "A statement that evaluates an expression",
+        "A block of organized, reusable code that performs a single action",
+        "Code that allows us to write loops",
+      ],
+      correct: 2,
+    },
+    {
+      q: "What is the output of the following?\ngreet = function(...months){ months.forEach(month => console.log('Month: ' +\nmonth));}greet([ 'Jan', 'Feb']);",
+      options: [
+        "Jan Feb",
+        "ReferenceError",
+        "Month: Jan,Feb",
+        "Month: Jan E. Month: Feb",
+      ],
+      correct: 2,
+    },
+    {
+      q: 'function display(num1, num2) { console.log(num1, num2); } let nums = "12345"; display(...nums); What is the output?',
+      options: ["1 2", "2 1", "1 2 3 4 5", "4 5"],
+      correct: 0,
+    },
+    {
+      q: 'function printName() { name = "Mary"; name = "John"; console.log(name); } What is the console output?',
+      options: ["Empty", "None", "John", "Mary"],
+      correct: 2,
+    },
+    {
+      q: "Babel compiles the JavaScript code you write into",
+      options: ["ECMAScript 5", "ECMAScript 7", "ECMAScript 3", "ECMAScript 6"],
+      correct: 0,
+    },
+    {
+      q: "In JavaScript, does 'var' declare a block-scoped variable?",
+      options: ["True", "False"],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – Angular (8)
+    {
+      q: "EventEmitter class’s simple interface, which basically encompass two methods . . . . . . . . . can therefore be used to trigger",
+      options: [
+        "custom events and listen to events as well, both synchronously or asynchronously.",
+        "exit()",
+        "superscript()",
+        "subscribe()",
+        "emit()",
+      ],
+      correct: 2,
+    },
+    {
+      q: "Route . . . . . . . . . . allow us to pass values in our url to our component so we can dynamically change our view content.",
+      options: ["pipes", "modules", "variables", "parameters"],
+      correct: 3,
+    },
+    {
+      q: "Observables help you manage . . . . . . . . data.",
+      options: [
+        "synchronous",
+        "asynchronous",
+        "Both asynchronous & synchronous",
+        "None of above",
+      ],
+      correct: 2,
+    },
+    {
+      q: "The promise becomes . . . . . . after resolving or rejecting.",
+      options: ["mutable", "ignored", "immutable", "recurring"],
+      correct: 2,
+    },
+    {
+      q: "Which of the following is not built-in pipe in Angular",
+      options: ["DatePipe", "CurrencyPipe", "DataPipe", "PercentPipe"],
+      correct: 2,
+    },
+    {
+      q: "What is the purpose of the pure property in the @Pipe decorator?",
+      options: [
+        "It marks the pipe as synchronous",
+        "It controls whether Angular re-evaluates the pipe only on pure change detection",
+        "It prevents the pipe from being used in other modules",
+        "It removes the pipe from the component tree",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Attribute binding is similar to property binding but is tied to the . . . . . . . . rather than the DOM property.",
+      options: [
+        "Page attribute",
+        "DOM attribute",
+        "Root attribute",
+        "HTML attribute",
+      ],
+      correct: 3,
+    },
+    {
+      q: "It's always possible to make use of animation input parameters by setting even more data via the . . . . .property.",
+      options: [
+        "options.param",
+        "option.params",
+        "option.param",
+        "options.params",
+      ],
+      correct: 3,
+    },
+    // IBM Cloud Microservices – React (7)
+    {
+      q: 'The string "api/route" in Express is an example of a...',
+      options: ["Middleware", "Route", "Error Handler"],
+      correct: 1,
+    },
+    {
+      q: 'Which library allows the use of the "require" keyword in front-end code?',
+      options: ["guid", "Browserify", "React", "jQuery"],
+      correct: 1,
+    },
+    {
+      q: "Which of the following are automation tools?",
+      options: ["Gulp", "JSX", "Express"],
+      correct: 0,
+    },
+    {
+      q: "True or false : The only thing that can change the data inside a store is the store itself.",
+      options: ["false", "true"],
+      correct: 1,
+    },
+    {
+      q: "The Gulp task which takes a stream and outputs a file is...",
+      options: ["src", "task", "dest"],
+      correct: 2,
+    },
+    {
+      q: "Which of the following API is a MUST for every React Component ?",
+      options: ["getInitialState", "render", "renderComponent"],
+      correct: 2,
+    },
+    {
+      q: "What is React in MVC?",
+      options: ["Controller", "Middleware", "Model", "Router"],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – MongoDB (7)
+    {
+      q: "In MongoDB, what is the equivalent of SQL term row?",
+      options: ["Primary Key", "Index", "Field", "Document"],
+      correct: 3,
+    },
+    {
+      q: "Which of the following code will give an error on the MongoDB command shell?",
+      options: ["use databasename", "show dbs", "USE databasename", "Db"],
+      correct: 2,
+    },
+    {
+      q: "What theorem or principal MongoDB follows?",
+      options: ["APAC", "Always-Sync", "ASCII", "CAP"],
+      correct: 3,
+    },
+    {
+      q: "What method is used to remove a single item from a MongoDB collection?",
+      options: [
+        "db.collection.deleteOne()",
+        "db.collection.delete()",
+        "db.collection.removeOne()",
+        "db.collection.remove()",
+      ],
+      correct: 0,
+    },
+    {
+      q: "db.collection.find( { qty: { $gt: 6 } }, { name: 1, _id: 0 } ) - which fields are returned?",
+      options: ["_id", "name", "_id, name", "name, _id"],
+      correct: 1,
+    },
+    {
+      q: "MongoDB database can be accessed using Spring Data.",
+      options: ["True", "False"],
+      correct: 0,
+    },
+    {
+      q: "How would you limit the results of a find to 10 items?",
+      options: [
+        "adb.collection.find({},{limit:10})",
+        "db.collection.find().limit(10)",
+        "db.collection.limit(query, 10)",
+        "This is not possible in the node.js driver",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – Spring Core, AOP and Testing (5)
+    {
+      q: "By default a bean is lazily loaded.",
+      options: ["True", "False"],
+      correct: 1,
+    },
+    {
+      q: "Which of the following is not a valid difference between @Inject and @Autowired annotations?",
+      options: [
+        "There is no difference and both can be used interchangeably.",
+        "@Autowired is a legacy annotation whereas @Inject is its latest version.",
+        "@Inject is part of Java EE's CDI framework while @Autowired is Spring's own implementation.",
+        "None of these.",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is Spring MVC framework?",
+      options: [
+        "Spring MVC framework is Model-Value-Class architecture and used to bind model data with values.",
+        "The Spring web MVC framework provides model-view-controller architecture and ready components that can be used to develop flexible and loosely coupled web applications.",
+        "Spring MVC framework is used for Transaction management for Web Applications.",
+        "Spring MVC framework is used for AOP for Web Applications.",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is the default scope of stateless beans in Spring?",
+      options: ["global-session", "singleton", "prototype", "request"],
+      correct: 1,
+    },
+    {
+      q: "LoggerInterceptor which implements the HandlerInterceptor.The LoggerInterceptor will override the\nwhich following methods",
+      options: [
+        "preHandlerBean(), postHandlerBean(), afterCompletion()",
+        "PreProcessHandler(), PostProcessHandler(), afterCompletion()",
+        "PreHandler(), PostHandler(), afterCompletion()",
+        "none",
+      ],
+      correct: 2,
+    },
+    // IBM Cloud Microservices – Spring DAO, Hibernate and JPA (3)
+    {
+      q: "What are the ways to access Hibernate by using Spring?",
+      options: [
+        "Inversion of Control with a Hibernate Template and Callback.",
+        "Extending HibernateDAOSupport and applying an AOP Interceptor.",
+        "Both of the above.",
+        "None of the above.",
+      ],
+      correct: 2,
+    },
+    {
+      q: "You can only use Hibernate in ORM in Spring Boot Applications.",
+      options: ["TRUE", "FALSE"],
+      correct: 1,
+    },
+    {
+      q: "Which of the following database is not supported using jdbcTemplate?",
+      options: ["MySql", "PostgresSql", "NoSql", "Oracle"],
+      correct: 2,
+    },
+    // IBM Cloud Microservices – Spring Boot and REST Services (4)
+    {
+      q: "How do you activate a specific Spring Boot profile named 'prod'?",
+      options: [
+        "By naming the config file application.properties only",
+        "By setting spring.profiles.active=prod in application.properties or via the command line as --spring.profiles.active=prod",
+        "By annotating the main class with @ActiveProfile('prod')",
+        "Profiles are activated automatically based on the OS environment",
+      ],
+      correct: 1,
+    },
+    {
+      q: "How can you reload your changes on Spring Boot without restarting the server?",
+      options: [
+        "Add the spring-boot-devtools dependency",
+        "Add the spring-boot-test dependency",
+        "Add the spring-boot-web dependency",
+        "Add the spring-boot-jasper dependency",
+      ],
+      correct: 0,
+    },
+    {
+      q: "What is Swagger (Springdoc/SpringFox) used for in a Spring Boot REST API?",
+      options: [
+        "To automatically test all REST endpoints",
+        "To automatically generate interactive API documentation from your REST controller code",
+        "To secure REST endpoints with OAuth2",
+        "To validate request and response JSON schemas",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Annotation to add security to your spring boot app?",
+      options: [
+        "@EnableWebSecurity",
+        "@EnableSecurity",
+        "@EnableSpringSecurity",
+      ],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – Microservices (3)
+    {
+      q: "Microservices: What is a key benefit of microservices architecture?",
+      options: [
+        "Monolithic codebase",
+        "Independent scalability",
+        "Tight coupling",
+        "Single database",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which of the following statements is true about microservices architecture?\n(i) must deploy on same host\n(ii) supports high availability of individual microservices\n(iii) cannot be used with DevOps\n(iv) designed using bounded context communicating with other bounded contexts",
+      options: ["Only i", "Only ii", "Only ii and iv", "All of the above"],
+      correct: 2,
+    },
+    {
+      q: "Microservices is most closely related to which other established acronym?",
+      options: ["API", "AWS", "GCP", "PAAS"],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – DevOps (2)
+    {
+      q: "Load Balancing improves the distribution of workloads across multiple computing resources , such as computers or a computer cluster.",
+      options: ["True.", "False."],
+      correct: 0,
+    },
+    {
+      q: "Shift-left concept refers to moving everything to the earlier phase in the ________",
+      options: ["cycle.", "Requirement", "Development", "Design", "Testing"],
+      correct: 1,
+    },
+  ],
+  // ---- Test 2 (full-length, 60 Qs, matches official section weightage) ----
+  test2: [
+    // IBM Cloud Microservices – Java (8)
+    {
+      q: "static int x=10; Test t=new Test(); t.x=20; System.out.println(Test.x);",
+      options: ["10", "20", "30", "Error"],
+      correct: 1,
+    },
+    {
+      q: "In Java, which of the following data structure classes CANNOT be type parameterized?",
+      options: ["List", "Set", "Array", "Map"],
+      correct: 2,
+    },
+    {
+      q: "Which code fragment, inserted before the last line, allows the code to compile?\n\nimport java.util.Date;\nimport java.text.DateFormat;\nDateFormat df;\nDate date = new Date();\n// insert code here\nString s = df.format(date);",
+      options: [
+        "df = new DateFormat();",
+        "df = Date.getFormat();",
+        "df = date.getFormat();",
+        "df = DateFormat.getFormat();",
+        "df = DateFormat.getInstance();",
+      ],
+      correct: 4,
+    },
+    {
+      q: 'What is the output of this code?\nint i = 0;\nfor (; i < 3; i++) {\n    if (i == 1) continue;\n    System.out.print(i + " ");\n}',
+      options: ["0 1 2", "0 2", "1 2", "0 1"],
+      correct: 1,
+    },
+    {
+      q: "A programmer needs a java.util.List with an efficient add(0, object) but does NOT need quick random access. What supports this?",
+      options: [
+        "java.util.Queue",
+        "java.util.ArrayList",
+        "java.util.LinearList",
+        "java.util.LinkedList",
+      ],
+      correct: 3,
+    },
+    {
+      q: "Which tag is also allowed by static field?",
+      options: ["util:constant", "list", "set", "constructor-args"],
+      correct: 0,
+    },
+    {
+      q: "Which statement best describes the relationship between DevOps and Continuous Delivery?",
+      options: [
+        "DevOps and Continuous Delivery are the same thing.",
+        "DevOps and Continuous Delivery share a background in Agile methods and LEAN thinking.",
+        "DevOps and Continuous Delivery share common processes.",
+        "DevOps and Continuous Delivery are not related and are mutually exclusive.",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which of the following is a valid declaration of a two-dimensional array?",
+      options: [
+        "int[][] arr = new int[5][5];",
+        "int[] arr[] = new int[5][5];",
+        "int arr[][] = new int[5][5];",
+        "All of the above",
+      ],
+      correct: 3,
+    },
+    // IBM Cloud Microservices – HTML5, CSS and Bootstrap (6)
+    {
+      q: ".What syntax allows for a variable number of arguments to a function where the arguments are passed as an array?",
+      options: [
+        "1. function([]numbers) { }",
+        "2. function(*numbers) { }",
+        "3. function(...numbers) { }",
+        "4. function(numbers[]) { }",
+      ],
+      correct: 2,
+    },
+    {
+      q: "To change the datatype from one type to another,we require",
+      options: ["TypeOperator", "TypeAssertion", "InferredTyping"],
+      correct: 1,
+    },
+    {
+      q: "Which Bootstrap classes create a justified tabs navigation?",
+      options: [
+        ".nav, .nav-tabs",
+        ".nav, .nav-pills",
+        ".nav, .nav-pills, .nav-stacked",
+        ".nav, .nav-tabs, .nav-justified",
+      ],
+      correct: 3,
+    },
+    {
+      q: "What does the following code do: input:checked + label { font-weight: bold; }?",
+      options: [
+        "Makes the label bold when the input receives focus",
+        "Makes the label bold that immediately follows a checked input (works with checkboxes/radio buttons)",
+        "Targets all labels that are siblings of any input",
+        "It is invalid CSS because input and label cannot be combined",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What access modifier limits the accessibility of a class member to its own class and subclasses?",
+      options: ["export", "internal", "protected", "private", "sensitive"],
+      correct: 2,
+    },
+    {
+      q: "To get the first or nth child you use",
+      options: ["the nested selector", "A pseudo-class"],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – JavaScript (7)
+    {
+      q: ") Which of the following can be impplemented using animation?",
+      options: [
+        "Fireworks",
+        "fade Effect",
+        "Roll-in or Roll-out",
+        "All of the mentioned",
+      ],
+      correct: 3,
+    },
+    {
+      q: "Which method is used to add an event listener?",
+      options: [
+        "addEvent()",
+        "attachEvent()",
+        "addEventListener()",
+        "onEvent()",
+      ],
+      correct: 2,
+    },
+    {
+      q: "What is the command line tool introduced for the JS engine in Java 8 ?",
+      options: ["jjs", "jss", "jfs", "jbd"],
+      correct: 0,
+    },
+    {
+      q: "In Node.js, what is a stream and why is it beneficial for reading large files?",
+      options: [
+        "A stream is a synchronous file reader; it's faster because it avoids callbacks",
+        "A stream allows reading data in chunks, so the entire file doesn't need to be loaded into memory at once",
+        "A stream is a network connection protocol built into Node.js",
+        "Streams are only useful for video data",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which method converts a JSON string into a JavaScript object?",
+      options: [
+        "JSON.stringify()",
+        "JSON.parse()",
+        "JSON.toObject()",
+        "JSON.decode()",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which Node.js built-in module is used to work with file and directory paths in a cross-platform way?",
+      options: ["fs", "os", "path", "url"],
+      correct: 2,
+    },
+    {
+      q: "Attribute binding is similar to property binding but is tied to the . . . . . . . . rather than the DOM property.",
+      options: [
+        "Page attribute",
+        "DOM attribute",
+        "Root attribute",
+        "HTML attribute",
+      ],
+      correct: 3,
+    },
+    // IBM Cloud Microservices – Angular (8)
+    {
+      q: "Which Angular decorator marks a class as available for dependency injection?",
+      options: ["@Injectable", "@Inject", "@Service", "@Component"],
+      correct: 0,
+    },
+    {
+      q: "A currency filter is applied to an expression using the pipe character.",
+      options: ["True", "False"],
+      correct: 0,
+    },
+    {
+      q: "A data binding has these four parts:",
+      options: [
+        "host element, curly brackets, target, expression",
+        "host element, square brackets, target, evaluation",
+        "host element, square brackets, target, expression",
+        "host element, parentheses, target, expression",
+      ],
+      correct: 2,
+    },
+    {
+      q: "In Angular, one can create local HTML reference or HTML tag using variable\nwhich starts with character ____",
+      options: ["@", "#", "“", "&"],
+      correct: 1,
+    },
+    {
+      q: "What are the 4 main types of data binding in Angular?",
+      options: [
+        "Property [ ], Interpolation {{ }}, Event ( ), Two-way [( )]",
+        "Property {{ }}, Interpolation [ ], Event ( ), Two-way ( )[ ]",
+        "Only property and event binding exist",
+        "Interpolation, animation, routing, and pipes",
+      ],
+      correct: 0,
+    },
+    {
+      q: "On the opposite side of event bindings (( )) lie Angular's square-bracket syntax ([ ]), which signifies a:",
+      options: [
+        "property binding",
+        "class binding",
+        "style binding",
+        "both A & B",
+      ],
+      correct: 0,
+    },
+    {
+      q: "How do you create a custom pipe in Angular?",
+      options: [
+        "Using @Directive with a transform method",
+        "Using @Pipe decorator with a transform method",
+        "Using @Component with a pipes array",
+        "Using @Injectable with a name property",
+      ],
+      correct: 1,
+    },
+    {
+      q: "In Angular, how can you set a header in every http request ?",
+      options: [
+        "Use HttpClientInterceptor.",
+        "Extend HttpClient class.",
+        "Set as a request header parameter.",
+      ],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – React (7)
+    {
+      q: "What is the purpose of JSON Web Tokens (JWT) in React authentication?",
+      options: [
+        "To style components dynamically",
+        "To store user preferences in localStorage",
+        "To securely transmit user identity information between client and server",
+        "To manage component state globally",
+      ],
+      correct: 2,
+    },
+    {
+      q: "How to create a ref in functional component?",
+      options: [
+        "const ref = useRef();",
+        "const ref = createRef();",
+        "const ref = useState();",
+        "const ref = useEffect();",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Where is an authentication token commonly stored in a React app?",
+      options: [
+        "In the React component's state only",
+        "In localStorage or sessionStorage",
+        "Directly in JSX",
+        "In a CSS variable",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is Redux Saga?",
+      options: [
+        "A testing library for Redux reducers",
+        "A middleware that uses generator functions to handle side effects in Redux",
+        "A replacement for Redux reducers",
+        "A tool for combining multiple Redux stores",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What does an Error Boundary in React do?",
+      options: [
+        "Catches errors in asynchronous code",
+        "Catches JavaScript errors in child components and displays a fallback UI",
+        "Prevents all runtime errors in the application",
+        "Handles network request failures",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which lifecycle method is used to implement an Error Boundary?",
+      options: [
+        "componentDidUpdate",
+        "componentWillUnmount",
+        "componentDidCatch",
+        "shouldComponentUpdate",
+      ],
+      correct: 2,
+    },
+    {
+      q: "How does React handle the Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) standard?",
+      options: [
+        "aria-* HTML attributes are fully supported in JSX where most DOM properties and attributes in React are camelCased, these attributes should be lowercase.",
+        "React processes aria-* attributes separately and updates the DOM for accessibility if the user requires it.",
+        "aria-* attributes should be converted to camelCase like other attributes. For example: className, onChange, and so on",
+        "React is yet to support the WAI-ARIA standard.",
+      ],
+      correct: 3,
+    },
+    // IBM Cloud Microservices – MongoDB (7)
+    {
+      q: "In MongoDB, which of the following methods returns one document?",
+      options: ["findOne()", "findOne1()", "selectOne()", "find()"],
+      correct: 0,
+    },
+    {
+      q: "NoSQL databases like MongoDB are mainly used for handling large volumes of ______ data.",
+      options: [
+        "unstructured",
+        "structured",
+        "semi-structured only",
+        "all of the above equally",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which command is used to check the status of a replica set?",
+      options: [
+        "rs.status()",
+        "replica.status()",
+        "db.replicaSetStatus()",
+        "sh.status()",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Write an aggregation pipeline to get the distinct values of the 'category' field from the 'products' collection.",
+      options: [
+        "db.products.aggregate([ { $group: { _id: '$category' } } ])",
+        "db.products.aggregate([ { $sort: { category: 1 } } ])",
+        "db.products.aggregate([ { $project: { category: 1 } } ])",
+        "db.products.aggregate([ { $match: { category: { $exists: true } } } ])",
+      ],
+      correct: 0,
+    },
+    {
+      q: "What theorem/principal does MongoDB follow?",
+      options: ["APAC", "Always-Sync", "ASCII", "CAP"],
+      correct: 3,
+    },
+    {
+      q: "Point out the correct statement.",
+      options: [
+        "MongoDB is classified as a NoSQL database",
+        "MongoDB favours XML format more than JSON",
+        "MongoDB is column oriented database store",
+        "All of the mentioned",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which of the following can improve MongoDB query performance?",
+      options: [
+        "Compound index",
+        "Text index",
+        "Unique index",
+        "All of the above",
+      ],
+      correct: 3,
+    },
+    // IBM Cloud Microservices – Spring Core, AOP and Testing (5)
+    {
+      q: "Which statements are true about Inversion of Control (IoC)?",
+      options: [
+        "Decouples task execution from implementation; each module focuses on its purpose; replacing a module shouldn't affect others",
+        "Only 'decoupling of task execution'",
+        "Modules should observe what other systems do (this is false)",
+        "None of the above",
+      ],
+      correct: 0,
+    },
+    {
+      q: "What are the various property editors used in Spring?",
+      options: [
+        "PropertyEditor, URLEditor only",
+        "ClassEditor, CustomDateEditor, StringTrimmerEditor only",
+        "FileEditor, LocaleEditor, StringArrayPropertyEditor only",
+        "All of the above",
+      ],
+      correct: 3,
+    },
+    {
+      q: "What does the @Required annotation mean?",
+      options: [
+        "Bean property must be populated by the user.",
+        "Bean property is required while saving to the database.",
+        "The affected bean property must be populated at configuration time, through explicit value or autowiring.",
+        "Required while serializing the bean.",
+      ],
+      correct: 2,
+    },
+    {
+      q: "What is advice?",
+      options: [
+        "A concern that cuts across multiple classes",
+        "The process of linking aspects with other application types",
+        "Action taken by an aspect at a particular join point",
+        "A method to implement transaction management",
+      ],
+      correct: 2,
+    },
+    {
+      q: "Which annotation allows a controller's field to be assigned using Spring Expression Language (SpEL)?",
+      options: ["@Value", "@After", "@Default", "@None"],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – Spring DAO, Hibernate and JPA (3)
+    {
+      q: "You can only use Hibernate for ORM in Spring Boot Applications.",
+      options: ["True", "False"],
+      correct: 1,
+    },
+    {
+      q: "What does extending JpaRepository<T, ID> give you in Spring Data JPA?",
+      options: [
+        "Only the save() and findById() methods",
+        "Full CRUD operations, pagination, sorting, and the ability to define custom query methods",
+        "A direct connection to the database without Hibernate",
+        "Automatic REST endpoint generation",
+      ],
+      correct: 1,
+    },
+    {
+      q: "To annotate all your Data Access Object (DAO) classes, use the --------",
+      options: ["@Service", "@Classes", "@Repository", "@Component"],
+      correct: 2,
+    },
+    // IBM Cloud Microservices – Spring Boot and REST Services (4)
+    {
+      q: "In Spring Boot testing with MockMvc, what does the following code test?\n\nmockMvc.perform(get('/api/users'))\n  .andExpect(status().isOk())\n  .andExpect(jsonPath('$[0].name').value('Alice'));",
+      options: [
+        "It sends an actual HTTP GET request to a live server",
+        "It performs a mock HTTP GET to /api/users and asserts the response status is 200 and the first element's name is 'Alice'",
+        "It tests the database query for the users table",
+        "It validates the request body of a POST request",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is the correct way to inject a property value with a default fallback in Spring Boot using @Value?",
+      options: [
+        "@Value('${app.timeout}') private int timeout;",
+        "@Value('${app.timeout:30}') private int timeout;",
+        "@Value('${app.timeout || 30}') private int timeout;",
+        "@Value('${app.timeout} default 30') private int timeout;",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is the correct Spring Boot REST controller method to handle a POST request for creating a new resource?",
+      options: [
+        "@GetMapping('/users') public User createUser(@RequestBody User user)",
+        "@PostMapping('/users') public ResponseEntity<User> createUser(@RequestBody User user)",
+        "@PutMapping('/users') public User createUser(@RequestParam User user)",
+        "@CreateMapping('/users') public User createUser(@RequestBody User user)",
+      ],
+      correct: 1,
+    },
+    {
+      q: "In Spring Boot, what does the following test annotation combination do?\n\n@SpringBootTest\n@AutoConfigureMockMvc",
+      options: [
+        "Loads only the web layer without starting a server",
+        "Loads the full application context and auto-configures a MockMvc instance for integration testing the web layer",
+        "Creates a real HTTP server on a random port for testing",
+        "Loads only the service and repository layers without the web layer",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – Microservices (3)
+    {
+      q: "Service discovery tools help by reducing the problem of how processes/services in a cluster find and talk to each other.",
+      options: ["True", "False"],
+      correct: 0,
+    },
+    {
+      q: "What is the role of Apache Tomcat in a CI/CD pipeline?",
+      options: [
+        "Tomcat is a build tool that compiles Java applications",
+        "Tomcat is a Java Servlet/JSP web server and application container used to deploy and serve Java web applications (WARs) as part of a CD pipeline",
+        "Tomcat is a container orchestrator for Java microservices",
+        "Tomcat manages Jenkins job queues",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which of the following statements is true about microservices architecture?",
+      options: [
+        "Must be deployed on the same physical host",
+        "Supports high availability of individual services",
+        "Cannot be used with DevOps",
+        "Are designed using bounded contexts that communicate with other bounded contexts",
+      ],
+      correct: [1, 3],
+    },
+    // IBM Cloud Microservices – DevOps (2)
+    {
+      q: "POM in Maven stands for ________.",
+      options: [
+        "Project Object Model",
+        "Process Object Model",
+        "Project Object Method",
+        "All of the above",
+      ],
+      correct: 0,
+    },
+    {
+      q: 'What does nginx -g "daemon off;" do inside a Docker container?',
+      options: [
+        "Runs NGINX in the background",
+        "Runs NGINX in the foreground",
+        "Stops NGINX",
+        "Restarts NGINX",
+      ],
+      correct: 1,
+    },
+  ],
+  // ---- Test 3 (full-length, 60 Qs, matches official section weightage) ----
+  test3: [
+    // IBM Cloud Microservices – Java (8)
+    {
+      q: "Which of the following is NOT a primitive data type in Java?",
+      options: ["int", "boolean", "String", "char"],
+      correct: 2,
+    },
+    {
+      q: "Java: What is the purpose of the final keyword?",
+      options: [
+        "Prevents method overriding",
+        "Allows dynamic binding",
+        "Enables garbage collection",
+        "Permits multiple inheritance",
+      ],
+      correct: 0,
+    },
+    {
+      q: "What is the key difference between an interface default method and a method in an abstract class in Java 8?",
+      options: [
+        "Default methods in interfaces cannot access state (fields); abstract class methods can access the class's instance fields",
+        "They are functionally identical",
+        "Abstract class methods can be private; interface default methods cannot",
+        "Default interface methods can only be void",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Class.forName() throws which checked exception if the class isn't found?",
+      options: [
+        "ClassNotFoundException",
+        "IOException",
+        "SQLException",
+        "RuntimeException",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which output pattern is correct (checking indices 0 and 4 due to i += 3)?",
+      options: [
+        "'a' is a lower case letter / 'A' is an upper case letter",
+        "'b' is a lower case letter / whitespace",
+        "'a' is a lower case letter / whitespace character",
+        "'a' is a lower case letter / '0' is a digit",
+      ],
+      correct: 0,
+    },
+    {
+      q: 'class exception_handling {\npublic static void main(String args[])\n{\ntry {\nSystem.out.print("Hello" + " "\n+ 1 / 0);\n}\ncatch(ArithmeticException e) {\nSystem.out.print("World");\n}\n}\n}',
+      options: ["Hello", "World", "HelloWorld", "Hello World"],
+      correct: 1,
+    },
+    {
+      q: "Which of the following is a valid Enum feature in Java?",
+      options: [
+        "Enums can extend other classes",
+        "Enums can implement interfaces and have fields, methods, and constructors",
+        "Enum constructors must be public",
+        "Enum values can be dynamically added at runtime",
+      ],
+      correct: 1,
+    },
+    {
+      q: ';\n}\n}\npublic static void main(String[] args) {\nMain obj = new Main();\nSystem.out.println(obj.getValue("DEMOS"));\n}\n}',
+      options: ["D", "DEMOS", "EMOS", "Empty String"],
+      correct: 2,
+    },
+    // IBM Cloud Microservices – HTML5, CSS and Bootstrap (6)
+    {
+      q: "How would you define a string type variable with the value bar in TypeScript?",
+      options: [
+        "let string: foo = 'bar';",
+        "let foo:string = 'bar';",
+        "let string foo = 'bar';",
+        "let foo (string) = 'bar';",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which of the following CSS Property sets the stacking order of positioned elements?",
+      options: ["x-index", "y-index", "z-index"],
+      correct: 2,
+    },
+    {
+      q: "Which tag is NOT a valid HTML5 semantic tag?",
+      options: ["<nav>", "<header>", "<frame>", "<aside>"],
+      correct: 2,
+    },
+    {
+      q: "A <nav> element is placed inside a <footer>. Is this valid HTML5?",
+      options: [
+        "No, <nav> can only appear once per page inside <header>",
+        "Yes, <nav> can be used inside <footer> for secondary navigation such as site links",
+        "No, <footer> cannot contain block-level elements",
+        "Yes, but only if the <nav> contains at least 3 links",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which flags are required to run nodes with ES6?",
+      options: [
+        "1. harmony and strict-mode",
+        "2. experimental and strict-mode",
+        "3. harmony and block-binding",
+        "4. harmony and experimental",
+      ],
+      correct: 3,
+    },
+    {
+      q: "Which CSS property controls the stacking context and visual layering of overlapping elements?",
+      options: ["layer-order", "display-order", "z-index", "stack-level"],
+      correct: 2,
+    },
+    // IBM Cloud Microservices – JavaScript (7)
+    {
+      q: "Which method allows the same event handler function to be registered more than once? When an event of the specified type occurs, the registered function will be invoked as many times as it was registered.",
+      options: [
+        "addEvent()",
+        "addMultipltEvent()",
+        "attachEvent()",
+        "reattachEvent()",
+      ],
+      correct: 2,
+    },
+    {
+      q: "Pick the correct Java Stream API’s?",
+      options: [
+        "Stream.allMatch",
+        "Stream.noneMatch",
+        "Stream.anyMatch",
+        "All the above",
+      ],
+      correct: 3,
+    },
+    {
+      q: 'What is the output of: console.log(!!"false");',
+      options: ["false", "true", "undefined", '"false"'],
+      correct: 1,
+    },
+    {
+      q: "What is the purpose of the 'async/await' syntax?",
+      options: [
+        "To write asynchronous code in a synchronous style",
+        "To make functions run faster",
+        "To create web workers",
+        "To handle errors more easily",
+      ],
+      correct: 0,
+    },
+    {
+      q: "How can you detect the client's browser name in JavaScript?",
+      options: [
+        "client.navName",
+        "navigator.appName",
+        "browser.name",
+        "window.browser",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Using the . . . . . . animation function, the parent animation can allow the child animation to run at the exact",
+      options: [
+        "correct time.",
+        "animateChild",
+        "childAnimate",
+        "animateInner",
+        "innerChild",
+      ],
+      correct: 0,
+    },
+    {
+      q: "There is no catch method on a promise.",
+      options: ["True", "False"],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – Angular (8)
+    {
+      q: "Which structural directive iterates over a list?",
+      options: ["*ngIf", "*ngFor", "*ngRepeat", "*ngLoop"],
+      correct: 1,
+    },
+    {
+      q: "When you apply an Angular 'pipe', it changes the value of the underlying component's member variable as well.",
+      options: ["True", "False"],
+      correct: 1,
+    },
+    {
+      q: "Which syntax is used for event binding in Angular?",
+      options: [
+        '[click]="onClick()"',
+        '{{click}}="onClick()"',
+        '(click)="onClick()"',
+        '[(click)]="onClick()"',
+      ],
+      correct: 2,
+    },
+    {
+      q: "Which of the following bootstrap styles are used to create a vertical pills navigation?",
+      options: [
+        ".nav, .nav-tabs",
+        ".nav, .nav-pills",
+        ".nav, .nav-pills, .nav-stacked",
+        ".nav, .nav-tabs, .nav-justified",
+      ],
+      correct: 2,
+    },
+    {
+      q: "The ______ decorator allows us to define a pipe's name for use across an application.",
+      options: ["@pipeName", "@pipeDeco", "$Pipe", "@Pipe"],
+      correct: 3,
+    },
+    {
+      q: "Which testing framework does Angular use by default for unit tests?",
+      options: ["Mocha", "Jest", "Jasmine", "Chai"],
+      correct: 2,
+    },
+    {
+      q: "Scope acts as glue between controller and view.",
+      options: ["True", "False"],
+      correct: 0,
+    },
+    {
+      q: "Promises are more advanced than Observables.",
+      options: ["True", "False"],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – React (7)
+    {
+      q: 'Correct way to update state? const [user, setUser] = useState({ name:"John", age:30 });',
+      options: [
+        'setUser({ name:"Jane" })',
+        'setUser({ ...user, name:"Jane" })',
+        'user.name="Jane"',
+        'setUser(user.name="Jane")',
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which hook is used to access URL parameters in React Router v6?",
+      options: ["useLocation", "useHistory", "useParams", "useRouteMatch"],
+      correct: 2,
+    },
+    {
+      q: "Route . . . . . . . . . . allow us to pass values in our url to our component so we can dynamically change our view content.",
+      options: ["pipes", "modules", "variables", "parameters"],
+      correct: 3,
+    },
+    {
+      q: "True or false: The only thing that can change the data inside a Flux/Redux store is the store itself.",
+      options: ["False", "True"],
+      correct: 1,
+    },
+    {
+      q: "How does the Context API solve prop drilling?",
+      options: [
+        "It compresses prop data before passing it",
+        "It allows data to be shared across the component tree without passing props at every level",
+        "It automatically detects which components need props",
+        "It converts all props into global variables",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is React?",
+      options: [
+        "Just a server-side framework",
+        "Just a user-interface framework",
+        "Both a server-side framework as well as a user-interface framework",
+      ],
+      correct: 2,
+    },
+    {
+      q: "How do you define a URL parameter in React Router v5?",
+      options: [
+        "<Route path='/user?id' />",
+        "<Route path='/user/:id' />",
+        "<Route path='/user[id]' />",
+        "<Route path='/user/id' />",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – MongoDB (7)
+    {
+      q: "What is the purpose of the 'mongod' process?",
+      options: [
+        "The MongoDB shell client",
+        "The primary daemon process for MongoDB database",
+        "A backup utility for MongoDB",
+        "A monitoring tool for MongoDB performance",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Identify the correct statement about MongoDB queries.",
+      options: [
+        "Queries specify criteria/conditions that identify the documents MongoDB returns to clients",
+        "Write operations retrieve data stored in the database",
+        "Selection has no effect on data returned over the network",
+        "None of the above",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which one is NOT a spring data MongoDB annotation ?",
+      options: ["@Document", "@Field", "@Entity", "@Query."],
+      correct: 2,
+    },
+    {
+      q: "What is the role of a primary node in a MongoDB replica set?",
+      options: [
+        "It only serves read queries",
+        "It accepts all write operations and is the source for replication",
+        "It acts as a backup and never accepts writes",
+        "It distributes queries to secondary nodes",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which method returns exactly one document from a MongoDB collection?",
+      options: ["findOne()", "findOne1()", "selectOne()", "getOne()"],
+      correct: 0,
+    },
+    {
+      q: "Which classes are commonly used to work with MongoDB in a Spring application?",
+      options: [
+        "MongoTemplate",
+        "MongoRepository",
+        "MongoClient",
+        "All of the above",
+      ],
+      correct: 3,
+    },
+    {
+      q: "What is the difference between $push and $addToSet update operators?",
+      options: [
+        "$push adds an item to an array; $addToSet adds an item only if not already present",
+        "$push adds to the beginning; $addToSet adds to the end",
+        "$push works on strings; $addToSet works on numbers",
+        "There is no difference; they are aliases",
+      ],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – Spring Core, AOP and Testing (5)
+    {
+      q: "Which element must be used to configure Spring MVC? all inside < >",
+      options: [
+        "mvc:annotation-driven",
+        "aop:aspect",
+        "tx:advice",
+        "oxm:jaxb2-marshaller",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which are correct ways to instantiate a Spring IoC container?",
+      options: [
+        "Only via ApplicationContext",
+        "Only via XmlBeanFactory",
+        "Only via BeanFactory + ClassPathXmlApplicationContext",
+        "All of the above are valid ways",
+      ],
+      correct: 3,
+    },
+    {
+      q: "Which is the annotation for Spring Java-based configuration?",
+      options: [
+        "@Component",
+        "@SpringConfiguration",
+        "@SpringXml",
+        "@Configuration",
+      ],
+      correct: 3,
+    },
+    {
+      q: "How do you handle shutdown of the Spring IoC container?",
+      options: [
+        "Using shutdownHook()",
+        "Using shutdownHandler()",
+        "Using registerHook()",
+        "Using registerShutdownHook()",
+      ],
+      correct: 3,
+    },
+    {
+      q: "Below compilation option create smaller in size and faster in performance angular distributed package",
+      options: ["JIT", "AOT"],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – Spring DAO, Hibernate and JPA (3)
+    {
+      q: "What is Spring Data JPA and what problem does it solve?",
+      options: [
+        "A Spring module for raw JDBC operations with type-safe queries",
+        "A Spring module that reduces boilerplate data access code by providing repository interfaces with built-in CRUD operations and query generation",
+        "A replacement for Hibernate that uses SQL instead of JPQL",
+        "A caching layer that stores JPA entities in memory",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is the purpose of @Transactional on a test method in Spring Boot?",
+      options: [
+        "It makes the test run faster by batching database operations",
+        "It wraps the test in a transaction that is automatically rolled back after the test completes, keeping the database clean",
+        "It commits all changes made during the test to the real database",
+        "It is required for all tests that access the database",
+      ],
+      correct: 1,
+    },
+    {
+      q: "In a Spring Boot project, what does the following property do?\n\nspring.jpa.show-sql=true",
+      options: [
+        "It enables the H2 console for viewing the database",
+        "It logs all SQL statements generated by Hibernate to the console",
+        "It validates all SQL queries at startup",
+        "It shows slow SQL queries only",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – Spring Boot and REST Services (4)
+    {
+      q: "What is Thymeleaf in Spring Boot?",
+      options: [
+        "A database migration tool for Spring Boot",
+        "A server-side Java template engine that renders HTML views and integrates naturally with Spring MVC",
+        "A JavaScript framework bundled with Spring Boot",
+        "A REST API testing tool for Spring Boot applications",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is an embedded server in Spring Boot and what is the default?",
+      options: [
+        "A virtual machine bundled with the application; default is JBoss",
+        "A servlet container packaged within the application JAR so no external server installation is needed; default is Tomcat",
+        "A mock server used for testing; default is MockMvc",
+        "A cloud server provisioned automatically; default is AWS",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which annotation adds security to your Spring Boot app?",
+      options: [
+        "@EnableWebSecurity",
+        "@EnableSecurity",
+        "@EnableSpringSecurity",
+      ],
+      correct: 0,
+    },
+    {
+      q: "How do you build a jar from a Maven-based Spring Boot app via command line?",
+      options: [
+        "mvn install followed by jar cvf build/classes",
+        "mvn spring-boot:jar",
+        "mvn package",
+        "mvn compile",
+      ],
+      correct: 2,
+    },
+    // IBM Cloud Microservices – Microservices (3)
+    {
+      q: "What does it mean to publish a REST service in Spring?\n(i) Publishing data as JSON\n(ii) Publishing data as XML\n(iii) Sharing DB between microservices using DAO",
+      options: ["Only i", "Only i and ii", "Only ii", "All of the above"],
+      correct: 1,
+    },
+    {
+      q: "Microservices: Which pattern ensures loose coupling in microservices?",
+      options: [
+        "Circuit Breaker",
+        "Service Registry",
+        "Event-Driven",
+        "Monolith",
+      ],
+      correct: 2,
+    },
+    {
+      q: "What is a key benefit of microservices architecture?",
+      options: [
+        "Monolithic codebase",
+        "Independent scalability",
+        "Tight coupling",
+        "A single shared database",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – DevOps (2)
+    {
+      q: "In a Jenkins pipeline, what does the 'post' block do?\npost {\n  success { mail to: 'team@company.com', subject: 'Build Passed' }\n  failure { slackSend message: 'Build Failed!' }\n}",
+      options: [
+        "Defines pre-build steps that run before any stage",
+        "Defines post-build actions that run after the pipeline completes, conditionally based on build status (success, failure, always, unstable)",
+        "Configures Jenkins notifications for manual approval gates",
+        "Runs cleanup tasks only when the pipeline is aborted",
+      ],
+      correct: 1,
+    },
+    {
+      q: "DevOps can be implemented in any _________.",
+      options: ["Process", "Environment", "Defects", "None of the above"],
+      correct: 1,
+    },
+  ],
+  // ---- Test 4 (full-length, 60 Qs, matches official section weightage) ----
+  test4: [
+    // IBM Cloud Microservices – Java (8)
+    {
+      q: "Annotation used to declare an introduction",
+      options: ["Before", "After", "@DeclareParents", "None of the mentioned"],
+      correct: 2,
+    },
+    {
+      q: "GIT can be integrated with Jenkins.",
+      options: ["True", "False"],
+      correct: 0,
+    },
+    {
+      q: "What is the output of the code?\n\npublic class Test8 {\n    public static void main(String args[]) {\n        Number numberRef = new Integer(0);\n        Double doubleRef = (Double)numberRef;\n    }\n}",
+      options: ["0", "0.0", "Compilation fails", "Throws exception"],
+      correct: 3,
+    },
+    {
+      q: "What is the difference between Stack and Deque for stack operations in Java?",
+      options: [
+        "Stack is a newer API; Deque is legacy",
+        "Stack extends Vector (legacy, synchronized); ArrayDeque implementing Deque is the preferred modern alternative for stack operations",
+        "Deque only supports queue operations, not stack operations",
+        "They are identical and interchangeable",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which Java Set implementation is both sorted and synchronized?",
+      options: [
+        "TreeSet (sorted, but not synchronized)",
+        "LinkedHashSet",
+        "HashSet",
+        "Collections.synchronizedSortedSet(new TreeSet<>()) — no single built-in class is both by default",
+      ],
+      correct: 3,
+    },
+    {
+      q: "How would you declare and instantiate a variable, given the generic class Bag<T>?",
+      options: [
+        "Bag bag = new Bag();",
+        "Bag<T> bag = new Bag<T>();",
+        "Bag bag<T> = new Bag<T>();",
+        "Bag<T> bag = new Bag();",
+      ],
+      correct: 1,
+    },
+    {
+      q: "A void method does not return a value.",
+      options: ["True", "False"],
+      correct: 0,
+    },
+    {
+      q: "A team of programmers is involved in reviewing a proposed design for a new utility class. After some discussion, they realize that the current design allows other classes to access methods in the utility class that should be accessible only to methods within the utility class itself. What design issue has the team discovered?",
+      options: [
+        "Tight coupling",
+        "Low cohesion",
+        "High cohesion",
+        "Loose coupling",
+        "Weak encapsulation",
+        "Strong encapsulation",
+      ],
+      correct: 4,
+    },
+    // IBM Cloud Microservices – HTML5, CSS and Bootstrap (6)
+    {
+      q: "function fun1(...params) {\nconsole.log(params.length);\n}\nfun1();\nfun1(5);\nfun1(5, 6, 7);",
+      options: [
+        "Which concept resemble the above program",
+        "String Interpolation",
+        "Tagged Templates",
+        "Spread Operator/Rest Parameters",
+        "Object Destructuring",
+      ],
+      correct: 2,
+    },
+    {
+      q: "How can you access the state of a component from inside of a member function in React?",
+      options: [
+        "this.getState()",
+        "this.prototype.stateValue",
+        "this.state",
+        "this.values",
+      ],
+      correct: 3,
+    },
+    {
+      q: "Which statement will allow your code to reference an internal module in a file named shapes.ts using TypeScript?",
+      options: [
+        '/// <reference="shapes.ts" />',
+        '/// <reference path="shapes.ts" />',
+        'import "shapes"',
+        "/// shapes.ts",
+      ],
+      correct: 2,
+    },
+    {
+      q: "What will be the rendered output of: <h1>Hello <span style='display:none'>World</span></h1>?",
+      options: [
+        "Hello World",
+        "Hello",
+        "Hello  (with extra space)",
+        "An error is thrown",
+      ],
+      correct: 1,
+    },
+    {
+      q: "In what direction does float will work? img { float: right;​   }",
+      options: ["left", "top", "bottom", "right"],
+      correct: 3,
+    },
+    {
+      q: "What does the CSS property overflow: hidden do to an element?",
+      options: [
+        "Makes the element transparent",
+        "Clips any content that extends beyond the element's bounds, hiding the overflow",
+        "Adds a scrollbar automatically when content overflows",
+        "Prevents child elements from being positioned outside the parent",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – JavaScript (7)
+    {
+      q: "In the following command, what does the second parameter represent?",
+      options: [
+        "db.collection.find( { qty: { $gt: 6 } }, { name: 1, wins: 1 } )",
+        "Read Concern",
+        "Projection",
+        "Write Concern",
+        "Query",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is the output of: console.log('5' - 3);",
+      options: ["2", "53", "NaN", "TypeError"],
+      correct: 0,
+    },
+    {
+      q: "Which of the following statements are true about Java ?",
+      options: [
+        "A finally block is executed, only after the catch block is executed.",
+        "A finally block is executed whether an exception is thrown or not.",
+        "A finally block is NOT Mandatory.",
+        "A finally block is executed, only if an exception occurs.",
+      ],
+      correct: 3,
+    },
+    {
+      q: "What does the optional chaining operator (?.) do in JavaScript?",
+      options: [
+        "Returns the default value if the left side is false",
+        "Safely accesses nested properties, returning undefined if any intermediate value is null or undefined instead of throwing an error",
+        "Chains multiple Promises together",
+        "Checks if a variable is defined",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which of the following will NOT throw an error?",
+      options: [
+        "JSON.parse('')",
+        "JSON.parse(null)",
+        "JSON.parse()",
+        "JSON.parse({})",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Element used to restrict access to a particular URL.",
+      options: [
+        "restrict-url",
+        "intercept-url",
+        "intercept-restrict",
+        "none of the mentioned",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which routing guard is used to check whether routing can take place or not",
+      options: ["CanActivate", "Resolve", "CanLoad", "CanDeactive"],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – Angular (8)
+    {
+      q: "What is an Observable in Angular?",
+      options: [
+        "A static data structure",
+        "A stream of data that can be subscribed to over time",
+        "A one-time Promise replacement",
+        "A directive for dynamic rendering",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What command is used to deploy an Angular app to GitHub Pages using the CLI?",
+      options: [
+        "ng deploy --target=github",
+        "ng publish",
+        "ng add angular-cli-ghpages then ng deploy",
+        "ng build && git push",
+      ],
+      correct: 2,
+    },
+    {
+      q: "What class is used with @Output to emit custom events?",
+      options: ["EventEmitter", "Subject", "Observable", "BehaviorSubject"],
+      correct: 0,
+    },
+    {
+      q: "Which structural directive conditionally renders an element?",
+      options: ["*ngFor", "*ngSwitch", "*ngIf", "*ngShow"],
+      correct: 2,
+    },
+    {
+      q: "currency filter is applied to an expression using pipe character.",
+      options: ["true", "false"],
+      correct: 0,
+    },
+    {
+      q: "What directive renders the matched route component in the template?",
+      options: [
+        "<ng-template>",
+        "<router-link>",
+        "<router-outlet>",
+        "<route-view>",
+      ],
+      correct: 2,
+    },
+    {
+      q: "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to manage the subscription yourself.",
+      options: ["subscribe()", "subs()", "subscribed()", "None of above"],
+      correct: 0,
+    },
+    {
+      q: "Where should you sort and filter data in an Angular app?",
+      options: [
+        "In a directive",
+        "In a pipe",
+        "In your component",
+        "In a filter",
+      ],
+      correct: 2,
+    },
+    // IBM Cloud Microservices – React (7)
+    {
+      q: "Which of the below methods are NOT a part of React Component's lifecycle?",
+      options: [
+        "Initial Rendering",
+        "Render/Re-Render",
+        "unMounting",
+        "Remote URL calls",
+      ],
+      correct: 3,
+    },
+    {
+      q: "How does React Router make URL params accessible to components?",
+      options: ["parseUrlParams", "State", "getUrlParams", "Props"],
+      correct: 3,
+    },
+    {
+      q: "Which hook performs side effects?",
+      options: ["useEffect", "useReducer", "useContext", "useCallback"],
+      correct: 0,
+    },
+    {
+      q: "What does combineReducers() do in Redux?",
+      options: [
+        "Merges two Redux stores",
+        "Combines multiple reducer functions into a single root reducer",
+        "Dispatches multiple actions at once",
+        "Creates middleware from reducers",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What does a Jest snapshot test do?",
+      options: [
+        "Tests the performance of a component",
+        "Renders a component and saves its output to compare against future renders",
+        "Checks network requests made by the component",
+        "Tests Redux actions only",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What are props in React?",
+      options: [
+        "Internal state of a component",
+        "Inputs passed from parent to child components",
+        "CSS properties applied to components",
+        "Lifecycle methods",
+      ],
+      correct: 1,
+    },
+    {
+      q: "How can you access the state of a component from inside of a member function in React?",
+      options: [
+        "this.getState()",
+        "this.prototype.stateValue",
+        "this.state",
+        "this.values",
+      ],
+      correct: 2,
+    },
+    // IBM Cloud Microservices – MongoDB (7)
+    {
+      q: "Identify the incorrect statement on MongoDB ?",
+      options: [
+        "Secondary Indices are not available in MongoDB.",
+        "MongoDB supports search by field, range queries and regular expression matches.",
+        "C .MongoDB can store the business subject in the minimal number of documents.",
+      ],
+      correct: 0,
+    },
+    {
+      q: "What is the purpose of sharding in MongoDB?",
+      options: [
+        "To replicate data across multiple servers for high availability",
+        "To horizontally partition data across multiple servers for scalability",
+        "To compress data for storage efficiency",
+        "To encrypt data at rest",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is the purpose of the $unwind stage in aggregation?",
+      options: [
+        "Deconstructs an array field into multiple documents",
+        "Removes null values from arrays",
+        "Sorts array elements in ascending order",
+        "Flattens nested objects",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Given a collection 'events' with a 'timestamp' field, write a query to find all events from the last 7 days.",
+      options: [
+        "db.events.find({ timestamp: { $gte: new Date(new Date() - 7*24*60*60*1000) } })",
+        "db.events.find({ timestamp: { $gt: ISODate('2023-01-01') } })",
+        "db.events.find({ timestamp: { $lastDays: 7 } })",
+        "db.events.find({ $where: 'this.timestamp > new Date() - 7*24*60*60*1000' })",
+      ],
+      correct: 0,
+    },
+    {
+      q: "What does the '$out' stage do in an aggregation pipeline?",
+      options: [
+        "Outputs the results to a specified collection, overwriting if it exists",
+        "Sends output to a file system",
+        "Prints output to the console",
+        "Exports results to a CSV file",
+      ],
+      correct: 0,
+    },
+    {
+      q: "What storage format does MongoDB use internally for documents?",
+      options: ["JSON", "BSON", "XML", "YAML"],
+      correct: 1,
+    },
+    {
+      q: "Given a collection 'sales' with documents containing 'amount' and 'date' fields, write an aggregation pipeline to calculate the total sales amount per month.",
+      options: [
+        "db.sales.aggregate([ { $group: { _id: { $month: '$date' }, total: { $sum: '$amount' } } } ])",
+        "db.sales.aggregate([ { $project: { month: '$date', total: '$amount' } }, { $group: { _id: '$month', total: { $sum: '$total' } } } ])",
+        "db.sales.aggregate([ { $group: { _id: { month: { $month: '$date' } }, total: { $sum: '$amount' } } } ])",
+        "Both A and C are correct",
+      ],
+      correct: 3,
+    },
+    // IBM Cloud Microservices – Spring Core, AOP and Testing (5)
+    {
+      q: "Considering 2 classes AccountServiceImpl and ClientServiceImpl. Any of these 2 classes inherits from each\nother. What is the result of the following pointcut expression?\nexecution(* *..AccountServiceImpl.update(..))\n&&\nexecution(* *..ClientServiceImpl.update(..))",
+      options: [
+        "No joint point is defined",
+        "Matches public update methods of the 2 classes, whatever the arguments",
+        "Matches any update methods of the 2 classes, whatever the arguments and method visibility",
+        "Matches any update methods of the 2 classes, with one more arguments and whatever method visibility",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which attribute is used to set the scope of the bean?",
+      options: ["setScope", "scope", "getScope", "none of the mentioned"],
+      correct: 1,
+    },
+    {
+      q: "By default a bean is not autowired?",
+      options: ["True", "False"],
+      correct: 1,
+    },
+    {
+      q: "What is used to dispatch requests to the Web Application?",
+      options: ["DispatcherServlet", "ViewHandler", "ViewResolver"],
+      correct: 0,
+    },
+    {
+      q: "What is the difference between autowire='byName' and autowire='byType' in Spring?",
+      options: [
+        "byName matches beans by their Java class name; byType matches by their XML id",
+        "byName injects by matching the property name to a bean id; byType injects by matching the property's type to a bean type in the container",
+        "byType is the default; byName must be explicitly enabled",
+        "They are identical; both match by bean id",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – Spring DAO, Hibernate and JPA (3)
+    {
+      q: "Shutdown of IOC containers - Using registerShutDownHook 2. <list> - wiring values and allows duplicates 3. Log4J parlance each package name - logger 4. Hibernate uses HibernateException and Jpa uses Persistence Exception - True 5. Unit test is used to validate single domain class - True 6. Lifecycle of JPA - all of the above 7. Bean pattern names is used only in XML based where as it is not used in AspectJ based - True 8. call stored procedures - simpleJDBCCall 9. You indicate a class selector with",
+      options: ["the hash (#) symboL", "the dot (.)", "the tag"],
+      correct: 1,
+    },
+    {
+      q: "Which of the following statements is FALSE? (a–f describe Core/DAO/ORM/AOP/Web/MVC packages)",
+      options: [
+        "Core package provides the IoC/DI feature",
+        "DAO package provides a JDBC-abstraction layer",
+        "ORM package integrates JPA/JDO/Hibernate/iBatis",
+        "AOP decouples crosscutting tasks via method-interceptors/pointcuts",
+        "Web package provides multipart file-upload support",
+        "MVC package provides a Model-View-Controller implementation",
+        "None of these — all statements above are true",
+      ],
+      correct: 6,
+    },
+    {
+      q: "Which class can be used to call Stored Procedures in Spring?",
+      options: [
+        "SPHelper",
+        "JdbcTemplateCall",
+        "JdbcTemplate",
+        "SimpleJdbcCall",
+      ],
+      correct: 3,
+    },
+    // IBM Cloud Microservices – Spring Boot and REST Services (4)
+    {
+      q: "A REST service endpoint's address typically starts with what and may end with what?",
+      options: [
+        "Starts with http:// and may end with a query string (?)",
+        "No certain URL is specified",
+        "Depends entirely on the platform used",
+        "Must always end in .json",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which endpoints are provided by Spring Boot to monitor metrics of individual microservices?",
+      options: [
+        "/actuator /health",
+        "/actuator",
+        "/rest",
+        "/logger",
+        "/health",
+      ],
+      correct: 0,
+    },
+    {
+      q: "What is ResponseEntity in Spring Boot and why is it used?",
+      options: [
+        "A special DTO class that wraps response data",
+        "A Spring class that represents the full HTTP response including status code, headers, and body, giving fine-grained control over the response",
+        "An interface that must be implemented by all REST controllers",
+        "A utility for converting Java objects to JSON",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What endpoint does Spring Boot Actuator expose to check the application's health status?",
+      options: [
+        "/actuator/status",
+        "/actuator/health",
+        "/actuator/ping",
+        "/actuator/alive",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – Microservices (3)
+    {
+      q: "Publishing an application's data as a REST service in Spring typically means:",
+      options: [
+        "Publishing data as JSON over REST",
+        "Publishing data as XML over REST",
+        "Sharing a database directly between two microservices via DAO",
+        "Both publishing as JSON and as XML over REST",
+      ],
+      correct: 3,
+    },
+    {
+      q: "What is the purpose of a Kubernetes Service?",
+      options: [
+        "To schedule pods onto specific nodes",
+        "To provide a stable network endpoint (IP and DNS) for accessing a dynamic set of pods, enabling load balancing and service discovery",
+        "To define persistent storage for pods",
+        "To manage secrets and configuration",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which pattern helps ensure loose coupling between microservices?",
+      options: [
+        "Circuit Breaker",
+        "Service Registry",
+        "Event-Driven architecture",
+        "Monolith pattern",
+      ],
+      correct: 2,
+    },
+    // IBM Cloud Microservices – DevOps (2)
+    {
+      q: "What kind of information does 'docker system df' show you?",
+      options: [
+        "Container network settings",
+        "Disk usage of images, containers, and volumes",
+        "Docker daemon version",
+        "Running container CPU usage",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What does the following Declarative Jenkinsfile section configure?\nenvironment {\n    DOCKER_REGISTRY = 'docker.io/myuser'\n    IMAGE_TAG = \"${env.BUILD_NUMBER}\"\n}",
+      options: [
+        "Defines Docker runtime settings for the Jenkins agent",
+        "Declares pipeline-level environment variables accessible to all stages as DOCKER_REGISTRY and a dynamic IMAGE_TAG using the Jenkins build number",
+        "Sets environment variables only for the first stage",
+        "Configures the Jenkins controller's Docker plugin settings",
+      ],
+      correct: 1,
+    },
+  ],
+  // ---- Test 5 (full-length, 60 Qs, matches official section weightage) ----
+  test5: [
+    // IBM Cloud Microservices – Java (8)
+    {
+      q: 'What is the output of the following?\nOptional<String> opt = Optional.of("Java");\nSystem.out.println(opt.map(String::toUpperCase).orElse("Empty"));',
+      options: ["Empty", "java", "JAVA", "Java"],
+      correct: 2,
+    },
+    {
+      q: "The HTTP/2 Client API is introduced in Java 9.",
+      options: ["True", "False"],
+      correct: 0,
+    },
+    {
+      q: "Which is the correct Java code snippet to be used to create a Functional Interface?",
+      options: [
+        "interface MyFunctionalInterface implements Functional {",
+        "@FunctionalInterface interface MyFunctionalInterface {",
+        "@Functional interface MyFunctionalInterface {",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What are the Different Modes of Autowiring ?",
+      options: [
+        "byName,byType,constructor,autodetect.",
+        "byName,byType,constructor,autocorrect.",
+        "byName,byContent,constructor,autodetect.",
+        "byName,byContent,setter,autodetect.",
+      ],
+      correct: 0,
+    },
+    {
+      q: "What does the Optional class in Java 8 solve?",
+      options: [
+        "It improves performance by lazily computing values",
+        "It wraps a possibly-null value to force explicit handling of the absence of a value, reducing NullPointerExceptions",
+        "It is a container for a fixed list of optional configuration values",
+        "It replaces null entirely; you cannot have null in Java 8+",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is the output of the following?\nint[] a = {1, 2, 3};\nint[] b = a;\nb[0] = 99;\nSystem.out.println(a[0]);",
+      options: ["1", "99", "0", "ArrayIndexOutOfBoundsException"],
+      correct: 1,
+    },
+    {
+      q: "What is the basis for equality state in Java IdentityHashMap?",
+      options: ["Hash Code and equals", "Name", "Reference"],
+      correct: 2,
+    },
+    {
+      q: "DAO methods require access to the session factory, which can be injected via:",
+      options: [
+        "A setter method only",
+        "A constructor argument only",
+        "None of the mentioned",
+        "All of the mentioned (setter or constructor)",
+      ],
+      correct: 3,
+    },
+    // IBM Cloud Microservices – HTML5, CSS and Bootstrap (6)
+    {
+      q: "The main purpose of the placeholder attribute in input controls is:",
+      options: [
+        "Allow the end-user to remember the location in form",
+        'There is no such attribute known as "placeholder"',
+        "Allow the end-user to replace the data control with another",
+        'Display "watermark" data to assist the end-user',
+      ],
+      correct: 3,
+    },
+    {
+      q: "Where is the correct place to insert a JavaScript in an HTML document?",
+      options: [
+        "Only the <head> section",
+        "Only the <body> section",
+        "Both the <head> section and the <body> section are correct",
+        "The <footer> section only",
+      ],
+      correct: 2,
+    },
+    {
+      q: "Which HTML element should be used to represent a list where the order of items does NOT matter?",
+      options: ["<ol>", "<dl>", "<ul>", "<list>"],
+      correct: 2,
+    },
+    {
+      q: "What keyword is used to apply all of the properties on one interface to another interface?",
+      options: ["implements", "extends", "class", "furthers", "references"],
+      correct: 1,
+    },
+    {
+      q: "Which attribute is required to make an &lt;input&gt; a mandatory field?",
+      options: [
+        "required",
+        "minlength",
+        "both required and minlength are needed",
+        "pattern",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which CSS preprocessors are commonly referenced (LESS and/or SASS)?",
+      options: ["LESS only", "SASS only", "Both LESS and SASS", "Neither"],
+      correct: 2,
+    },
+    // IBM Cloud Microservices – JavaScript (7)
+    {
+      q: "What is a pure function?",
+      options: [
+        "A function written in strict mode only",
+        "A function that returns a value and has no side effects, always producing the same output for the same inputs",
+        "A function that only accepts primitive types",
+        "A function declared with the 'pure' keyword",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What will the following code output? console.log([] == false);",
+      options: ["true", "false", "undefined", "TypeError"],
+      correct: 0,
+    },
+    {
+      q: "What is the result of: console.log(5 == '5') and console.log(5 === '5') respectively?",
+      options: ["false, false", "true, true", "true, false", "false, true"],
+      correct: 2,
+    },
+    {
+      q: ") How can we make methods available on all objects?",
+      options: [
+        "Object.add(methods)",
+        "Object.methods(add)",
+        "Object.add.methods(...)",
+        "Object.prototype",
+      ],
+      correct: 3,
+    },
+    {
+      q: '{ "Student": [ "Amy", "Bob", "John" ] } - Student is of type:',
+      options: ["Not a valid JSON string", "Array", "Class", "Object"],
+      correct: 1,
+    },
+    {
+      q: "In Express.js, what happens when you call next() inside a middleware function?",
+      options: [
+        "The response is sent back to the client",
+        "The next matching route handler or middleware in the stack is called",
+        "The server moves to the next HTTP request",
+        "The current middleware is re-executed",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is the purpose of CORS (Cross-Origin Resource Sharing) in an Express API?",
+      options: [
+        "To compress API responses",
+        "To control which origins are allowed to make requests to the API, preventing unauthorized cross-origin access",
+        "To enable HTTPS on the Express server",
+        "To manage database connections across multiple origins",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – Angular (8)
+    {
+      q: "Which library provides Observables used in Angular?",
+      options: ["Zone.js", "RxJS", "NgRx", "Lodash"],
+      correct: 1,
+    },
+    {
+      q: "What happens when a page containing an AngularJS app loads?",
+      options: [
+        "The HTML document is loaded and evaluated by the browser",
+        "The AngularJS script loads and the angular global object is created",
+        "JavaScript registering controller functions is executed",
+        "All of the above, in that order",
+      ],
+      correct: 3,
+    },
+    {
+      q: "When bootstrapping an Angular app, how do you specify the main, top-level app component to be used?",
+      options: [
+        "You add the component as a package in your SystemJs config.",
+        "You load the component directly in your index.html file.",
+        "You add the component to the bootstrap array in your main app module.",
+        "You load the component directly from your main SystemJs package (e.g. main.ts).",
+      ],
+      correct: 2,
+    },
+    {
+      q: "Which routing guard checks whether routing can take place at all?",
+      options: ["CanActivate", "Resolve", "CanLoad", "CanDeactivate"],
+      correct: 0,
+    },
+    {
+      q: "Templates can be a single file (like index.html) or multiple views combined into one page.",
+      options: ["True", "False"],
+      correct: 0,
+    },
+    {
+      q: "AngularJS Expressions are used to bind application data to html.",
+      options: ["true", "false"],
+      correct: 0,
+    },
+    {
+      q: "To make animations work, you include the Animate library and refer to the ____ module in your application.",
+      options: ["ng-repeat", "ngAnimation", "ngAnimate", "none of the above"],
+      correct: 2,
+    },
+    {
+      q: "In Angular / RxJs , when should you unsubscribe from a Subscription ?",
+      options: [
+        "There is no need to unsubscribe . Angular routing handles it.",
+        "Unsubscribe them in ngOnDestroy.",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – React (7)
+    {
+      q: "What is the default port for the React development server?",
+      options: ["3000", "8080", "3306", "8809"],
+      correct: 0,
+    },
+    {
+      q: ". Route . . . . . . . . . . allow us to pass values in our url to our component so we can dynamically change our view content.",
+      options: ["pipes", "modules", "variables", "parameters"],
+      correct: 3,
+    },
+    {
+      q: "Which of these are lifecycle-related React functions?",
+      options: [
+        "componentDidMount",
+        "componentDidUnmount",
+        "render",
+        "componentFailToMount",
+      ],
+      correct: [0, 2],
+    },
+    {
+      q: "What does the 'export default' statement do in a JavaScript module?",
+      options: [
+        "Exports multiple named values",
+        "Makes a single value the default export of the module",
+        "Declares a global variable",
+        "Imports a default module",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Why is the 'key' prop important when rendering lists in React?",
+      options: [
+        "It applies CSS styles to each element",
+        "It helps React identify which items have changed, been added, or removed",
+        "It triggers a re-render of the entire list",
+        "It is used to access the element via refs",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What does React.Fragment allow you to do?",
+      options: [
+        "Split a component into multiple files",
+        "Group multiple elements without adding an extra DOM node",
+        "Create reusable template fragments",
+        "Import external HTML fragments",
+      ],
+      correct: 1,
+    },
+    {
+      q: "The just-in-time JSX transformer is good for",
+      options: [
+        "integrating with JavaScript tools",
+        "simple development workflow",
+        "reusing behavior",
+        "performance",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – MongoDB (7)
+    {
+      q: "Which read concern level in MongoDB provides the highest consistency guarantee?",
+      options: ["local", "available", "majority", "linearizable"],
+      correct: 3,
+    },
+    {
+      q: "Upon running: db.collection.find( { qty: { $gt: 6 } }, { name: 1, _id: 0 } ) — which field(s) will be returned?",
+      options: ["_id", "name", "_id, name", "name1, _id0"],
+      correct: 1,
+    },
+    {
+      q: "What does the $group aggregation stage do?",
+      options: [
+        "Groups documents by a specified key and performs accumulations",
+        "Removes duplicate documents from the result set",
+        "Joins documents from multiple collections",
+        "Sorts documents within groups",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which operator is used to update a field by incrementing its value in MongoDB?",
+      options: ["$inc", "$add", "$increment", "$sum"],
+      correct: 0,
+    },
+    {
+      q: "Write a query to find all documents in 'products' where the 'tags' array contains the value 'electronics'.",
+      options: [
+        "db.products.find({ tags: 'electronics' })",
+        "db.products.find({ tags: { $contains: 'electronics' } })",
+        "db.products.find({ tags: { $in: ['electronics'] } })",
+        "db.products.find({ $arrayContains: { tags: 'electronics' } })",
+      ],
+      correct: [0, 2],
+    },
+    {
+      q: "Which of the following is a valid way to perform a text search in MongoDB?",
+      options: [
+        "db.articles.find({ $text: { $search: 'mongodb' } })",
+        "db.articles.find({ content: /mongodb/ })",
+        "Both A and B are valid",
+        "db.articles.textSearch('mongodb')",
+      ],
+      correct: 0,
+    },
+    {
+      q: "What theorem/principle does MongoDB follow?",
+      options: ["APAC", "Always-Sync", "ASCII", "CAP"],
+      correct: 3,
+    },
+    // IBM Cloud Microservices – Spring Core, AOP and Testing (5)
+    {
+      q: "Which of the following is NOT a real view resolver?",
+      options: [
+        "BeanNameViewResolver",
+        "VelocityViewResolver",
+        "JasperReportsViewResolver",
+        "UrlBasedViewResolver",
+        "ResourceBundleViewResolver",
+      ],
+      correct: 2,
+    },
+    {
+      q: "What is advice? Select a unique answer.",
+      options: [
+        "An action taken by an aspect at a particular join point",
+        "A point during the execution of a program",
+        "An aspect and a pointcut",
+        "A predicate that matches join points",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which terminologies are typically used with regard to AOP: A.Concerns B.Advice C.Float D.Pointcut?",
+      options: ["A, B, and D", "A, C, and D", "A, B, and C", "B, C, and D"],
+      correct: 0,
+    },
+    {
+      q: "To use a bean definition template, what attribute should you add to the bean?",
+      options: [
+        'abstract="true"',
+        'interface="true"',
+        'class="com.example.helloworld"',
+        'public="true"',
+      ],
+      correct: 0,
+    },
+    {
+      q: "What is advice (in AOP)?",
+      options: [
+        "An action taken by an aspect at a particular join point",
+        "A point during the execution of a program",
+        "An aspect and a pointcut",
+        "A predicate that matches join points",
+      ],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – Spring DAO, Hibernate and JPA (3)
+    {
+      q: "How to get the object of DAO in Spring framework?",
+      options: [
+        "Using new keyword",
+        "Using Spring Dependency Injection",
+        "Using static factory",
+        "Using reflection",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which starter dependency connects a Spring Boot app to MongoDB?",
+      options: [
+        "spring-boot-starter-data-mongodb",
+        "spring-boot-starter-data-jpa",
+        "spring-boot-starter-web",
+        "spring-boot-starter-security",
+      ],
+      correct: 0,
+    },
+    {
+      q: "What annotation is used to customize the path of a Spring Data REST repository endpoint?",
+      options: [
+        "@RequestMapping",
+        "@RepositoryRestResource(path='...')",
+        "@RestResource(path='...')",
+        "@EndpointPath",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – Spring Boot and REST Services (4)
+    {
+      q: "Spring Boot: How do you externalize configuration?",
+      options: [
+        "Using application.properties",
+        "Using @Configuration",
+        "Using @Bean",
+        "Using @Autowired",
+      ],
+      correct: 0,
+    },
+    {
+      q: "What is the difference between PUT and PATCH in a RESTful API built with Spring Boot?",
+      options: [
+        "PUT is for creating resources; PATCH is for deleting them",
+        "PUT replaces the entire resource; PATCH applies a partial update to specific fields only",
+        "They are interchangeable; the choice is purely stylistic",
+        "PATCH is not supported natively in Spring Boot",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is the purpose of 'application.properties' or 'application.yml' in a Spring Boot project?",
+      options: [
+        "To define the database schema for the application",
+        "To externalize configuration properties like server port, database URL, and logging levels",
+        "To list all Spring Boot starter dependencies",
+        "To configure the build tool (Maven/Gradle)",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What annotation is used to configure a Spring Boot test that loads only the web layer (controllers) without the full application context?",
+      options: [
+        "@SpringBootTest",
+        "@WebMvcTest",
+        "@ContextConfiguration",
+        "@MockMvcTest",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – Microservices (3)
+    {
+      q: "Microservices: What is a key benefit of microservices architecture?",
+      options: [
+        "Monolithic codebase",
+        "Independent scalability",
+        "Tight coupling",
+        "Single database",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which of the following statements is true about microservices architecture?\n(i) must deploy on same host\n(ii) supports high availability of individual microservices\n(iii) cannot be used with DevOps\n(iv) designed using bounded context communicating with other bounded contexts",
+      options: ["Only i", "Only ii", "Only ii and iv", "All of the above"],
+      correct: 2,
+    },
+    {
+      q: "Microservices is most closely related to which other established acronym?",
+      options: ["API", "AWS", "GCP", "PAAS"],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – DevOps (2)
+    {
+      q: "What does 'docker run -d -p 8080:80 nginx' do?",
+      options: [
+        "Runs nginx in the foreground and maps host port 80 to container port 8080",
+        "Runs nginx in detached (background) mode and maps host port 8080 to container port 80",
+        "Pulls and builds an nginx image from Docker Hub and deploys to port 8080",
+        "Runs nginx and creates a volume at port 8080",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is the purpose of Jenkins Credentials (Manage Credentials)?",
+      options: [
+        "To manage Jenkins user accounts and RBAC",
+        "To securely store and inject sensitive data (SSH keys, passwords, tokens) into pipelines without exposing them in plaintext in Jenkinsfiles",
+        "To configure Jenkins agent connection credentials",
+        "To store Kubernetes kubeconfig files only",
+      ],
+      correct: 1,
+    },
+  ],
+  // ---- Test 6 (full-length, 60 Qs, matches official section weightage) ----
+  test6: [
+    // IBM Cloud Microservices – Java (8)
+    {
+      q: "What is the purpose of try-with-resources (introduced in Java 7)?",
+      options: [
+        "It allows multiple catch blocks to catch different exceptions",
+        "It automatically closes resources that implement AutoCloseable at the end of the try block, even if an exception occurs",
+        "It provides better performance by reusing resources across multiple try blocks",
+        "It prevents resources from being garbage collected prematurely",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Load Balancing improves the distribution of workloads across multiple computing resources , such as computers or a",
+      options: ["computer cluster.", "True.", "False."],
+      correct: 0,
+    },
+    {
+      q: "Which three modifiers are valid on the marked line? (Choose three)\n\npublic interface Status {\n    /* insert code here */ int MY_VALUE = 10;\n}",
+      options: [
+        "final",
+        "static",
+        "native",
+        "public",
+        "private",
+        "abstract",
+        "protected",
+      ],
+      correct: [0, 1, 3],
+    },
+    {
+      q: "What is a local class in Java?",
+      options: [
+        "A class defined within a package that has package-private access",
+        "A class defined within a method body; it can access final or effectively-final local variables and has access to the enclosing class members",
+        "A static nested class with private access",
+        "An inner class that can only be instantiated locally within the same file",
+      ],
+      correct: 1,
+    },
+    {
+      q: "When is a method required to include a return statement?",
+      options: [
+        "When the method has a non-void return type",
+        "When the method contains more than one statement",
+        "Never",
+        "Always",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which Java Class has natural sorting implemented ?",
+      options: ["LinkedHashSet.", "TreeSet", "HashSet"],
+      correct: 1,
+    },
+    {
+      q: 'String s1 = "one"; String s2 = s1 + " two"; print(s2); Output?',
+      options: ["one", "two", "one two", "compilation error"],
+      correct: 2,
+    },
+    {
+      q: "Given the following code:float f = 7.0f/2.0f;long l = 7L/2L;Which statement is true?",
+      options: [
+        "The values of f and l are equivalent",
+        "The attempt to assign l the result of 7L/2L will create an error",
+        "The value of f is less than the value of l",
+        "The value of f is greater than the value of l",
+      ],
+      correct: 3,
+    },
+    // IBM Cloud Microservices – HTML5, CSS and Bootstrap (6)
+    {
+      q: "Consider: .nav li a { color: blue; } and #main a { color: red; }. Both apply to an <a> inside an <li> inside .nav and #main. Which color wins?",
+      options: [
+        "blue, because .nav li a has more selectors",
+        "red, because the ID selector (#main) has higher specificity than a class selector",
+        "blue, because class selectors always beat ID selectors",
+        "The last declared rule wins regardless of specificity",
+      ],
+      correct: 1,
+    },
+    {
+      q: "In CSS, which statement correctly describes 'inheritance'?",
+      options: [
+        "All CSS properties are automatically passed from parent to child elements",
+        "Only certain properties like font-size and color are inherited by child elements by default",
+        "Inherited styles always override directly applied styles",
+        "Only block-level elements can inherit styles",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is the use of the <datalist> element in HTML5 forms?",
+      options: [
+        "It creates a multi-select dropdown list",
+        "It provides a list of predefined options for autocomplete suggestions on an input",
+        "It replaces the <select> element with a searchable list",
+        "It is used to list data tables inside a form",
+      ],
+      correct: 1,
+    },
+    {
+      q: "To pre-select an '<option>' in a dropdown menu when the page loads, you use the attribute:",
+      options: [
+        "selected='selected'",
+        "checked='checked'",
+        "default='true'",
+        "value='selected'",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which CSS rule makes the header sticky so it stays at the top of the viewport when the user scrolls?",
+      options: [
+        "header { position: fixed; top: 0; }",
+        "header { position: sticky; top: 0; }",
+        "header { float: top; }",
+        "Both A and B achieve the same result",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is the key difference between position: absolute and position: fixed?",
+      options: [
+        "absolute is positioned relative to its nearest positioned ancestor; fixed is positioned relative to the viewport and does not scroll",
+        "fixed is positioned relative to its parent; absolute is relative to the viewport",
+        "absolute elements are removed from flow; fixed elements are not",
+        "They behave identically in all cases",
+      ],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – JavaScript (7)
+    {
+      q: "In Node.js, what is the purpose of the 'process.argv' array?",
+      options: [
+        "It lists all currently running processes",
+        "It contains the command-line arguments passed when the Node.js process was launched",
+        "It stores environment variables for the current process",
+        "It represents the arguments of the last function call",
+      ],
+      correct: 1,
+    },
+    {
+      q: ") What is the purpose of the mimeTypes property of a plug-in entry?",
+      options: [
+        "Contains MIME properties",
+        "Contains MIME sizes",
+        "Contains MIME types",
+        "Contains MIME methods",
+      ],
+      correct: 2,
+    },
+    {
+      q: "The . . . . . . . filter waits for a promise and returns the most recent value received. It then updates the view.",
+      options: ["sync", "async", "promise", "custom"],
+      correct: 1,
+    },
+    {
+      q: "Let has block scope?",
+      options: ["True", "False"],
+      correct: 0,
+    },
+    {
+      q: "What is dependency injection?",
+      options: [
+        "A coding technique in which all dependencies are defined with import statements",
+        "A coding technique for registering services",
+        "A coding pattern in which a class receives the instances of objects it needs from an external source",
+      ],
+      correct: 2,
+    },
+    {
+      q: "Which function in JS is used to convert an array to a string?",
+      options: ["splice", "slice", "join", "concat"],
+      correct: 2,
+    },
+    {
+      q: "What does the following code output?\n\nconsole.log(0.1 + 0.2 === 0.3);",
+      options: ["true", "false", "undefined", "NaN"],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – Angular (8)
+    {
+      q: "What is an NgModule in Angular?",
+      options: [
+        "A TypeScript class decorator for services",
+        "A container that groups related components, directives, pipes, and services",
+        "A built-in directive for conditionally showing modules",
+        "A utility for managing HTTP calls",
+      ],
+      correct: 1,
+    },
+    {
+      q: "How do you subscribe to an Observable in Angular?",
+      options: [
+        "observable.listen(callback)",
+        "observable.then(callback)",
+        "observable.subscribe(callback)",
+        "observable.on(callback)",
+      ],
+      correct: 2,
+    },
+    {
+      q: "What does FormArray represent in reactive forms?",
+      options: [
+        "An array of form groups within a module",
+        "A dynamic list of form controls or groups",
+        "An array of validators",
+        "A collection of submitted form values",
+      ],
+      correct: 1,
+    },
+    {
+      q: "You can pass extra animation input parameters by setting more data via the ____ property.",
+      options: [
+        "options.param",
+        "option.params",
+        "option.param",
+        "options.params",
+      ],
+      correct: 3,
+    },
+    {
+      q: "AngularJS can show or hide HTML depending on the state of data in the model, using the directives ____.",
+      options: [
+        "ng-shown, ng-hidden",
+        "ng-show, ng-hide",
+        "nt-show, nt-hide",
+        "ng-shows, ng-hides",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What module must be imported to use ngModel in Angular?",
+      options: [
+        "HttpClientModule",
+        "ReactiveFormsModule",
+        "FormsModule",
+        "CommonModule",
+      ],
+      correct: 2,
+    },
+    {
+      q: "Using the . . . . . . animation function, the parent animation can allow the child animation to run at the exact correct time.",
+      options: ["animateChild", "childAnimate", "animateInner", "innerChild"],
+      correct: 0,
+    },
+    {
+      q: "Which approach to forms in Angular defines the form structure in the component class?",
+      options: [
+        "Template-driven forms",
+        "Reactive forms",
+        "Hybrid forms",
+        "Schema-driven forms",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – React (7)
+    {
+      q: "Which approach allows you to read form values without managing state for every input?",
+      options: [
+        "Controlled components",
+        "Uncontrolled components using refs",
+        "Redux Form",
+        "Context API",
+      ],
+      correct: 1,
+    },
+    {
+      q: "How do you programmatically navigate to a route in React Router v6?",
+      options: [
+        "useHistory().push('/path')",
+        "useNavigate()('/path')",
+        "const navigate = useNavigate(); navigate('/path')",
+        "Router.push('/path')",
+      ],
+      correct: 2,
+    },
+    {
+      q: "What is a custom React hook?",
+      options: [
+        "A built-in hook with custom configuration",
+        "A function that starts with 'use' and can call other hooks to share stateful logic",
+        "A lifecycle method for functional components",
+        "A component that wraps other components with additional logic",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which component must wrap a lazy-loaded component?",
+      options: [
+        "React.Fragment",
+        "React.StrictMode",
+        "React.Suspense",
+        "React.ErrorBoundary",
+      ],
+      correct: 2,
+    },
+    {
+      q: "In which directory are React components conventionally saved?",
+      options: [
+        "Inside js/components/",
+        "Inside vendor/components/",
+        "Inside external/components/",
+        "Inside vendor/",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Behavior is shared between components using",
+      options: ["propTypes", "state", "mixins", "props"],
+      correct: 2,
+    },
+    {
+      q: "What does React Router's <BrowserRouter> component do?",
+      options: [
+        "Renders a browser-native navigation bar",
+        "Provides routing context using the HTML5 history API",
+        "Creates a new browser tab for each route",
+        "Handles server-side rendering",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – MongoDB (7)
+    {
+      q: "What is the default port on which MongoDB runs?",
+      options: ["27017", "3306", "5432", "8080"],
+      correct: 0,
+    },
+    {
+      q: "Which of the following is true about MongoDB transactions?",
+      options: [
+        "Transactions are only available in the Enterprise edition",
+        "Transactions support multi-document ACID compliance across replica sets",
+        "Transactions cannot span multiple operations",
+        "Transactions automatically shard data",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Where in an HTML document is the correct place to refer to an external style sheet?",
+      options: [
+        "In the <head> section",
+        "In the <body> section",
+        "In the <head> section",
+        "At the end of the document",
+        "At the start of the document",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What does the $regex operator do?",
+      options: [
+        "Performs regular expression pattern matching on string fields",
+        "Registers a new expression in the aggregation pipeline",
+        "Replaces text in a string",
+        "Validates email formats automatically",
+      ],
+      correct: 0,
+    },
+    {
+      q: "In MongoDB, which operation uses an index often, having better performance than those that don't use an index?",
+      options: ["SELECT", "UPDATE", "DELETE", "SORT"],
+      correct: 3,
+    },
+    {
+      q: "Which annotation is NOT a Spring Data MongoDB annotation?",
+      options: ["@Document", "@Field", "@Entity", "@Query"],
+      correct: 2,
+    },
+    {
+      q: "What does the 'explain()' method do in MongoDB?",
+      options: [
+        "Provides execution statistics and query plan details",
+        "Exports data to a JSON file",
+        "Explains the schema of a collection",
+        "Lists all indexes on a collection",
+      ],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – Spring Core, AOP and Testing (5)
+    {
+      q: "How does after-returning advice work?",
+      options: [
+        "Run advice after a class loads if it loads successfully.",
+        "Run advice after a method execution only if the method completes successfully.",
+        "Run advice after http response is returned only if success.",
+        "Run advice after http request is processed with no exception.",
+      ],
+      correct: 1,
+    },
+    {
+      q: "The Dependency Look up is a methodology where we get the resource after demand. There can be various ways to get the resource. Types of Dependency Look up include:",
+      options: [
+        "Factory Method",
+        "JNDI Method",
+        "Key Word Method",
+        "All of the above",
+      ],
+      correct: 3,
+    },
+    {
+      q: "Which is correct for Spring Framework?",
+      options: [
+        "Spring framework is a heavy-weight solution.",
+        "Spring framework is a light-weight solution.",
+        "Spring only supports XML config.",
+        "Spring cannot integrate with other frameworks.",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What is the default bean scope in Spring?",
+      options: ["prototype", "request", "singleton", "session"],
+      correct: 2,
+    },
+    {
+      q: "Which are the IoC containers in Spring?",
+      options: [
+        "BeanFactory, ApplicationContext",
+        "BeanFactory, ApplicationContext, IocContextFactory",
+        "BeanFactory, BeanContext, IocContextFactory",
+        "BeanFactory, ApplicationContext, BeanContext",
+      ],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – Spring DAO, Hibernate and JPA (3)
+    {
+      q: "What is the purpose of @Column(nullable = false, unique = true) on a JPA entity field?",
+      options: [
+        "It applies validation at the Java layer only",
+        "It maps the field to a database column with NOT NULL and UNIQUE constraints at the schema level",
+        "It makes the field required in JSON input for REST APIs",
+        "It prevents the field from being serialized to JSON",
+      ],
+      correct: 1,
+    },
+    {
+      q: "A method annotated @Transactional only reads data. What optimization helps the provider process it more efficiently?",
+      options: [
+        "Add readOnly to @Transactional — hints the provider to optimize for read-only",
+        "Add a timeout to @Transactional",
+        "readOnly prevents any write operations",
+        "Set a custom transactionManager option",
+      ],
+      correct: 0,
+    },
+    {
+      q: "In Spring MVC with ORM, what annotation is used to demarcate a transactional method?",
+      options: ["@Commit", "@Transactional", "@Rollback", "@Atomic"],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – Spring Boot and REST Services (4)
+    {
+      q: "How do you configure default Spring Boot configuration/dependencies in Maven?",
+      options: [
+        "Add spring-boot-starter-parent as the POM's <parent>",
+        "Add spring-boot-dependencies as <parent> with a relativePath",
+        "Add spring-boot-starter-parent as a <dependency>",
+        "Add spring-boot-starter as a <dependency>",
+      ],
+      correct: 0,
+    },
+    {
+      q: "How do you create a REST client in Spring Boot to call an external API?",
+      options: [
+        "Using HttpClient from java.net only",
+        "Using RestTemplate or the newer WebClient (from Spring WebFlux) to make HTTP requests to external services",
+        "Using @FeignClient only, which is mandatory for REST clients",
+        "REST clients cannot be created inside Spring Boot applications",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What does @ConfigurationProperties(prefix = 'app.mail') do in Spring Boot?",
+      options: [
+        "It reads only the app.mail entry from application.properties",
+        "It binds all properties with the prefix 'app.mail' from application.properties to the fields of the annotated class",
+        "It configures the mail server for the application automatically",
+        "It creates a new properties file for mail configuration",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which annotation maps HTTP GET requests in Spring MVC?",
+      options: [
+        "@PostMapping",
+        "@GetMapping",
+        "@RequestMapping (only)",
+        "@PutMapping",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – Microservices (3)
+    {
+      q: "Microservices: What is a key benefit of microservices architecture?",
+      options: [
+        "Monolithic codebase",
+        "Independent scalability",
+        "Tight coupling",
+        "Single database",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which of the following statements is true about microservices architecture?\n(i) must deploy on same host\n(ii) supports high availability of individual microservices\n(iii) cannot be used with DevOps\n(iv) designed using bounded context communicating with other bounded contexts",
+      options: ["Only i", "Only ii", "Only ii and iv", "All of the above"],
+      correct: 2,
+    },
+    {
+      q: "Microservices is most closely related to which other established acronym?",
+      options: ["API", "AWS", "GCP", "PAAS"],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – DevOps (2)
+    {
+      q: "DevOps: What is CI/CD?",
+      options: [
+        "Continuous Integration / Continuous Deployment",
+        "Code Inspection / Code Delivery",
+        "Continuous Improvement / Continuous Development",
+        "Code Integration / Code Deployment",
+      ],
+      correct: 0,
+    },
+    {
+      q: "What is the purpose of Maven in a CI/CD pipeline?",
+      options: [
+        "Maven is a container runtime used to build Docker images",
+        "Maven is a Java build and dependency management tool that compiles code, runs tests, and packages applications (e.g., into JARs/WARs) in a CI pipeline",
+        "Maven is a version control tool similar to Git",
+        "Maven orchestrates the deployment of applications to Kubernetes",
+      ],
+      correct: 1,
+    },
+  ],
+  // ---- Test 7 (full-length, 60 Qs, matches official section weightage) ----
+  test7: [
+    // IBM Cloud Microservices – Java (8)
+    {
+      q: "Which of these are true? (multiple correct — select the most complete option)",
+      options: [
+        "Raccoon is-a Mammal; Raccoon has-a Mammal; BabyRaccoon is-a Mammal; BabyRaccoon is-a BabyRaccoon",
+        "Only Raccoon is-a Mammal",
+        "BabyRaccoon is-a Raccoon",
+        "None of the above",
+      ],
+      correct: 0,
+    },
+    {
+      q: "You can also use an ES6 class to define a component in React.",
+      options: ["True.", "False."],
+      correct: 0,
+    },
+    {
+      q: "What is runtime polymorphism in Java and how is it achieved?",
+      options: [
+        "It is achieved by method overloading and resolved at compile time",
+        "It is achieved by method overriding and dynamic dispatch — the JVM decides at runtime which overridden method to call based on the actual object type",
+        "It is achieved by casting objects between types explicitly",
+        "It is achieved using generics and type parameters",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What indicates the end of a Java statement?",
+      options: [
+        "Both a semicolon and a newline",
+        "A newline",
+        "A double-slash ( // )",
+        "A semicolon ( ; )",
+      ],
+      correct: 3,
+    },
+    {
+      q: "Views that can't be resolved byInternalResourceViewResolver.",
+      options: [
+        "redirect",
+        "redirect:prefix",
+        "redirect:suffix",
+        "all of the mentioned",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which of these keywords cannot be used for a class which has been declared final?",
+      options: [
+        "abstract",
+        "extends",
+        "abstract and extends",
+        "None of the mentioned",
+      ],
+      correct: 0,
+    },
+    {
+      q: "What is the output of the following code?\nint x = 10;\nObject obj = x;\nSystem.out.println(obj instanceof Integer);",
+      options: [
+        "false",
+        "true",
+        "Compilation error",
+        "ClassCastException at runtime",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Shift-left concept refers to moving everything to the earlier phase in the ________ cycle.",
+      options: ["Requirement", "Development", "Design", "Testing"],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – HTML5, CSS and Bootstrap (6)
+    {
+      q: "What is the output of this HTML: <p>Price: &lt;b&gt;100&lt;/b&gt;</p>?",
+      options: [
+        "Price: 100 (with 100 in bold)",
+        "Price: <b>100</b> (rendered as literal text, not bold)",
+        "An HTML error occurs",
+        "Price: b100b",
+      ],
+      correct: 1,
+    },
+    {
+      q: "List some features of Typescript?",
+      options: [
+        "Typescript can be compiled to all major versions of Javascript(ES3,ES5,ES6,ES7)",
+        "Typescript can be used for cross –browser development and is an open source project",
+        "Typescript is a superset of JavaScript that provides typed nature to your code",
+        "All of the above",
+      ],
+      correct: 3,
+    },
+    {
+      q: "What does the CSS clear: both property do when applied to an element?",
+      options: [
+        "Removes all styles from the element",
+        "Prevents the element from being floated in any direction",
+        "Ensures the element drops below any preceding floated elements on both sides",
+        "Clears the element's padding and margin",
+      ],
+      correct: 2,
+    },
+    {
+      q: "Which of the following are automation tools?",
+      options: ["Gulp", "JSX", "Express"],
+      correct: 0,
+    },
+    {
+      q: "What CSS property controls the rendering direction of text (e.g., left-to-right or right-to-left)?",
+      options: ["text-align", "writing-mode", "direction", "flow"],
+      correct: 2,
+    },
+    {
+      q: "When is it recommended to pass this.setState a function instead of an object",
+      options: [
+        "When the new state should completely replace the old state .",
+        "When the new state does not depend on the old state.",
+        "When the new state depends on the old state.",
+      ],
+      correct: 2,
+    },
+    // IBM Cloud Microservices – JavaScript (7)
+    {
+      q: "Which of these are valid CSS display property values?",
+      options: ["None", "inline", "inline-block", "All of the above"],
+      correct: 3,
+    },
+    {
+      q: "What function converts a JavaScript object to a JSON string?",
+      options: [
+        "JSON.text()",
+        "JSON.serialize()",
+        "JSON.toString()",
+        "JSON.stringify()",
+      ],
+      correct: 3,
+    },
+    {
+      q: "Views that cannot be resolved by InternalResourceViewResolver.",
+      options: [
+        "redirect",
+        "redirect:prefix",
+        "redirect:suffix",
+        "all of the mentioned",
+      ],
+      correct: 0,
+    },
+    {
+      q: "In Express.js, how do you implement pagination for a GET /tasks endpoint using query parameters?",
+      options: [
+        "Using req.body.page and req.body.limit",
+        "Using req.params.page and req.params.limit",
+        "Using req.query.page and req.query.limit with Mongoose's .skip() and .limit()",
+        "Pagination is handled automatically by Mongoose",
+      ],
+      correct: 2,
+    },
+    {
+      q: 'Given <code>{ "Student": [ "Amy", "Bob", "John" ] }</code>, the value of "Student" is a(n):',
+      options: ["invalid JSON value", "Array", "Class", "Object"],
+      correct: 1,
+    },
+    {
+      q: "The promise becomes . . . . . . after resolving or rejecting.",
+      options: ["mutable", "ignored", "immutable", "recurring"],
+      correct: 2,
+    },
+    {
+      q: "We subscribe to the observable ourselves using the actual . . . . . . method. The downside is that you have to manage the",
+      options: [
+        "subscription yourself.",
+        "subscribe()",
+        "subs()",
+        "subscribed()",
+        "None of above",
+      ],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – Angular (8)
+    {
+      q: "The ____ filter waits for a promise and returns the most recent value received, then updates the view.",
+      options: ["sync", "async", "promise", "custom"],
+      correct: 1,
+    },
+    {
+      q: "How do you add built-in validation to a reactive form control?",
+      options: [
+        "Add required attribute in HTML",
+        "Pass Validators from the Validators class as the second argument to FormControl",
+        "Use ngModel directive",
+        "Add validators in @Component metadata",
+      ],
+      correct: 1,
+    },
+    {
+      q: "The ____ directive substitutes the normal href property to work with route links, and is also used to navigate between routes.",
+      options: ["RouterLinks", "RouterLinking", "RouterLink", "RouterLinq"],
+      correct: 2,
+    },
+    {
+      q: "Select type of pipe Angular executes during every change detection cycle of component",
+      options: ["Pure Pipe", "Impure Pipe"],
+      correct: 1,
+    },
+    {
+      q: "Route . . . . . . . . . . allow us to pass values in our url to our component so we can dynamically change our view content.",
+      options: ["pipes", "modules", "variables", "parameters"],
+      correct: 3,
+    },
+    {
+      q: "Which pipe converts a string to uppercase in Angular?",
+      options: ["upper", "toUpperCase", "uppercase", "capitalize"],
+      correct: 2,
+    },
+    {
+      q: "In Angular, one can create a local HTML reference of a tag using a variable that starts with character ___.",
+      options: ["@", "#", "*", "&"],
+      correct: 1,
+    },
+    {
+      q: "Which decorator marks a class as injectable in Angular?",
+      options: ["@Component", "@Service", "@Injectable", "@Provide"],
+      correct: 2,
+    },
+    // IBM Cloud Microservices – React (7)
+    {
+      q: "What is the entry point file rendered into the DOM in a default Create React App setup?",
+      options: ["App.js", "index.html", "index.js", "main.js"],
+      correct: 2,
+    },
+    {
+      q: "What does the <Transition> component from React Transition Group primarily manage?",
+      options: [
+        "Route transitions in React Router",
+        "The mounting and unmounting states of a component for animation purposes",
+        "Async data loading transitions",
+        "CSS Grid layout transitions",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which of the following APIs is a MUST for every React Component?",
+      options: ["getInitialState", "render", "renderComponent"],
+      correct: 1,
+    },
+    {
+      q: "What are the three core principles of Redux?",
+      options: [
+        "Encapsulation, Inheritance, Polymorphism",
+        "Single source of truth, State is read-only, Changes via pure functions",
+        "Actions, Reducers, Sagas",
+        "Immutability, Reactivity, Asynchrony",
+      ],
+      correct: 1,
+    },
+    {
+      q: "How can we render JSX in the browser? (i) Using Babel (ii) Using TypeScript (iii) Using Flux (iv) Using Redux",
+      options: [
+        "Only i and ii",
+        "Only iv",
+        "Only i, ii and iv",
+        "Only iii and iv",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which ES6 method creates a new array with the results of calling a function on every element?",
+      options: ["filter()", "reduce()", "map()", "forEach()"],
+      correct: 2,
+    },
+    {
+      q: "What does the 'webpack' command primarily do?",
+      options: [
+        "Transpiles/bundles JavaScript down into one (or few) files",
+        "Runs the React local development server",
+        "Only lints code",
+        "Only minifies CSS",
+      ],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – MongoDB (7)
+    {
+      q: "Write a MongoDB query to delete all documents from the 'orders' collection where the 'status' field equals 'cancelled'.",
+      options: [
+        "db.orders.deleteMany({ status: 'cancelled' })",
+        "db.orders.delete({ status: 'cancelled' })",
+        "db.orders.remove({ status: 1 })",
+        "db.orders.drop({ status: 'cancelled' })",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Identify the incorrect statement on MongoDB (secondary indices).",
+      options: [
+        "Secondary Indices are not available in MongoDB.",
+        "MongoDB supports search by field, range queries and regular expression matches.",
+        "MongoDB can store the business subject in the minimal number of documents.",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Spring Boot: How do you connect to MongoDB?",
+      options: [
+        "spring-boot-starter-data-mongodb",
+        "spring-boot-starter-data-jpa",
+        "spring-boot-starter-web",
+        "spring-boot-starter-security",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Sharding a MongoDB database across many server instances can be achieved with ____",
+      options: ["LAN", "SAN.", "MAN"],
+      correct: 0,
+    },
+    {
+      q: "Which of the following statements is INCORRECT about MongoDB?",
+      options: [
+        "MongoDB supports search by field, range queries, and regex",
+        "MongoDB can store business subjects in a minimal number of documents",
+        "Secondary indices are NOT available in MongoDB",
+        "MongoDB documents are stored in BSON",
+      ],
+      correct: 2,
+    },
+    {
+      q: "Write a query to delete the 'users' collection completely from the current database.",
+      options: [
+        "db.users.drop()",
+        "db.users.delete()",
+        "db.dropCollection('users')",
+        "db.users.remove({})",
+      ],
+      correct: 0,
+    },
+    {
+      q: "What is the purpose of the 'writeConcern' in MongoDB?",
+      options: [
+        "Specifies the level of acknowledgment requested for write operations",
+        "Encrypts write operations",
+        "Compresses data before writing",
+        "Validates schema before writing",
+      ],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – Spring Core, AOP and Testing (5)
+    {
+      q: "Which of the below API Calls provides you the security information ?\n1) HttpServletRequest.isUserinRole()\n2) HttpServletRequest.getUserPrincipal()",
+      options: ["Only 1", "Only 2", "Both i and ii"],
+      correct: 2,
+    },
+    {
+      q: "What is the use of Autodiscovery?",
+      options: [
+        "Eliminate the use of the <Property> element",
+        "Reduce the use of the <Constructor-arg> element",
+        "Eliminate the use of the <Props> element",
+        "Reduce the use of the <bean> element",
+      ],
+      correct: 3,
+    },
+    {
+      q: "Which annotation allows the Jaxb2Marshaller marshaller to detect a class's fields?",
+      options: [
+        "@XmlRootElement",
+        "@XmlRoot",
+        "@NotNull",
+        "None of the mentioned",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which element is used to specify access attributes for a bean's methods?",
+      options: [
+        "security:protect",
+        "security:intercept",
+        "security:intercept-security",
+        "none of the mentioned",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which controller combines multiple request-handling methods into one controller?",
+      options: [
+        "UrlFilenameViewController",
+        "MultiActionController",
+        "CommandController",
+        "MultiRequestController",
+      ],
+      correct: 1,
+    },
+    // IBM Cloud Microservices – Spring DAO, Hibernate and JPA (3)
+    {
+      q: "Which ORM(s) does Spring support?",
+      options: ["Hibernate", "iBatis", "JPA", "All of the above"],
+      correct: 3,
+    },
+    {
+      q: "Using JdbcTemplate, which Spring class parses a result set and merges rows into a single object?",
+      options: [
+        "ResultSetExtractor",
+        "RowMapper",
+        "RowCallbackHandler",
+        "ResultSetMapper",
+      ],
+      correct: 0,
+    },
+    {
+      q: "Which starter dependency enables building REST APIs in Spring Boot?",
+      options: [
+        "spring-boot-starter-web",
+        "spring-boot-starter-data-jpa",
+        "spring-boot-starter-security",
+        "spring-boot-starter-test",
+      ],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – Spring Boot and REST Services (4)
+    {
+      q: "Publishing an application's data as a REST service with Spring requires:",
+      options: [
+        "@RequestMapping",
+        "@PathVariable",
+        "All of the mentioned",
+        "None of the mentioned",
+      ],
+      correct: 2,
+    },
+    {
+      q: "What is Spring JMS and what is it used for?",
+      options: [
+        "A Spring module for JSON marshalling and serialisation",
+        "A Spring module that simplifies working with Java Message Service (JMS) for asynchronous messaging between applications",
+        "A module for managing JavaScript modules in Spring MVC",
+        "A module for sending HTTP messages between microservices",
+      ],
+      correct: 1,
+    },
+    {
+      q: "What does @RequestBody do in a Spring Boot REST controller method?",
+      options: [
+        "It extracts a single field from the request body",
+        "It deserializes the HTTP request body (typically JSON) into a Java object",
+        "It validates that the request body is not empty",
+        "It maps request headers to a Java object",
+      ],
+      correct: 1,
+    },
+    {
+      q: "How to reload changes on Spring Boot without having to restart the server?",
+      options: [
+        "spring-boot-devtools",
+        "spring-boot-test",
+        "spring-boot-web",
+        "spring-boot-jasper",
+      ],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – Microservices (3)
+    {
+      q: "Microservices: What is a key benefit of microservices architecture?",
+      options: [
+        "Monolithic codebase",
+        "Independent scalability",
+        "Tight coupling",
+        "Single database",
+      ],
+      correct: 1,
+    },
+    {
+      q: "Which of the following statements is true about microservices architecture?\n(i) must deploy on same host\n(ii) supports high availability of individual microservices\n(iii) cannot be used with DevOps\n(iv) designed using bounded context communicating with other bounded contexts",
+      options: ["Only i", "Only ii", "Only ii and iv", "All of the above"],
+      correct: 2,
+    },
+    {
+      q: "Microservices is most closely related to which other established acronym?",
+      options: ["API", "AWS", "GCP", "PAAS"],
+      correct: 0,
+    },
+    // IBM Cloud Microservices – DevOps (2)
+    {
+      q: "Which servers run the Kubernetes control-plane components in OpenShift?",
+      options: ["Workers", "Masters", "Registries", "Routers"],
+      correct: 1,
+    },
+    {
+      q: "In GitHub, what is a Pull Request (PR)?",
+      options: [
+        "A command to pull code from a remote repository",
+        "A request to merge changes from one branch (or fork) into another, enabling code review and discussion before merging",
+        "A way to pull Docker images from GitHub Container Registry",
+        "A request sent to collaborators to pull the latest code",
+      ],
+      correct: 1,
+    },
+  ],
 };
 
 // Human-friendly display names for topic ids (used in the UI)
@@ -23801,4 +27177,11 @@ const TOPIC_LABELS = {
   react: "React",
   devops: "DevOps",
   htmlcss: "HTML & CSS",
+  test1: "Full Test 1 (60 Qs)",
+  test2: "Full Test 2 (60 Qs)",
+  test3: "Full Test 3 (60 Qs)",
+  test4: "Full Test 4 (60 Qs)",
+  test5: "Full Test 5 (60 Qs)",
+  test6: "Full Test 6 (60 Qs)",
+  test7: "Full Test 7 (60 Qs)",
 };
