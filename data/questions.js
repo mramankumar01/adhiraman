@@ -1543,9 +1543,9 @@ const QUESTION_BANK = {
       correct: 4,
     },
     {
-      q: 'class output {\npublic static void main(String args[])\n{\nStringBuffer c = new StringBuffer("Hello");\nStringBuffer c1 = new StringBuffer("World");\nappend(c1);\nSystem.out.println(c);\n}\n}',
+      q: 'class output {\npublic static void main(String args[])\n{\nStringBuffer c = new StringBuffer("Hello");\nStringBuffer c1 = new StringBuffer("World");\nc.append(c1);\nSystem.out.println(c);\n}\n}',
       options: ["Hello", "World", "HelloWorld", "Hello World"],
-      correct: 3,
+      correct: 2,
     },
     {
       q: 'class exception_handling {\npublic static void main(String args[])\n{\ntry {\nSystem.out.print("Hello" + " "\n+ 1 / 0);\n}\ncatch(ArithmeticException e) {\nSystem.out.print("World");\n}\n}\n}',
@@ -1583,12 +1583,8 @@ const QUESTION_BANK = {
       correct: [0, 1],
     },
     {
-      q: "State whether the statement is true or false.",
-      options: [
-        "Adopting Agile is necessary prior to embracing DevOps practices.",
-        "True",
-        "False",
-      ],
+      q: "State whether the statement is true or false.\nAdopting Agile is necessary prior to embracing DevOps practices.",
+      options: ["True", "False"],
       correct: 1,
     },
     {
@@ -1802,14 +1798,8 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "Which of the below API Calls provides you the security information ?",
-      options: [
-        "1) HttpServletRequest.isUserinRole()",
-        "2) HttpServletRequest.getUserPrincipal()",
-        "Only 1",
-        "Only 2",
-        "Both i and ii",
-      ],
+      q: "Which of the below API Calls provides you the security information ?\n1) HttpServletRequest.isUserinRole()\n2) HttpServletRequest.getUserPrincipal()",
+      options: ["Only 1", "Only 2", "Both i and ii"],
       correct: 2,
     },
     {
@@ -1836,13 +1826,9 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "In your Data Access Object (DAO) method , you neither need to surround your code with a try/catch block nor declare",
-      options: [
-        "throwing an exception in the method signature.",
-        "i. TRUE",
-        "ii. FALSE.",
-      ],
-      correct: 1,
+      q: "In your Data Access Object (DAO) method , you neither need to surround your code with a try/catch block nor declare throwing an exception in the method signature.",
+      options: ["i. TRUE", "ii. FALSE."],
+      correct: 0,
     },
     {
       q: "A logger location where logging information is sent is called",
@@ -1944,8 +1930,8 @@ const QUESTION_BANK = {
       correct: 1,
     },
     {
-      q: "Load Balancing improves the distribution of workloads across multiple computing resources , such as computers or a",
-      options: ["computer cluster.", "True.", "False."],
+      q: "Load Balancing improves the distribution of workloads across multiple computing resources , such as computers or a computer cluster.",
+      options: ["True.", "False."],
       correct: 0,
     },
     {
@@ -2231,10 +2217,10 @@ const QUESTION_BANK = {
       correct: 3,
     },
     {
-      q: "Which of the following statements is NOT correct for JVM?\nJVM acts as a translator that translates different Machine code (on the basis of Host Machine) for a common Byte Code.",
+      q: "Which of the following statements is NOT correct for JVM?",
       options: [
-        "JVM is a Virtual Machine that acts as an intermediary between Java Application and Host",
-        "Operating System.",
+        "JVM acts as a translator that translates different Machine code (on the basis of Host Machine) for a common Byte Code.",
+        "JVM is a Virtual Machine that acts as an intermediary between Java Application and Host Operating System.",
         "JVM reads Byte Code and generates Machine Code.",
         "JVM reads Source Code and generates Byte Code.",
       ],
@@ -2511,7 +2497,7 @@ const QUESTION_BANK = {
         "Loose coupling",
         "Object immutability",
       ],
-      correct: 1,
+      correct: [1, 2],
     },
     {
       q: "A team of programmers is reviewing a proposed API for a new utility class. After some discussion, they realize that they can reduce the number of methods in the API without losing any functionality. If they implement the new design, which two OO principles will they be promoting?",
@@ -13481,9 +13467,9 @@ const QUESTION_BANK = {
       correct: 0,
     },
     {
-      q: "In your Data Access Object (DAO) method , you neither need to surround your code with a",
+      q: "In your Data Access Object (DAO) method , you neither need to surround your code with a try/catch block nor declare throwing an exception in the method signature.",
       options: ["TRUE", "FALSE."],
-      correct: 1,
+      correct: 0,
     },
     {
       q: "Which Java Class has natural sorting implemented?",
