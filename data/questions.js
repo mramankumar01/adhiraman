@@ -10108,7 +10108,6 @@ const QUESTION_BANK = {
     {
       q: "Where in an HTML document is the correct place to refer to an external style sheet?",
       options: [
-        "In the <head> section",
         "In the <body> section",
         "In the <head> section",
         "At the end of the document",
